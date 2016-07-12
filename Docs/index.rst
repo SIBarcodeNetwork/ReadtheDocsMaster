@@ -15,7 +15,7 @@ Updates
     :target: http://www.geneious.com/assets/plugins/GenbankSubmission_1_6_4.gplugin
 
 15 June, 2016
-	The Biocode Plugin was updated to version 3.0.0, and the GenBank Upload Plugin was updated to version 1.6.4. You can read about the updates to the Biocode Plugin `here <http://software.mooreabiocode.org/index.php?title=Release_Notes#Biocode_Plugin_3.0.0_-_9_June_2016>`_. You can read about the updates to the GenBank Upload Plugin `here. <http://www.geneious.com/plugins/genbank-submission-plugin#history>`_ Additionally, the back-end LIMS database was split up by country and new login information was provided to each BWP partner via email.
+	The Biocode Plugin was updated to version 3.0.0, and the GenBank Upload Plugin was updated to version 1.6.4. You can read about the updates to the Biocode Plugin `here <http://software.mooreabiocode.org/index.php?title=Release_Notes#Biocode_Plugin_3.0.0_-_9_June_2016>`_. You can read about the updates to the GenBank Upload Plugin `here. <http://www.geneious.com/plugins/genbank-submission-plugin#history>`_
 
 .. toctree::
 	:caption: Background
@@ -23,7 +23,6 @@ Updates
 	workflow
 	software_components
 	barcode_data_standard
-	bwp_data_standard
 	conventions
 
 .. toctree::
