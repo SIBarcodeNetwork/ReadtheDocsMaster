@@ -53,12 +53,12 @@ To create an extraction plate:
 
 * Finally you want to import the Extraction Barcode's for each DNA extract. This can be done in two different ways:
 
-* *Option 1*: This is our preferred method. Select "Import Extraction Barcodes from FIMS" from the "Tools" dropdown menu. A new window will appear, and select the FIMS column that contains the extraction barcodes from the dropdown menu - in our case it is "extractionBarcode". For this to work, you must ensure that your FIMS spreadsheet contains the unique extraction barcodes.
+* *Option 1:* This is our preferred method. Select "Import Extraction Barcodes from FIMS" from the "Tools" dropdown menu. A new window will appear, and select the FIMS column that contains the extraction barcodes from the dropdown menu - in our case it is "extractionBarcode". For this to work, you must ensure that your FIMS spreadsheet contains the unique extraction barcodes.
 
 .. figure:: /images/import_extraction_barcode_FIMS.png
   :align: center
 
-* *Option 2*: Select "Import Extraction Barcodes from File" from the "Tools" dropdown menu. Select the file generated from the plate scanner or alternatively you can copy and paste the data from the file generated from the plate scanner into that column in the window. Since copy and pasting is open to user error, we strongly advise against using it unless absolutely necessary.
+* *Option 2:* Select "Import Extraction Barcodes from File" from the "Tools" dropdown menu. Select the file generated from the plate scanner. Ensure that the well order of the plate scan matches the well order displayed in the Edit Plate window.
 
 * Once this is complete Click "OK" and you will be brought back to the "New Extraction" window.
 
