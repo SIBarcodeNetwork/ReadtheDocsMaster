@@ -32,9 +32,9 @@ Organize the assemblies you want to submit, and then go to Tools > Submit to Gen
 
 You will see a window appear that has the following sections. Each section is detailed below.
 
-.. image:: /images/genbank_submit_colorcoded.png
+.. image:: /images/genbank_submit_colorcoded_si.png
   :align: center
-  :target: /en/latest/_images/genbank_submit_colorcoded.png
+  :target: /en/latest/_images/genbank_submit_colorcoded_si.png
 
 
 Submission Details
@@ -59,13 +59,13 @@ Affiliation
   Fill out the relevant information for the institution that produced these sequences. The entries in this section will show up in the GenBank record, so be sure to provide accurate and consistent information.
 
 Sequence Authors
-  List as many people who were involved in the production of these sequences as you can think of. Keep in mind that only these people will be authorized to make changes to the GenBank record.
+  List as many people who were involved in the production of these sequences as you can think of. Keep in mind that only these people will be authorized to make changes to the GenBank record, if not value is entered for **Consortium**.
 
 Consortium
-  Always fill this in as "Barcode of Wildlife Project". This will allow for easier searching and filtering of all BWP-generated sequences.
+  This is an optional field that enables people other than the sequence authors to make edits to the record. For SI Barcode Network records, we enter the value "CBOL", which allows anyone from CBOL to make edits to the record. 
 
 Publication Status and Title
-  We will be generating several different scientific publications about the sequences generated from the Barcode of Wildlife Project, but for now select "Unpublished" for the Publication Status, and "Barcode of Wildlife Project [country]" (where [country] is the name of the BWP partner country that produced the sequence.) Again, this allows for easier searching and filtering, and we will be able to add publications to sequences as they are published.
+  Since the SI Barcode Network attempts to get sequence records published to GenBank as quickly as possible, there will generally not be an associated publication yet. For cases like these, we will select "Unpublished" for the Publication Status, and the project name for Publication Title. This allows for easier searching and filtering, and we will be able to add publications to sequences as they are published.
 
 .. figure:: /images/gb_record_publisher_details.png
   :align: center
@@ -112,7 +112,7 @@ Molecule Type
   This will always be "Genomic DNA" for DNA Barcode records.
 
 Genetic Code
-  For COI barcode sequences, this will be either "Vertebrate Mitochondrial" or "Invertebrate Mitochondrial". *(Make sure to separate vertebrates and invertebrate submissions, as you can only choose 1.)* Plant barcode sequences (matK and rbcL) will always be "Baterial" (the full name that Geneious abbreviated is "The Bacterial, Archaeal, and **Plant** Plastid Code").
+  For COI barcode sequences, this will be either "Vertebrate Mitochondrial" or "Invertebrate Mitochondrial". *(Make sure to separate vertebrates and invertebrate submissions, as you can only choose one.)* Plant barcode sequences (matK and rbcL) will always be "Baterial" (the full name that Geneious abbreviated is "The Bacterial, Archaeal, and **Plant** Plastid Code").
 
 Genetic Location
   For COI barcode sequences, this will be "Mitochondrion". For plant barcode sequences (matK and rbcL), this will be "Chloroplast".
@@ -156,21 +156,6 @@ Gene CDS Product
 ==== =============
 CytB cytochrome b
 ==== =============
-
-BWP Structured Comments
------------------------
-
-This window will appear when you check the button next to "Include structured comments", and then click the "Choose..." button. These are the Barcode of Wildlife Project special fields that set apart BWP GenBank records from regular BARCODE keyword records. The screenshot below shows the appropriate FIMS field to choose for each structured comment field. You can also include additional non-required structured comment fields (chainOfCustody or coordinatePrecision) by checking the box next to "Enable optional comments".
-
-.. image:: /images/structured_comments.png
-  :align: center
-  :target: /en/latest/_images/structured_comments.png
-
-.. figure:: /images/gb_record_structured_comments.png
-  :align: center
-  :target: /en/latest/_images/gb_record_structured_comments.png
-
-  This screenshot of a sample BWP GenBank record shows how the BWP structured comment fields will appear.
 
 Consensus and Primers
 ---------------------
