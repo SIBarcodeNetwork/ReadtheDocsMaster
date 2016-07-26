@@ -51,4 +51,4 @@ Updates
 	sequence_qc
 	mark_pass
 	gb_upload
-	its_annotation
+	noncoding_annotation

@@ -1,9 +1,9 @@
-.. _its_annotation-link:
+.. _noncoding_annotation-link:
 
-Annotating for ITS GenBank Upload
-=================================
+Annotating for Noncoding Sequence GenBank Upload
+================================================
 
-Since ITS1 and ITS2 are not genes and do not encode proteins, you cannot use the automated "Add Gene & CDS features" button. You are going to have to individually annotate each sequence.
+Since ITS1, ITS2, 16S, etc. do not encode proteins, you will not be able to use the automated "Add Gene & CDS features" button. You are going to have to individually annotate each sequence.
 
 Here are a couple of example ITS records that show what we will be trying to achieve: http://www.ncbi.nlm.nih.gov/nuccore/JN253283
 and http://www.ncbi.nlm.nih.gov/nuccore/KT960182
