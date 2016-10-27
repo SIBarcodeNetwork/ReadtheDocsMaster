@@ -4,7 +4,7 @@ Populating the FIMS spreadsheet
 Downloading and renaming the FIMS spreadsheet
 ---------------------------------------------
 
-The SI Barcode Network FIMS spreadsheet template is hosted on the SI Barcode Network GitHub page at https://github.com/MikeTrizna/SIBarcodeNetwork. The direct link to the spreadsheet is https://github.com/MikeTrizna/SIBarcodeNetwork/raw/master/SI%20Barcoding%20Specimen%20Spreadsheet.xlsx.
+The SI Barcode Network FIMS spreadsheet template is hosted on the SI Barcode Network GitHub page at https://github.com/MikeTrizna/SIBarcodeNetwork, called "SI Barcoding Specimen Spreadsheet.xlsx". You can also download the spreadsheet directly from `here https://github.com/MikeTrizna/SIBarcodeNetwork/raw/master/SI%20Barcoding%20Specimen%20Spreadsheet.xlsx`_.
 
 It is a good idea to immediately rename this spreadsheet file with the name of your dataset according to the :ref:`conventions-link`. For this example, I'm going to name my spreadsheet "CBOL_MGT_001.xlsx". This is because my institution is CBOL, my initials are MGT, and this is the first dataset I am uploading to the FIMS.
 
