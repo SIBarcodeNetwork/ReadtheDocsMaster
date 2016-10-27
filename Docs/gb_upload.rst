@@ -6,8 +6,8 @@ Installing the Geneious Plug-in
 
 .. note::
 
-   The most up-to-date GenBank Submission plug-in version is 1.6.4, which can be found `here
-   <http://www.geneious.com/assets/plugins/GenbankSubmission_1_6_4.gplugin>`_.
+   The most up-to-date GenBank Submission plug-in version is 1.6.5, which can be found `here
+   <http://www.geneious.com/assets/plugins/GenbankSubmission_1_6_5.gplugin>`_.
 
 We will be using Geneious's GenBank Submission plug-in to submit completed sequences to GenBank. The Geneious GenBank Submission Plug-in does all of the hard work of bundling together the various parts of a GenBank submission -- sequence data, specimen metadata, trace files, etc.
 
@@ -197,7 +197,7 @@ Trace End
   :align: center
   :target: /en/latest/_images/traces_defaults.png
 
-  **If your version of the Geneious plug-in does not show this exact set of field options for "Traces", then you need to upgrade to version 1.6.4.**
+  **If your version of the Geneious plug-in does not show this exact set of field options for "Traces", then you need to upgrade to version 1.6.5.**
 
 Just like for the previous "PCR Primers" section, these fields should all be populated by Geneious automatically.
 
