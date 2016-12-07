@@ -14,7 +14,7 @@ Creating the plate
 * Save plate once complete.
 
 Attaching raw traces to a cycle sequencing plate
------------------------------------------------
+------------------------------------------------
 
 Once cycle sequencing is complete, the raw trace files can be uploaded to the corresponding cycle sequencing plate or set of reactions. 
 

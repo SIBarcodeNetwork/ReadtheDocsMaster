@@ -53,5 +53,11 @@ Updates
 	assembling_contigs
 	sequence_qc
 	mark_pass
+
+.. toctree::
+	:maxdepth: 2
+	:caption: Data Publication
+
 	gb_upload
 	noncoding_annotation
+	rapid_data_release
