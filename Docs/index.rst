@@ -61,3 +61,4 @@ Updates
 	gb_upload
 	noncoding_annotation
 	rapid_data_release
+	bioprojects

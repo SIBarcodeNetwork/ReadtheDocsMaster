@@ -1,0 +1,113 @@
+Organizing GenBank Records with BioProjects
+===========================================
+
+What is a BioProject?
+---------------------
+
+From the NCBI BioProject homepage (https://www.ncbi.nlm.nih.gov/bioproject/):
+
+	"A BioProject is a collection of biological data related to a single initiative, originating from a single organization or from a consortium. A BioProject record provides users a single place to find links to the diverse data types generated for that project."
+
+BioProjects grew out of the NCBI Genome Project database, which served solely to organize genome sequences in GenBank. However, it became apparent that this organizational structure could be used to group together entries for several more kinds of data, so BioProjects became a distinct entity in 2011.
+
+
+Creating a BioProject
+---------------------
+
+The easiest way to create a BioProject is to use the new NCBI Submission Portal: https://submit.ncbi.nlm.nih.gov/.
+
+1. Click on "Sign in to NCBI" before you get started. Generally, it is easiest to sign in with your Google account, so that you do not have to create yet another username and password to forget.
+
+.. figure:: /images/ncbi_submission_portal_sign_in.png
+  :align: center
+  :target: /en/latest/_images/ncbi_submission_portal_sign_in.png
+
+  ..
+
+2. After signing in, you should be directed back to the Submission Portal page. Now click on the link for BioProject.
+
+.. figure:: /images/ncbi_submission_portal_bioproject.png
+  :align: center
+  :target: /en/latest/_images/ncbi_submission_portal_bioproject.png
+
+  ..
+
+3. Click the New Submission button.
+
+.. figure:: /images/ncbi_submission_portal_new_submission.png
+  :align: center
+  :target: /en/latest/_images/ncbi_submission_portal_new_submission.png
+
+  ..
+
+4. Fill out the Submitter page.
+
+.. figure:: /images/bioproject_submitter_page.png
+  :align: center
+  :target: /en/latest/_images/bioproject_submitter_page.png
+
+  ..
+
+5. Select "Targeted Locus (Loci)" for Project Data Type, and "Multispecies" for Sample scope.
+
+.. figure:: /images/bioproject_project_type.png
+  :align: center
+  :target: /en/latest/_images/bioproject_project_type.png
+
+  ..
+
+6. Give a short description for "Multispecies description".
+
+.. figure:: /images/bioproject_target.png
+  :align: center
+  :target: /en/latest/_images/bioproject_target.png
+
+  ..
+
+7. The submission portal will create an automated Project Title based on your previous entries, but overwrite this with the title of your project. Give a good description of the project in "Public description", because this will be front-and-center on the BioProject page. Finally, check the "Yes" box to indicate that this project is part of a larger initiative. If this BioProject falls under the SI Barcode Network, then enter "SI Barcode Network" for Initiative description, and "PRJNA81359" for BioProject Accession. Leave the rest of entries on this page blank.
+
+.. figure:: /images/bioproject_general_info.png
+  :align: center
+  :target: /en/latest/_images/bioproject_general_info.png
+
+  ..
+
+8. Skip the BioSample page.
+9. Add any Publications your project has generated on the Publications page. Don't worry, you can come back and add publications later.
+10. Finally, the Overview tab will show all of your entries in one place. This will be your last chance to make any changes before submitting.
+11. After a few days, you will receive an email from NCBI informing you that your BioProject has been successfully created. Most importantly, they will send your BioProject ID, which you can now add to existing GenBank records or include in new GenBank submissions.
+
+
+How to update BioProject information
+------------------------------------
+
+If your BioProject has already been published and you would like to update any of the entries from the BioProject creation process, email the changes you would like to make to bioprojecthelp@ncbi.nlm.nih.gov.
+
+Adding a BioProject to existing GenBank records
+-----------------------------------------------
+
+Adding a BioProject ID to sequence records that are already published to GenBank is a manual procedure done through email. Email bioprojecthelp@ncbi.nlm.nih.gov, and let them know:
+
+	* your BioProject ID, and
+	* the range of GenBank accessions to which you would like to add the BioProject ID.
+
+Adding a BioProject to new GenBank submissions
+----------------------------------------------
+
+Unfortunately, out of the several different methods of publishing sequences to GenBank (BankIt, Sequin, tbl2asn, Geneious, and BOLD), only tbl2asn has a straightforward method for adding a BioProject ID to a batch submission.
+
+tbl2asn
+~~~~~~~
+
+In the tbl2asn instruction manual at https://www.ncbi.nlm.nih.gov/genbank/tbl2asn2/, the 3 files required to create a submission package are a "template file", a FASTA file containing nucleotide sequences, and a feature table with annotations. The template file will be where we include the BioProject ID for a submission.
+
+To create a GenBank submission template file, go to https://submit.ncbi.nlm.nih.gov/genbank/template/submission/, and fill out the form. The last section of the form is for "BioProject/BioSample Information", and this is where you will add your BioProject ID.
+
+
+.. figure:: /images/tbl2asn_template_bioproject.png
+  :align: center
+  :target: /en/latest/_images/tbl2asn_template_bioproject.png
+
+  ..
+
+Press the "Create Template" button to download a ".sbt" file, and bundle that with your other components for the tbl2asn command line utility.
