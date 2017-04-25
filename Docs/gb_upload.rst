@@ -36,6 +36,7 @@ You will see a window appear that has the following sections. Each section is de
   :align: center
   :target: /en/latest/_images/genbank_submit_colorcoded_si.png
 
+.. _gb_submission_details:
 
 Submission Details
 ------------------
