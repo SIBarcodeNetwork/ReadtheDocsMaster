@@ -57,7 +57,7 @@
   <validation>
     <worksheet sheetname="Samples">
       <rule type="duplicateColumnNames" level="error"/>
-      <rule type="uniqueValue" column="extractionWell" level="error"/>
+      <rule type="uniqueValue" column="extractionWell" level="warning"/>
       <rule type="uniqueValue" column="tissueID" level="error"/>
       <rule type="RequiredColumns" column="RequiredColumns" level="error">
         <field>countryOrOcean</field>
