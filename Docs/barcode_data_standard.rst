@@ -62,6 +62,10 @@ The data standard consists of several required and strongly recommended elements
 | | approved barcode region"             |                     |                              |
 +----------------------------------------+---------------------+------------------------------+
 
+.. note::
+
+   The full official definitions and descriptions for all of these terms can be found at on the INSDC Feature Table page at http://www.insdc.org/files/feature_table.html#7.3
+
 Specimen metadata
 -----------------
 
@@ -69,7 +73,7 @@ Collection metadata
 ~~~~~~~~~~~~~~~~~~~
 
 Country -- Required
-	The GenBank field name “Country” is slightly confusing -- not just because the INSDC country controlled vocabulary list (http://www.insdc.org/country.html) includes oceans and seas in addition to countries -- but because the country name is often concatenated with a colon to provide more specific location information about where a specimen was collected.
+	The GenBank field name “Country” is slightly confusing -- not just because the INSDC country controlled vocabulary list (http://www.insdc.org/country.html) includes oceans and seas in addition to countries -- but because the country name is often concatenated with a colon to provide more specific location information about where a specimen was collected. Typically, locality terms following the standardized country name are ordered in ascending order of specificity. An example for a specimen collected on the grounds of the Smithsonian Natural History Museum might be "USA: Washington, DC; Smithsonian Natural History Museum; West Loading Dock".
 
 Latitude and Longitude -- Strongly Recommended
 	The geographical coordinates of the location of where a specimen was collected are stored in the “lat_lon” field in decimal format. GenBank uses the specific format "d[d.dddd] N|S d[dd.dddd] W|E". An example of this is "38.891262 N 77.026093 W" for the Smithsonian Natural History Museum.
