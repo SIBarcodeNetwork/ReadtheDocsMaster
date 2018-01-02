@@ -117,10 +117,16 @@ subspecies
   The name of the lowest or terminal infraspecific epithet of the scientificName, excluding any rank designation.
 
 gb_lat_lon        
-  We use this field to combine the decimalLatitude and decimalLongitude together, since it is a single field in GenBank.
+  This is the combined lat_lon field for submission to GenBank. GenBank uses the specific format "d[d.dddd] N|S d[dd.dddd] W|E". An example of this is "38.891262 N 77.026093 W" for the Smithsonian Natural History Museum.
 
 gb_country        
-  We use this field to combine the CountryOrOcean and Locality fields together, since it is a single field in GenBank.
+  We use this field to combine the CountryOrOcean and Locality fields together, since it is a single field in GenBank. Typically, locality terms following the standardized country name are ordered in ascending order of specificity. An example for a specimen collected on the grounds of the Smithsonian Natural History Museum might be "USA: Washington, DC; Smithsonian Natural History Museum; West Loading Dock".
 
 gb_collection_date
-  We use this field to combine the YearCollected, MonthCollected, and DayCollected fields together, since it is a single field in GenBank.
+  We use this field to combine the YearCollected, MonthCollected, and DayCollected fields together, since it is a single field in GenBank. 	Here are the supported value formats, with examples: 
+
+		* "DD-Mmm-YYYY": 01-Jan-2016
+		* "Mmm-YYYY": Jan-2016
+		* "YYYY": 2016
+		* "YYYY-MM-DD": 2016-01-01
+		* "YYYY-MM": 2016-01
