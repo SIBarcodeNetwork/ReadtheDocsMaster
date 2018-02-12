@@ -26,15 +26,15 @@ Enter a value in the Connection Name so that the plug-in saves this information.
 Field Database Connection
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In the Field Database Connection section, start out by selecting "Biocode FIMS" from the dropdown.
+In the Field Database Connection section, select "Biocode FIMS" from the dropdown.
 
 .. figure:: /images/biocode_fims_options.png
   :align: center
   :target: /en/latest/_images/biocode_fims_options.png
 
-This will auto-fill the Host box with "http://www.biscicol.org/". Enter the FIMS Username and Password that Mike Trizna assigned to you. Make sure to click the "Save" box, and then the "Authenticate" button to ensure you can connect to FIMS.
+This will auto-fill the Host box with "http://www.biscicol.org:80" however **this needs to be replaced** with "http://www.biscicol.org/". Enter the FIMS Username and Password that Mike Trizna assigned to you. Make sure to click the "Save" box, and then the "Authenticate" button to ensure you can connect to FIMS.
 
-After authenticating, the Project drop-down will now be populated with only the FIMS projects that you have access to. Choose the relevant project.
+After authenticating, the Project drop-down will now be populated with only the FIMS projects that you have access to. Choose "SI Barcoding CBOL".
 
 Tissue ID field
 	For "Tissue ID field", select "tissueID".
@@ -54,9 +54,9 @@ Finally, click the "Autodetect" button to automatically populate the different t
 
 The completed Field Database Connection should look like this:
 
-.. figure:: /images/biocode_connection_details_fims.png
+.. figure:: /images/SIBN_biocode_connection_details_fims.png
   :align: center
-  :target: /en/latest/_images/biocode_connection_details_fims.png
+  :target: /en/latest/_images/SIBN_biocode_connection_details_fims.png
 
 LIMS Database Connection
 ~~~~~~~~~~~~~~~~~~~~~~~~
