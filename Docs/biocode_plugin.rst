@@ -21,7 +21,7 @@ This will open the Biocode Connections window that looks like this:
 Connection Name and Method
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Enter a value in the Connection Name so that the plug-in saves this information. Connection Method should be "Biocode FIMS".
+Enter a value in the Connection Name so that the plug-in saves this information. 
 
 Field Database Connection
 ~~~~~~~~~~~~~~~~~~~~~~~~~
