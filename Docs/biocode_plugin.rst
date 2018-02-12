@@ -32,12 +32,12 @@ In the Field Database Connection section, start out by selecting "Biocode FIMS" 
   :align: center
   :target: /en/latest/_images/biocode_fims_options.png
 
-This will auto-fill the Host box with "http://biscicol.org". Enter the FIMS Username and Password that Mike Trizna assigned to you during training. Make sure to click the "Save" box, and then the "Authenticate" button to ensure you can connect to FIMS.
+This will auto-fill the Host box with "http://www.biscicol.org/". Enter the FIMS Username and Password that Mike Trizna assigned to you. Make sure to click the "Save" box, and then the "Authenticate" button to ensure you can connect to FIMS.
 
-After authenticating, the Project drop-down will now be populated with only the FIMS projects that you have access to. Choose the project that corresponds with your country.
+After authenticating, the Project drop-down will now be populated with only the FIMS projects that you have access to. Choose the relevant project.
 
 Tissue ID field
-	For "Tissue ID field", select "tissueBarcode".
+	For "Tissue ID field", select "tissueID".
 
 Specimen ID field
 	For "Specimen ID field", select "voucherID".
@@ -64,13 +64,13 @@ LIMS Database Connection
 In the LIMS Location section, start out by selecting "Remote MySQL Database" from the dropdown.
 
 Server Address
-	For "Server Address", copy and paste in "db.bwplims.info".
+	For "Server Address", copy and paste in "nmnh-lims.si.edu".
 Port
 	For "Port", make sure it is set to "3,306".
 Database Name
-	For "Database Name", enter either "kenya_lims", "mexico_lims", or "south_africa_lims" depending on which partner country you are affiliated with.
+	For "Database Name", enter "lims".
 Username and Password
-	Finally, for the "Username" and "Password" boxes, enter the LIMS database Username and Password that Mike Trizna assigned to you via email.
+	Finally, for the "Username" and "Password" boxes, enter the LIMS database Username and Password that John Keltner assigned to you via email.
 
 Make sure that the checkbox next to "Save" is selected.
 
