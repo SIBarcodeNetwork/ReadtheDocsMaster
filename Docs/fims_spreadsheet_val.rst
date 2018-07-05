@@ -33,4 +33,4 @@ On the Query page, you will be able to view the data from any dataset on any of 
 
 Select the dataset you just uploaded and click the Table button. This will display an HTML table view of the specimen records in this dataset. It will be incredibly hard to read and scroll through, but be happy it made it in there. 
 
-You can click the Excel button to download a fresh Excel spreadsheet of this dataset. However, be advised that the wells are out of order and that you will lose any styling (colors, bold/italics, etc.) from when you originally uploaded the spreadsheet. Also, the default spreadsheet name is "biocode-fims-output.xls", so be sure to rename it with your dataset name immediately.
+You can click the Excel button to download a fresh Excel spreadsheet of this dataset. However, be advised that the wells are out of order and that you will lose any styling (colors, bold/italics, etc.) from when you originally uploaded the spreadsheet. Also, the default spreadsheet name is "biocode-fims-output.xlsx", so be sure to rename it with your dataset name immediately.
