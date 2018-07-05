@@ -9,12 +9,12 @@ Once we have a spreadsheet fully populated, our next step will be to validate an
 .. image:: /images/tools_validation.png
   :align: center
 
-On the Validate and Load Data page, for 'FIMS Data' click the Choose File (or Browse, depending on what browser you are using) button to select your spreadsheet. Select your Project from the Project drop-down. If you are ready to upload your spreadsheet, select the Upload tick box. Once you check that box, the Dataset Code dropdown will appear. You can either leave it as Create New Expedition to upload the spreadsheet as a new dataset, or you can select one of your previously created datasets to overwrite. Ensure that the Public checkbox is ticked, otherwise the LIMS software will not be able to pull in the information. Press Submit. 
+On the Validate and Load Data page, for 'FIMS Data' click the Choose File (or Browse, depending on what browser you are using) button to select your spreadsheet. Select your Project from the Choose Project drop-down. If you are ready to upload your spreadsheet, select the Upload tick box. Once you check that box, the Dataset Code dropdown will appear. You can either leave it as Create New Expedition to upload the spreadsheet as a new dataset, or you can select one of your previously created datasets to overwrite. Ensure that the Public checkbox is ticked, otherwise the LIMS software will not be able to pull in the information. Press Submit. 
 
 .. image:: /images/fims_validation_upload.png
   :align: center
 
-If you chose to Create New Expedition, you will be asked to enter an code. Remember to follow the BWP :ref:`conventions-link`, and make sure not to repeat a previously created expedition code. Click Create.
+If you chose to Create New Expedition, you will be asked to enter an code. Remember to follow the :ref:`conventions-link`, and make sure not to repeat a previously created expedition code. Click Create.
 
 Can I add a few records to an existing dataset by just uploading those new records?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
