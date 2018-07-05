@@ -14,12 +14,12 @@ On the Validate and Load Data page, for 'FIMS Data' click the Choose File (or Br
 .. image:: /images/fims_validation_upload.png
   :align: center
 
-If you chose to Create New Expedition, you will be asked to enter an code. Remember to follow the :ref:`conventions-link`, and make sure not to repeat a previously created expedition code. Click Create.
+If you chose to Create New Expedition, you will be asked to enter a code. Remember to follow the :ref:`conventions-link`, and make sure not to repeat a previously created expedition code. Click Create.
 
 Can I add a few records to an existing dataset by just uploading those new records?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-NO. When you choose to upload to a previously created dataset, the old dataset will be completely deleted and replaced by the data in the new spreadsheet. Therefore you should add the new records to your existing dataset, save it, and validate and upload this updated spreadsheet.
+NO. When you choose to upload to a previously created dataset, the old dataset will be completely deleted and replaced by the data in the new spreadsheet. Therefore you should add the new records to your existing dataset, save it, and validate and upload this updated spreadsheet. Make sure to select the existing Dataset Code -- do not create a new one.
 
 Check that the spreadsheet was successfully uploaded
 ----------------------------------------------------
