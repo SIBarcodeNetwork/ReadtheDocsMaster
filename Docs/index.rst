@@ -8,11 +8,14 @@ This documentation site describes the best practices for the informatics pipelin
 Updates
 -------
 
-.. image:: https://img.shields.io/badge/Biocode%20Plugin%20Version-3.0.0-green.svg
-    :target: http://assets.geneious.com/plugins/biocode/Biocode_3_0_0.gplugin
+.. image:: https://img.shields.io/badge/Biocode%20Plugin%20Version-3.0.4-green.svg
+    :target: https://github.com/Biomatters/biocode-lims/releases/download/v3.0.4/Biocode_3_0_4.gplugin
 
 .. image:: https://img.shields.io/badge/GenBank%20Upload%20Plugin%20Version-1.6.5-green.svg
     :target: https://www.geneious.com/assets/plugins/GenbankSubmission_1_6_5.gplugin
+
+11 September, 2017
+	Biocode plugin updated to fix problem where the Biocode FIMS only retrieved field definitions from the Barcode of Wildlife project instead of the project that was specified. This would result in empty tissue fields.
 
 20 September, 2016
 	The GenBank submission plugin was updated to version 1.6.5 with many minor bug fixes. The most important one to the SI Federal Barcoding Project is that the plugin will now attemp to replace non-ASCII characters (such as accented characters) with equivalent ASCII characters. This has been a problem in the past, since the previous default action was to simply omit these characters.
