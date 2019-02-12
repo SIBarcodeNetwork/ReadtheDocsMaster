@@ -42,7 +42,7 @@ Nucleotide sequences
 
 TO DO: Add instructions on how to create and email FASTA file to update multiple sequence records.
 
-Pubication information
+Publication information
 ~~~~~~~~~~~~~~~~~~~~~~
 
 TO DO: Add instructions on how to email publication information changes -- specifically how to request addition of Consortium and/or Sequence Authors, so that changes can be made more flexibly in the future. 
