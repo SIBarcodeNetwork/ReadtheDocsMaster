@@ -6,8 +6,8 @@ Installing the Geneious Plug-in
 
 .. note::
 
-   The most up-to-date GenBank Submission plug-in version is 1.6.5, which can be found `here
-   <http://www.geneious.com/assets/plugins/GenbankSubmission_1_6_5.gplugin>`_.
+   The most up-to-date GenBank Submission plug-in version is 1.6.7, which can be found `here
+   <https://www.geneious.com/plugins/genbank-submission-plugin/>`_.
 
 We will be using Geneious's GenBank Submission plug-in to submit completed sequences to GenBank. The Geneious GenBank Submission Plug-in does all of the hard work of bundling together the various parts of a GenBank submission -- sequence data, specimen metadata, trace files, etc.
 
