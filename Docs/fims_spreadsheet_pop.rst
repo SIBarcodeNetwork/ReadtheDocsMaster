@@ -4,7 +4,7 @@ Populating the FIMS spreadsheet
 The FIMS spreadsheet template
 -----------------------------
 
-The SI Barcode Network FIMS spreadsheet template is hosted on the SI Barcode Network GitHub page at https://github.com/MikeTrizna/SIBarcodeNetwork, called "SI Barcoding Specimen Spreadsheet.xlsx". You can also download the spreadsheet directly from `here <https://github.com/MikeTrizna/SIBarcodeNetwork/raw/master/SI%20Barcoding%20Specimen%20Spreadsheet.xlsx>`_.
+The SI Barcode Network FIMS spreadsheet template is hosted on the SI Barcode Network GitHub page at https://github.com/SIBarcodeNetwork/SIBarcodeNetwork, called "SI Barcoding Specimen Spreadsheet.xlsx". You can also download the spreadsheet directly from `here <https://github.com/SIBarcodeNetwork/SIBarcodeNetwork/blob/master/SI%20Barcoding%20Specimen%20Spreadsheet.xlsx>`_.
 
 .. figure:: /images/spreadsheet_on_github.png
   :align: center
