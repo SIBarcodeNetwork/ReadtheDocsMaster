@@ -42,7 +42,7 @@ A second quality check is made by aligning your sequences based on the gene - al
 For alignments of protein coding regions Geneious's Translation Alignment program doesn't work like it should, so use an alternate program such an online program called TranslatorX (http://translatorx.co.uk) to create an alignment. 
 
 .. note::
-	It's important to note that TranslatorX only checks the forward reading frames, so you need to Reverse-Complement the matK sequences before putting them into this alignment program otherwise you will receive errors. 
+	It's important to note that TranslatorX only checks the forward reading frames, so you need to Reverse-Complement the matK sequences before putting them into this alignment program, otherwise you will receive errors. 
 
 * Export the consensus sequences (of good assemblies only) as a FASTA file then import this file into the program. We suggest you leave the Protein Alignment Option method selected as "Muscle". In the Genetic Code box select the relevant reading frame and be sure to check the "Guess most likely reading frame" option. Then hit Submit Query.
 * If the program runs OK and doesn't encounter any errors, it will return an alignment of the nucleotides and also an alignment of the amino acids. You may download the fasta file of both, however, the alignment of amino acids is what will be used for the second quality check. Import the fasta file(s) of the alignments into Geneious for further analyses.
@@ -75,7 +75,7 @@ To use BLAST, follow these directions:
 * Once you have made your selections, click "Search" button in the "BLAST" window.
 * The search progress appears in the Document Window. If this is too slow, or you want to exit the search for whatever reason, click on the "Stop" button in the top left of the Document Window.
 * Once complete, the results are saved in a subfolder (folder name ends with "- nr Megablast") within the folder containing your query sequence(s). If you did a batch search, there will be further subfolders containing BLAST results for each of the sequences you entered into the BLAST search.
-* In the results folder the BLAST results are displayed in the "Hit Table" tab. Various information is included e.g. Hit Accession number, Query coverage, % Pairwise Identity, etc. You can chose what is displayed by clicking on the manage columns icon found in the upper right of the table. Further information is found in the other tabs of the folder (Query Centric View, Annotations, Distances, Info).
+* In the results folder the BLAST results are displayed in the "Hit Table" tab. Various information is included e.g. Hit Accession number, Query coverage, % Pairwise Identity, etc. You can choose what is displayed by clicking on the manage columns icon found in the upper right of the table. Further information is found in the other tabs of the folder (Query Centric View, Annotations, Distances, Info).
 
 .. figure:: /images/BLAST_hit_table.png
   :align: center
