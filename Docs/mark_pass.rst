@@ -4,13 +4,13 @@ Marking assemblies as Pass or Fail in LIMS
 Using the "Mark as Pass in LIMS" tool
 -------------------------------------
 
-* Log in to the Biodcode LIMS plug-in.
+* Log in to the Biocode LIMS plug-in
 
-* Select the assemblies that you want to pass in LIMS.
+* Select the assemblies that you want to pass in LIMS
 
 * Select the 'Biocode' Icon on the toolbar and then 'Mark as Pass in LIMS'. A new window will appear
 
-* Leave the "Remove previous final sequencing results" checked (see below)
+* Leave the "Remove previous final sequencing results" box checked (see below)
 
 .. figure:: /images/mark_pass.png
   :align: center 
