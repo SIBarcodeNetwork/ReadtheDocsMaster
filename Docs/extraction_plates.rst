@@ -23,7 +23,7 @@ To create an extraction plate:
 .. figure:: /images/empty_extraction_plate.png
   :align: center
 
-* Insert a name for the extraction plate into the relevant field in the window.
+* Insert a name for the extraction plate into the relevant field in the window. (See the :ref:`lims_conventions-link` for best practices.)
 
 * Click the "Bulk Edit" button (found in the toolbar, as seen in image above). This will allow you to attach the  FIMS meta-data from all tissues to each tissue's associated workflow in LIMS. 
 
