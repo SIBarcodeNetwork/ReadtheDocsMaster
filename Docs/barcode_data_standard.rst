@@ -4,7 +4,7 @@ Barcode Data Standard
 Introduction
 ------------
 
-The Barcode Data Standard was established by the Consortium of the Barcode of Life soon after the first scientific paper by Dr. Paul Hebert was published that proposed the method of DNA Barcoding. You can view and download the official data standard document `here<https://github.com/SIBarcodeNetwork/SIBarcodeNetwork/blob/master/BARCODE%20Data%20Standards%20v2.4.pdf>`_.
+The Barcode Data Standard was established by the Consortium of the Barcode of Life soon after the first scientific paper by Dr. Paul Hebert was published that proposed the method of DNA Barcoding. You can view and download the official data standard document `here <https://github.com/SIBarcodeNetwork/SIBarcodeNetwork/blob/master/BARCODE%20Data%20Standards%20v2.4.pdf>`_.
 
 The data standard consists of several required and strongly recommended elements that have to do either with specimen metadata or sequence data. We will go through each element, give a brief explanation, and try to highlight any commonly seen mistakes.
 
