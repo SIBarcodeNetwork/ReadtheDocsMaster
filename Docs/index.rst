@@ -8,11 +8,14 @@ This documentation site describes the best practices for the informatics pipelin
 Updates
 -------
 
-.. image:: https://img.shields.io/badge/Biocode%20Plugin%20Version-3.0.8-green.svg
-    :target: https://github.com/biocodellc/biocode-lims/releases/download/v3.0.8/BiocodePlugin_3_0_8.gplugin
+.. image:: https://img.shields.io/badge/Biocode%20Plugin%20Version-3.0.9-green.svg
+    :target: https://github.com/biocodellc/biocode-lims/releases/download/v3.0.9/BiocodePlugin_3_0_9.gplugin
 
 .. image:: https://img.shields.io/badge/GenBank%20Upload%20Plugin%20Version-1.6.7-green.svg
     :target: http://assets.geneious.com/plugins/GenbankSubmission_1_6_7.gplugin
+
+6 March, 2019
+	The Biocode plugin now includes the following fields: genbankCountry, genbankDate, and genbankLatLng. 
 
 26 November, 2018
 	The GenBank submission plugin was updated to version 1.6.7, correcting a few issues regarding annotations, as well as other small updates. You can view the full list of features and updates `here. <http://www.geneious.com/plugins/genbank-submission-plugin#history>`_ 
