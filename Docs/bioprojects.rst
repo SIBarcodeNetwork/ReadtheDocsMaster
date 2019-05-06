@@ -29,7 +29,7 @@ You will need to create a BioProject before new GenBank submissions or existing 
 
 To create a BioProject, navigate to the new NCBI Submission Portal: https://submit.ncbi.nlm.nih.gov/.
 
-1. Click on "Sign in to NCBI" before you get started. Generally, it is easiest to sign in with your Google account, so that you do not have to create yet another username and password to forget.
+1. Click on "Log in" before you get started. Generally, it is easiest to sign in with your Google account, so that you do not have to create yet another username and password to forget.
 
 .. figure:: /images/ncbi_submission_portal_sign_in.png
   :align: center
