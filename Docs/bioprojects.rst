@@ -90,10 +90,33 @@ Leave the rest of entries on this page blank.
 
   ..
 
-8. Skip the BioSample page.
-9. Add any Publications your project has generated on the Publications page. Don't worry, you can come back and add publications later.
-10. Finally, the Overview tab will show all of your entries in one place. This will be your last chance to make any changes before submitting.
-11. After a few days, you will receive an email from NCBI informing you that your BioProject has been successfully created. Most importantly, they will send your BioProject ID, which you can now add to existing GenBank records or include in new GenBank submissions.
+8. Enter any links you would like to display as part of your project. Add the Consortium and/or Data provider, if needed.
+
+.. figure:: /images/bioproject_links_and_consortium.png
+  :align: center
+  :target: /en/latest/_images/bioproject_links_and_consortium.png
+
+  ..
+
+9. If you would like to enter any grants, click the Add grants link to enter the relevant information. 
+
+.. figure:: /images/bioproject_grant_info.png
+  :align: center
+  :target: /en/latest/_images/bioproject_grant_info.png
+
+  ..
+
+10. Skip the BioSample page.
+11. Add any Publications your project has generated on the Publications page. Don't worry, you can come back and add publications later.
+12. Finally, the Overview tab will show all of your entries in one place. This will be your last chance to make any changes before submitting.
+
+.. figure:: /images/bioproject_submission_review.png
+  :align: center
+  :target: /en/latest/_images/bioproject_submission_review.png
+
+  ..
+
+13. After a few days, you will receive an email from NCBI informing you that your BioProject has been successfully created. Most importantly, they will send your BioProject ID, which you can now add to existing GenBank records or include in new GenBank submissions.
 
 
 How to update BioProject information
