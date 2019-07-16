@@ -32,7 +32,7 @@ In the Field Database Connection section, select "Biocode FIMS" from the dropdow
   :align: center
   :target: /en/latest/_images/biocode_fims_options.png
 
-This will auto-fill the Host box with "http://www.biscicol.org:80" however **this needs to be replaced** with "http://www.biscicol.org/". Enter the FIMS Username and Password that Mike Trizna assigned to you. Make sure to click the "Save" box, and then the "Authenticate" button to ensure you can connect to FIMS.
+This will auto-fill the Host box with "http://www.biscicol.org:80" however **this needs to be replaced** with "http://www.biscicol.org/". Enter the FIMS Username and Password that Niamh Redmond assigned to you. Make sure to click the "Save" box, and then the "Authenticate" button to ensure you can connect to FIMS.
 
 After authenticating, the Project drop-down will now be populated with only the FIMS projects that you have access to. Choose "SI Barcoding CBOL".
 
