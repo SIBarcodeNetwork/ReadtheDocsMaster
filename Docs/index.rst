@@ -8,8 +8,8 @@ This documentation site describes the best practices for the informatics pipelin
 Updates
 -------
 
-.. image:: https://img.shields.io/badge/Biocode%20Plugin%20Version-3.0.11-green.svg
-    :target: https://github.com/biocodellc/biocode-lims/releases/download/v3.0.11/BiocodePlugin_3_0_11.gplugin
+.. image:: https://img.shields.io/badge/Biocode%20Plugin%20Version-3.0.12-green.svg
+    :target: https://github.com/biocodellc/biocode-lims/releases/download/v3.0.12/BiocodePlugin_3_0_12.gplugin
 
 .. image:: https://img.shields.io/badge/GenBank%20Upload%20Plugin%20Version-1.6.7-green.svg
     :target: http://assets.geneious.com/plugins/GenbankSubmission_1_6_7.gplugin
