@@ -1,36 +1,58 @@
-FIMS spreadsheet validation and upload
+GeOMe FIMS spreadsheet validation and upload
 ======================================
 
-Validating and then uploading the spreadsheet
+Validating and uploading the spreadsheet
 ---------------------------------------------
 
-Once we have a spreadsheet fully populated, our next step will be to validate and upload the spreadsheet tothe FIMS. The validation step checks every specimen record to make sure that they meet the set of rules established by the project. Go to http://biscicol.org and click the Login button at the top. Log in with your pre-assigned BiSciCol username and password. (You do not need to log in to validate your spreadsheet, but you must be logged in to upload it to the database). After logging in, click on the Tools button at the top, and then choose Validation.
+If SIBN is performing the lab work for your project, please only work through the “validation” portion of this section and then email the spreadsheet to your project manager. We will take care of uploading everything for you. 
 
-.. image:: /images/tools_validation.png
-  :align: center
+Once we have a spreadsheet fully populated, our next step will be to validate and possibly upload the spreadsheet to the GeOMe FIMS database. (Again, if SIBN will be conducting your lab work, please only validate the spreadsheet, then forward it to your project manager.) The validation step checks every specimen record to make sure that they meet the set of rules established by the project. 
 
-On the Validate and Load Data page, for 'FIMS Data' click the Choose File (or Browse, depending on what browser you are using) button to select your spreadsheet. Select your Project from the Choose Project drop-down. If you are ready to upload your spreadsheet, select the Upload tick box. Once you check that box, the Dataset Code dropdown will appear. You can either leave it as Create New Expedition to upload the spreadsheet as a new dataset, or you can select one of your previously created datasets to overwrite. Ensure that the Public checkbox is ticked, otherwise the LIMS software will not be able to pull in the information. Press Submit. 
+Validation without loading
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1.	Go to https://geome-db.org/ and click on Workbench. 
+2.	If you are already logged into GeOMe, you will click Load Data at the top left, and then tick the “Only validate data” box at the top of the Load Data screen.
+3.	Or, if you are not logged in, click Validate Data at the top left. 
+4.	Where it says ‘Excel Workbook’, click the Browse button to select your spreadsheet. 
+5.	Select the pre-existing expedition called “_SIBN_Validation” and click the Validate button.
+6.	If your spreadsheet passes validation, great! Forward it on to your SIBN program manager and skip the rest of this section. Otherwise, please resolve the errors you are given and try validating again. 
+**Note: To pass validation, your data must be in a tab named Samples within the spreadsheet.
+
+Validation and loading
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1.	Go to https://geome-db.org/, click on the user profile image with the down-pointing caret at the top, and then click on Sign in. 
+2.	Log in with your pre-assigned GeOMe username and password. (You do not need to log in to validate your spreadsheet, but you must be logged in to upload it to the database). 
+3.	After logging in, go to Workbench and then click Load Data at the top left. 
+4.	On the Load Data page, for ‘FIMS Data’ click the Browse button to select your spreadsheet. 
+	a.	If this is the first time you have uploaded this plate to GeOMe, you will need to assign an “Expedition Name”. In the Expedition Name drop-down that appears, click the plus sign to the right of the box and enter your plate name. (The same plate name should go in Expedition Title and Expedition Code.) Remember to follow the :ref:`conventions-link`, and make sure not to repeat a previously created expedition code. 
+**Note: While the expedition title can be modified at any time, the expedition code is a unique identifier and cannot be changed.
+	b.	If you are adding or updating data you have previously uploaded, simply select the associated plate name from the Expedition Name drop-down. **Note: do not click “Replace expedition data” unless you want all of the previous data uploaded to be replaced with the new data. 
+5.	If you are ready to upload your spreadsheet, click the Load button. If there are no errors, the screen should return a “Successfully Validated!” message.
+**Note: To pass validation, your data must be in a tab named Samples within the spreadsheet. If you have already tried to upload data and validation failed, you may have to tick the box that says “Replace expedition data” when uploading it again. 
+
 
 .. image:: /images/fims_validation_upload.png
   :align: center
 
-If you chose to Create New Expedition, you will be asked to enter a code. Remember to follow the :ref:`conventions-link`, and make sure not to repeat a previously created expedition code. Click Create.
-
 Can I add a few records to an existing dataset by just uploading those new records?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-NO. When you choose to upload to a previously created dataset, the old dataset will be completely deleted and replaced by the data in the new spreadsheet. Therefore you should add the new records to your existing dataset, save it, and validate and upload this updated spreadsheet. Make sure to select the existing Dataset Code -- do not create a new one.
+YES! As long as you do not tick the “Reload Data” option, GeOMe will add new data to existing data. Just make sure you select the correct expedition to add the records to.
 
 Check that the spreadsheet was successfully uploaded
 ----------------------------------------------------
 
-Even though we got a success message, let’s make sure your data made it into the database successfully. This will also show how to retrieve data from the FIMS if you ever want to make changes. Click on the Tools button up top, and choose Query.
+Even though we got a success message, let’s make sure your data made it into the database successfully. This will also show how to retrieve data from the FIMS if you ever want to make changes. Click on the Query button at the top of the screen.
 
-.. image:: /images/tools_query.png
+On the Query page, you will be able to view the data from any dataset on any of the projects in the GeOMe FIMS. This is why it is so important not to include sensitive information (such as highly accurate GPS coordinates) in spreadsheet uploads. To see the dataset we just uploaded, first click on “Switch to Advanced Search” in the top right of the search screen. Then select SI Barcoding CBOL from the Individual Projects dropdown. Once the project is chosen, the list of datasets will be populated. Scroll through the list of datasets until you find the one you just created (or start typing it in, to bring up a shorter list). If you do not see it in this list, then your data was not successfully uploaded.
+
+Select the dataset you just uploaded and click the Search button. 
+
+.. image:: /images/fims_database_query.png
   :align: center
 
-On the Query page, you will be able to view the data from any dataset on any of the projects in the Biocode FIMS. This is why it is so important not to include sensitive information (such as highly accurate GPS coordinates) in spreadsheet uploads. To see the dataset we just uploaded, choose Barcode of Wildlife Training from the Choose Projects dropdown. Once the project is chosen, the list of datasets will be populated. Scroll through the list of datasets until you find the one you just created. If you do not see it in this list, then your data was not successfully uploaded.
+This will display an HTML table view of the specimen records in this dataset. It will be incredibly hard to read and scroll through, but be happy it made it in there. 
 
-Select the dataset you just uploaded and click the Table button. This will display an HTML table view of the specimen records in this dataset. It will be incredibly hard to read and scroll through, but be happy it made it in there. 
-
-You can click the Excel button to download a fresh Excel spreadsheet of this dataset. However, be advised that the wells are out of order and that you will lose any styling (colors, bold/italics, etc.) from when you originally uploaded the spreadsheet. Also, the default spreadsheet name is "biocode-fims-output.xlsx", so be sure to rename it with your dataset name immediately.
+You can click the Download button to download a fresh Excel spreadsheet of this dataset. However, be advised that the wells are out of order and that you will lose any styling (colors, bold/italics, etc.) from when you originally uploaded the spreadsheet. Also, the default spreadsheet name is "geome-fims-output.xlsx", so be sure to rename it with your dataset name immediately.
