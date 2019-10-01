@@ -18,7 +18,7 @@ Validation without loading
 5.	Select the pre-existing expedition called “_SIBN_Validation” and click the Validate button.
 6.	If your spreadsheet passes validation, great! Forward it on to your SIBN program manager and skip the rest of this section. Otherwise, please resolve the errors you are given and try validating again. 
 
-**Note: To pass validation, your data must be in a tab named Samples within the spreadsheet.
+*Note: To pass validation, your data must be in a tab named Samples within the spreadsheet.*
 
 Validation and loading
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -33,7 +33,7 @@ Validation and loading
 	b) If you are adding or updating data you have previously uploaded, simply select the associated plate name from the Expedition Name drop-down. **Note: do not click “Replace expedition data” unless you want all of the previous data uploaded to be replaced with the new data. 
 5.	If you are ready to upload your spreadsheet, click the Load button. If there are no errors, the screen should return a “Successfully Validated!” message.
 
-**Note: To pass validation, your data must be in a tab named Samples within the spreadsheet. If you have already tried to upload data and validation failed, you may have to tick the box that says “Replace expedition data” when uploading it again. 
+*Note: To pass validation, your data must be in a tab named Samples within the spreadsheet. If you have already tried to upload data and validation failed, you may have to tick the box that says “Replace expedition data” when uploading it again.* 
 
 
 .. image:: /images/fims_validation_upload.png
