@@ -26,9 +26,9 @@ Validation and loading
 2.	Log in with your pre-assigned GeOMe username and password. (You do not need to log in to validate your spreadsheet, but you must be logged in to upload it to the database). 
 3.	After logging in, go to Workbench and then click Load Data at the top left. 
 4.	On the Load Data page, for ‘FIMS Data’ click the Browse button to select your spreadsheet. 
-a.	If this is the first time you have uploaded this plate to GeOMe, you will need to assign an “Expedition Name”. In the Expedition Name drop-down that appears, click the plus sign to the right of the box and enter your plate name. (The same plate name should go in Expedition Title and Expedition Code.) Remember to follow the :ref:`conventions-link`, and make sure not to repeat a previously created expedition code. 
+	If this is the first time you have uploaded this plate to GeOMe, you will need to assign an “Expedition Name”. In the Expedition Name drop-down that appears, click the plus sign to the right of the box and enter your plate name. (The same plate name should go in Expedition Title and Expedition Code.) Remember to follow the :ref:`conventions-link`, and make sure not to repeat a previously created expedition code.
 **Note: While the expedition title can be modified at any time, the expedition code is a unique identifier and cannot be changed.
-b.	If you are adding or updating data you have previously uploaded, simply select the associated plate name from the Expedition Name drop-down. **Note: do not click “Replace expedition data” unless you want all of the previous data uploaded to be replaced with the new data. 
+	If you are adding or updating data you have previously uploaded, simply select the associated plate name from the Expedition Name drop-down. **Note: do not click “Replace expedition data” unless you want all of the previous data uploaded to be replaced with the new data. 
 5.	If you are ready to upload your spreadsheet, click the Load button. If there are no errors, the screen should return a “Successfully Validated!” message.
 **Note: To pass validation, your data must be in a tab named Samples within the spreadsheet. If you have already tried to upload data and validation failed, you may have to tick the box that says “Replace expedition data” when uploading it again. 
 
