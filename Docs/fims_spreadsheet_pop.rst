@@ -4,7 +4,7 @@ Populating the GeOMe FIMS spreadsheet
 The GeOMe FIMS spreadsheet template
 -----------------------------
 
-The SI Barcode Network GeOMe FIMS spreadsheet template is hosted on the SI Barcode Network GitHub page at https://github.com/SIBarcodeNetwork/SIBarcodeNetwork, called "SI Barcoding Specimen Spreadsheet.xlsx". (The direct link to download it is here <https://github.com/SIBarcodeNetwork/SIBarcodeNetwork/raw/master/SI%20Barcoding%20Specimen%20Spreadsheet.xlsx>`_.) If you would like to personalize the columns included in your template, you also have the option to generate it directly through GeOMe, by following `this link <https://geome-db.org/workbench/template>`_.
+The SI Barcode Network GeOMe FIMS spreadsheet template is hosted on the SI Barcode Network GitHub page at https://github.com/SIBarcodeNetwork/SIBarcodeNetwork, called "SI Barcoding Specimen Spreadsheet.xlsx". (The direct link to download it is `here <https://github.com/SIBarcodeNetwork/SIBarcodeNetwork/raw/master/SI%20Barcoding%20Specimen%20Spreadsheet.xlsx>`_.) If you would like to personalize the columns included in your template, you also have the option to generate it directly through GeOMe, by following `this link <https://geome-db.org/workbench/template>`_.
 
 .. figure:: /images/spreadsheet_on_github.png
   :align: center
@@ -58,7 +58,7 @@ phylum
   The full scientific name of the phylum in which the taxon is classified. The list of phyla allowable in GeOMe are taken from the Catalog of Life.  In addition, we have added 'Unknown' as an acceptable value. See controlled vocabulary in the Lists tab of the spreadsheet. 
 
 class    
-The full scientific name of the class in which the taxon is classified.
+  The full scientific name of the class in which the taxon is classified.
 
 order
   The full scientific name of the order in which the taxon is classified.
