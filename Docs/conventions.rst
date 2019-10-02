@@ -19,13 +19,13 @@ This name will then be used for the:
 
 .. image:: /images/dataset_code.png
 	:align: center
-	:scale: 80 %
+	:scale: 50 %
 
 * extractionPlateID field in spreadsheet
 
 .. image:: /images/plateid.png
 	:align: center
-	:scale: 80 %
+	:scale: 70 %
 	
 * and will also be incorporated in the plate names in the LIMS system (see below)
 
