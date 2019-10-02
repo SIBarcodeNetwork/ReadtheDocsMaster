@@ -11,6 +11,7 @@ Creating the plate
 * As described for PCR plates, set the thermocycling profile, reaction cocktail, primer, date etc.
 * Also set the direction as Forward or Reverse. 
 * If your cycle sequencing plate contains reactions for both directions, then highlight the forward reactions, click on "Edit Selected Wells" and set the direction and primer. Do the same for the remaining reactions in the opposite direction.
+* Add any additional comments in the Notes section, including which thermocycler you used, as well as the Full Plate Label field submitted in Signout. (This inlcudes the number Signout assigned to your plate when you submitted it for sequencing.)
 * Save plate once complete.
 
 Attaching raw traces to a cycle sequencing plate
