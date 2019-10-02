@@ -53,6 +53,7 @@ From this point forward, generating new plates, whether PCR or cycle sequencing,
 * A PCR reaction can be marked as "not run", "run", "passed" or "failed". 
 * The forward and reverse PCR primers are selected using the "Choose" button which points to a selected folder on the Local Directory where primers are stored by the user. (See :ref:`creating_primers-link`)
 * The reaction cocktail can be chosen from a list of existing cocktails, or by creating a new cocktail, described in the Additional Information section at the end of this document.
+* Add any additional comments in the Notes section, including which thermocycler you used.
 * Gel images can be uploaded by clicking the "Gel Images" button in the plate window and pointing to the relevant file. More information on attaching a gel image and scoring is available in the Additional Information section below.
 * Once all editing of the plate is complete, Click OK. 
 
