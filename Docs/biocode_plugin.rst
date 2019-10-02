@@ -55,4 +55,5 @@ Your fully-completed Biocode Connection window should look like this:
 
 .. figure:: /images/biocode_connection_details_completed.png
   :align: center
+  :scale: 50 %
   :target: /en/latest/_images/biocode_connection_details_completed.png
