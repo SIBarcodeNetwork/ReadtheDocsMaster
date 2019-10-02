@@ -26,37 +26,14 @@ Enter a value in the Connection Name so that the plug-in saves this information.
 Field Database Connection
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In the Field Database Connection section, select "Biocode FIMS" from the dropdown.
+In the Field Database Connection section, select "GeOMe FIMS" from the dropdown.
 
 .. figure:: /images/biocode_fims_options.png
   :align: center
   :target: /en/latest/_images/biocode_fims_options.png
 
-This will auto-fill the Host box with "http://www.biscicol.org:80" however **this needs to be replaced** with "http://www.biscicol.org/". Enter the FIMS Username and Password that Niamh Redmond assigned to you. Make sure to click the "Save" box, and then the "Authenticate" button to ensure you can connect to FIMS.
+This will auto-fill the Host box with “https://api.geome-db.org”. Enter the FIMS Username and Password assigned to you. Make sure to tick the “Save” box to save your login information to the plugin.
 
-After authenticating, the Project drop-down will now be populated with only the FIMS projects that you have access to. Choose "SI Barcoding CBOL".
-
-Tissue ID field
-	For "Tissue ID field", select "tissueID".
-
-Specimen ID field
-	For "Specimen ID field", select "voucherID".
-
-Make sure to check the box next to "The FIMS database contains plate information".
-
-Plate name field
-	For "Plate name field", select "extractionPlateID".
-
-Well field
-	For "Well field", select "extractionWell".
-
-Finally, click the "Autodetect" button to automatically populate the different taxonomy fields.
-
-The completed Field Database Connection should look like this:
-
-.. figure:: /images/SIBN_biocode_connection_details_fims.png
-  :align: center
-  :target: /en/latest/_images/SIBN_biocode_connection_details_fims.png
 
 LIMS Database Connection
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -72,7 +49,7 @@ Database Name
 Username and Password
 	Finally, for the "Username" and "Password" boxes, enter the LIMS database Username and Password that John Keltner assigned to you via email.
 
-Make sure that the checkbox next to "Save" is selected.
+Make sure that the checkbox next to "Save" is ticked.
 
 Your fully-completed Biocode Connection window should look like this:
 
