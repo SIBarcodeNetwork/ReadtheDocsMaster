@@ -25,12 +25,13 @@ There are four tabs in the spreadsheet: Instructions, Samples, Samples_Fields, a
 Source of columns
 ~~~~~~~~~~~~~~~~~
 
-The GeOMe FIMS, which we will be using to store and interface with specimen data, allows projects to completely customize the fields that they use -- along with the validation rules that accompany those fields. Since the goal of the SI Barcode Network is to get BARCODE keyword sequences into GenBank, we limited the specimen fields to those that will end up in a GenBank record. However, we also based our fields on `DarwinCore <http://rs.tdwg.org/dwc/terms/#dcindex>`_ fields, which you should notice in the field names. We think that our collections of fields act as a bridge between permanent collection databases (like `NMNH EMu <http://collections.nmnh.si.edu/search/>`_) and GenBank.
+The GeOMe FIMS, which we will be using to store and interface with specimen data, allows projects to completely customize the fields that they use -- along with the validation rules that accompany those fields. Since the goal of the SI Barcode Network is to get BARCODE keyword sequences into GenBank, we limited the specimen fields to those that will end up in a GenBank record. However, we also based our fields on `DarwinCore <http://rs.tdwg.org/dwc/terms/#dcindex>`_ fields, which you should notice in the field names. Our subset of fields acts as a bridge between permanent collection databases (like `NMNH EMu <http://collections.nmnh.si.edu/search/>`_) and GenBank.
 
 Column colors
 ~~~~~~~~~~~~~
 
-Red column headers indicate fields required before they can be uploaded to the FIMS. 
+Red column headers indicate fields **required** before they can be uploaded to the FIMS. 
+
 Black column headers are not required, but they should still be filled out if the values are known.
 
 Column definitions
