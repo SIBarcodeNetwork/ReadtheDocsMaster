@@ -38,8 +38,8 @@ Validation and loading
 5.	If you are ready to upload your spreadsheet, click the Load button. If there are no errors, the screen should return a “Successfully Validated!” message.
 
 *A few notes:* 
-| 1.	To pass validation, your data must be in a tab named Samples within the spreadsheet. 
-| 2.	If you have already tried to upload data and validation failed, you may have to tick the box that says “Replace expedition data” when uploading it again. 
+	1.	To pass validation, your data must be in a tab named Samples within the spreadsheet. 
+	2.	If you have already tried to upload data and validation failed, you may have to tick the box that says “Replace expedition data” when uploading it again. 
 
 
 .. image:: /images/fims_validation_upload.png
