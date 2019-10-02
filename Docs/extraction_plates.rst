@@ -13,7 +13,7 @@ To create an extraction plate:
 .. figure:: /images/new_reaction_button.png
   :align: center
 
-* In the drop-down menu of the "New Reaction" window, choose "Extraction" from the "Type of reaction" drop-down menu. Select the "96 well plate" size option. 
+* In the drop-down menu of the "New Reaction" window, choose "Extraction" from the "Type of reaction" drop-down menu. Select the "96 well plate" size option and click OK. 
 
 .. figure:: /images/new_extraction_plate.png
   :align: center
@@ -39,7 +39,7 @@ To create an extraction plate:
 .. figure:: /images/enter_plate_id.png
   :align: center
 
-* Here you must enter the extractionPlateID value that was included in the FIMS spreadsheet for this plate/dataset. Click "OK" once complete.
+* Here you must enter the extractionPlateID value that was included in the FIMS spreadsheet for this plate/expedition. Click "OK" once complete.
 
 * A new window will appear indicating the LIMS is fetching the tissue ID's from the FIMS database. When successful, the "Tissue Sample Id" fields in the "Edit Plate" window will be populated. Alternatively, if you receive a message indicating that the plate cannot be found in the FIMS, check:
 
@@ -53,10 +53,11 @@ To create an extraction plate:
 
 * Finally you want to import the Extraction Barcode's for each DNA extract. This can be done in two different ways:
 
-* *Option 1:* This is our preferred method. Select "Import Extraction Barcodes from FIMS" from the "Tools" dropdown menu. A new window will appear, and select the FIMS column that contains the extraction barcodes from the dropdown menu - in our case it is "extractionBarcode". For this to work, you must ensure that your FIMS spreadsheet contains the unique extraction barcodes.
+* *Option 1:* This is our preferred method. Select "Import Extraction Barcodes from FIMS" from the "Tools" dropdown menu. A new window will appear, and select the FIMS column that contains the extraction barcodes from the dropdown menu - in our case it is "tissueOtherCatalogNumbers". For this to work, you must ensure that your FIMS spreadsheet contains the unique extraction barcodes.
 
 .. figure:: /images/import_extraction_barcode_FIMS.png
   :align: center
+  :scale: 70 %
 
 * *Option 2:* Select "Import Extraction Barcodes from File" from the "Tools" dropdown menu. Select the file generated from the plate scanner. Ensure that the well order of the plate scan matches the well order displayed in the Edit Plate window.
 
@@ -72,6 +73,31 @@ To create an extraction plate:
 * Once complete, click "OK" which will bring you back to the "New Extraction" window. 
 
 * Click "OK" in this window for the LIMS to save the extraction plate.
+
+Creating the working stock (96 wells)
+-------------------------------------
+
+Once your DNA has been extracted, it is considered best practice to create a working stock. This protects the bulk of your DNA from freeze/thaw cycles as well as possible contamination during lab work. Because you are creating a working stock in the lab, you should also create one in the LIMS. 
+
+After the initial extraction plate has been created in the LIMS, you can easily create a working stock from this same plate. 
+
+•	With the extraction plate you just created selected, click New Reaction. Make sure the box next to “Create plate from existing plate documents” is ticked, and that the Type of reaction is set to Extraction. Click OK. 
+
+.. image:: /images/new_working_stock.png
+   :align: center
+   :scale: 80%
+
+•	As before, a new window will open displaying a plate map, except this time most of the data should already be populated. Go ahead and give your working stock a name, following the LIMS naming conventions. 
+•	Click on Bulk Edit to see the data that was pulled in from the extraction plate. You will notice that the Extraction Barcodes column is empty. We need to tell the LIMS we are using DNA from this same extraction. 
+•	Click on the Tools drop-down and select Import Extraction Barcodes from FIMS. Make sure the Extraction Barcode Field says tissueOtherCatalogNumbers and press OK. 
+•	At this point you should see the error screen below:
+
+.. image:: /images/extractions_already_exist.png
+   :align: center
+   :scale: 80%
+
+•	Click the Create aliquots button.
+•	Click Save to save your working stock plate to the LIMS.
 
 Additional Information:
 -----------------------
@@ -105,6 +131,7 @@ The available fields are shown in the left hand pane, and when fields are in the
 
 .. figure:: /images/display_options.png
   :align: center
+  :scale: 70 %
 
 Each well can be color-coded according to a particular field value. To select the field for color-coding use the "Color wells based on" drop-down menu found at bottom of the dialog window. All possible values for that field will be displayed and a color can be assigned to each of the values using the color chart.
 
