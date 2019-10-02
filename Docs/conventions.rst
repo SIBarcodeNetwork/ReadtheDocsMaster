@@ -39,6 +39,10 @@ Extraction Plate:
 
 	Example: FY19Ortho_P01_X01 for the first extraction plate from the plate/batch of samples in the expedition named “FY19Ortho_P01”. If you were to re-extract DNA from all of the samples in FY19Ortho_P01, then this second extraction plate would be called FY19Ortho_P01_X02.
 
+Working Stock of Extraction Plate:
+	*[expedition code]_X[extraction attempt number][working stock number]*
+
+	Example: FY19Ortho_P01_X01_W01 for the first working stock plate created from the FY19Ortho_P01_X01 extraction plate. If you were to create a second working stock from this same extraction plate, you would name it FY19Ortho_P01_X01_W02.
 
 PCR Plate:
 	*[expedition code]_PCR[PCR attempt number]_[fwd primer]_[rev primer]*
