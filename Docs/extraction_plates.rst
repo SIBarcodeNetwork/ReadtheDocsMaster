@@ -83,17 +83,19 @@ After the initial extraction plate has been created in the LIMS, you can easily 
 
 •	With the extraction plate you just created selected, click New Reaction. Make sure the box next to “Create plate from existing plate documents” is ticked, and that the Type of reaction is set to Extraction. Click OK. 
 
-.. image:: /images/new_working_stock.png
+.. figure:: /images/new_working_stock.png
    :align: center
    :scale: 50%
+   
 •	As before, a new window will open displaying a plate map, except this time most of the data should already be populated. Go ahead and give your working stock a name, following the LIMS naming conventions. 
 •	Click on Bulk Edit to see the data that was pulled in from the extraction plate. You will notice that the Extraction Barcodes column is empty. We need to tell the LIMS we are using DNA from this same extraction. 
 •	Click on the Tools drop-down and select Import Extraction Barcodes from FIMS. Make sure the Extraction Barcode Field says tissueOtherCatalogNumbers and press OK. 
 •	At this point you should see the error screen below:
 
-.. image:: /images/extractions_already_exist.png
+.. figure:: /images/extractions_already_exist.png
    :align: center
    :scale: 50%
+
 •	Click the Create aliquots button.
 •	Click Save to save your working stock plate to the LIMS.
 
