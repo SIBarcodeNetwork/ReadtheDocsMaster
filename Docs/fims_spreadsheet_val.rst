@@ -32,9 +32,11 @@ Validation and loading
 3.	After logging in, go to Workbench and then click Load Data at the top left. 
 4.	Where it says ‘Excel Workbook’, click the Browse button to select your spreadsheet. 
 	
-	a) If this is the first time you have uploaded this plate to GeOMe, you will need to assign an “Expedition Name”. In the Expedition Name drop-down that appears, click the plus sign to the right of the box and enter your plate name. (The same plate name should go in Expedition Title and Expedition Code.) Remember to follow the :ref:`conventions-link`, and make sure not to repeat a previously created expedition code. *Note: While the expedition title can be modified at any time, the expedition code is a unique identifier and cannot be changed.
+	a) If this is the first time you have uploaded this plate to GeOMe, you will need to assign an “Expedition Name”. In the Expedition Name drop-down that appears, click the plus sign to the right of the box and enter your plate name. (The same plate name should go in Expedition Title and Expedition Code.) Remember to follow the :ref:`conventions-link`, and make sure not to repeat a previously created expedition code. 
+
+	**Note: While the expedition title can be modified at any time, the expedition code is a unique identifier and cannot be changed.**
 	
-	b) If you are adding or updating data you have previously uploaded, simply select the associated plate name from the Expedition Name drop-down. Do not click “Replace expedition data” unless you want all of the previous data uploaded to be replaced with the new data. 
+	b) If you are adding to or updating data you have previously uploaded, simply select the associated plate name from the Expedition Name drop-down. **Do not click “Replace expedition data”** unless you want all of the previously uploaded data to be replaced with the new data. 
 5.	If you are ready to upload your spreadsheet, click the Load button. If there are no errors, the screen should return a “Successfully Validated!” message.
 
 *A few notes:* 
@@ -46,7 +48,7 @@ Validation and loading
   :align: center
   :target: /en/latest/_images/fims_validation_upload.png
 
-Can I add a few records to an existing dataset by just uploading those new records?
+Can I add a few records to an existing expedition by just uploading those new records?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 YES! As long as you do not tick the “Reload Data” option, GeOMe will add new data to existing data. Just make sure you select the correct expedition to add the records to.
@@ -54,17 +56,17 @@ YES! As long as you do not tick the “Reload Data” option, GeOMe will add new
 Check that the spreadsheet was successfully uploaded
 ----------------------------------------------------
 
-Even though we got a success message, let’s make sure your data made it into the database successfully. This will also show how to retrieve data from the FIMS if you ever want to make changes. Click on the Query button at the top of the screen.
+Even though we received a "successfully validated" message, you should make sure your data made it into the database successfully. The following step will also show how to retrieve data from the FIMS if you ever want to make changes. Click on the Query button at the top of the screen.
 
-On the Query page, you will be able to view the data from any dataset on any of the projects in the GeOMe FIMS. This is why it is so important not to include sensitive information (such as highly accurate GPS coordinates) in spreadsheet uploads. To see the dataset we just uploaded, first click on “Switch to Advanced Search” in the top right of the search screen. Then select SI Barcoding CBOL from the Individual Projects dropdown. Once the project is chosen, the list of datasets will be populated. Scroll through the list of datasets until you find the one you just created (or start typing it in, to bring up a shorter list). If you do not see it in this list, then your data was not successfully uploaded.
+On the Query page, you will be able to view the data from any expedition in any of the individual projects (e.g. SI Barcoding CBOL, GGI, SI Bioblitz, etc.) in the GeOMe FIMS. This is why it is so important not to include sensitive information (e.g. highly accurate GPS coordinates for protected species, fasta files, etc.) in spreadsheet uploads. To see the expedition that was just uploaded, first click on “Switch to Advanced Search” in the top right of the search screen. Then select SI Barcoding CBOL from the Individual Projects dropdown. Once the project is chosen, the list of expeditions will be populated. Scroll through the list of expeditions until you find the one you just created (or start typing it in, to bring up a shorter list). If you do not see it in this list, then your data was not successfully uploaded.
 
-Select the dataset you just uploaded and click the Search button. 
+Select the expedition you just uploaded and click the Search button. 
 
 .. image:: /images/fims_database_query.png
   :align: center
   :scale: 40 %
   :target: /en/latest/_images/fims_database_query.png 
 
-This will display an HTML table view of the specimen records in this dataset. It will be incredibly hard to read and scroll through, but be happy it made it in there. 
+This will display an HTML table view of the specimen records in this expedition. It will be incredibly hard to read and scroll through, but be happy it made it in there. 
 
-You can click the Download button to download a fresh Excel spreadsheet of this dataset. However, be advised that the wells are out of order and that you will lose any styling (colors, bold/italics, etc.) from when you originally uploaded the spreadsheet. Also, the default spreadsheet name is "geome-fims-output.xlsx", so be sure to rename it with your dataset name immediately.
+You can click the Download button to download a fresh Excel spreadsheet of this expedition. However, be advised that the wells are out of order and that you will lose any styling (colors, bold/italics, etc.) from when you originally uploaded the spreadsheet. Also, the default spreadsheet name is "geome-fims-output.xlsx", so be sure to rename it with your expedition name immediately.
