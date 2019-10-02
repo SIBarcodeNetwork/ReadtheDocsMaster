@@ -3,10 +3,10 @@
 Software components
 ===================
 
-Field Information Management System (FIMS) - BiSciCol Biocode
+Field Information Management System (FIMS) - GeOMe
 -------------------------------------------------------------
 
-The purpose of a field information management system, or FIMS, is to store information relating to fieldwork (e.g. specimen records, collecting events, identification, etc.) The FIMS being used by the SI Barcode Network is the Biocode FIMS, which is being developed by the Biological Science Collections (BiSciCol) project. The SI Barcode Network is using a cloud-hosted version that is available at http://biscicol.org. All that you need to use the Biocode FIMS is a spreadsheet program (Excel, Google Sheets, etc.), and a browser (Firefox, Chrome, etc.).
+The purpose of a field information management system, or FIMS, is to store information relating to fieldwork (e.g. specimen records, collecting events, identification, etc.) The FIMS being used by the SI Barcode Network is The Genomic Observatories Meta-Database (GeOMe) FIMS. The SI Barcode Network is using a cloud-hosted version that is available at https://geome-db.org/. All that you need to use the GeOMe FIMS is a spreadsheet program (Excel, Google Sheets, etc.), and a browser (Firefox, Chrome, etc.).
 
 Geneious software program
 -------------------------
@@ -18,4 +18,4 @@ Laboratory Information Management System (LIMS)
 
 The LIMS allows you to manage your laboratory and sequence editing workflows.
 
-A wiki containing information on the plugin and an online manual is also found at http://software.mooreabiocode.org/index.php?title=Main_Page
+A wiki containing information on the plugin and an online manual is also found at https://github.com/biocodellc/biocode-lims/wiki
