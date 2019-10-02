@@ -60,7 +60,7 @@ Select the dataset you just uploaded and click the Search button.
 
 .. image:: /images/fims_database_query.png
   :align: center
-  :scale: 50 %
+  :scale: 25 %
   :target: /en/latest/_images/fims_database_query.png 
 
 This will display an HTML table view of the specimen records in this dataset. It will be incredibly hard to read and scroll through, but be happy it made it in there. 
