@@ -20,6 +20,10 @@ Validation without loading
 
 *Note: To pass validation, your data must be in a tab named Samples within the spreadsheet.*
 
+.. image:: /images/fims_validation.png
+  :align: center
+  :target: /en/latest/_images/fims_validation.png
+
 Validation and loading
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
