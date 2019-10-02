@@ -25,7 +25,7 @@ This name will then be used for the:
 
 .. image:: /images/plateid.png
 	:align: center
-	:scale: 70 %
+	:scale: 50 %
 	
 * and will also be incorporated in the plate names in the LIMS system (see below)
 
