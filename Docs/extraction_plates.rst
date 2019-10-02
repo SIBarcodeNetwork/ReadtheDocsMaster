@@ -57,7 +57,7 @@ To create an extraction plate:
 
 .. figure:: /images/import_extraction_barcode_FIMS.png
   :align: center
-  :scale: 70 %
+  :scale: 50 %
 
 * *Option 2:* Select "Import Extraction Barcodes from File" from the "Tools" dropdown menu. Select the file generated from the plate scanner. Ensure that the well order of the plate scan matches the well order displayed in the Edit Plate window.
 
@@ -85,7 +85,7 @@ After the initial extraction plate has been created in the LIMS, you can easily 
 
 .. image:: /images/new_working_stock.png
    :align: center
-   :scale: 80%
+   :scale: 50%
 
 •	As before, a new window will open displaying a plate map, except this time most of the data should already be populated. Go ahead and give your working stock a name, following the LIMS naming conventions. 
 •	Click on Bulk Edit to see the data that was pulled in from the extraction plate. You will notice that the Extraction Barcodes column is empty. We need to tell the LIMS we are using DNA from this same extraction. 
@@ -94,7 +94,7 @@ After the initial extraction plate has been created in the LIMS, you can easily 
 
 .. image:: /images/extractions_already_exist.png
    :align: center
-   :scale: 80%
+   :scale: 50%
 
 •	Click the Create aliquots button.
 •	Click Save to save your working stock plate to the LIMS.
@@ -131,7 +131,7 @@ The available fields are shown in the left hand pane, and when fields are in the
 
 .. figure:: /images/display_options.png
   :align: center
-  :scale: 70 %
+  :scale: 50 %
 
 Each well can be color-coded according to a particular field value. To select the field for color-coding use the "Color wells based on" drop-down menu found at bottom of the dialog window. All possible values for that field will be displayed and a color can be assigned to each of the values using the color chart.
 
