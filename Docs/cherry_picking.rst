@@ -9,6 +9,7 @@ Aliquoting
 If you’ve decided the best plan of action is making aliquots from your working stock, you’ll want to create the rerun plate in the lab, and then create it in the LIMS as well. You’ll need the Extraction IDs and Tissue Sample IDs from the samples you are including for this process. Following the steps below will ensure that your original extraction plates are not modified in the LIMS. 
 
 To create a new plate of aliquots in the LIMS:
+
 * Click the “New Reaction” button on the Geneious toolbar, just as if you were creating a new extraction plate. 
 * In the “New Reaction” window, make sure the Type of reaction is set to “Extraction”, and that “96 well plate” is ticked. Click OK.
 * A new window will open showing an empty plate map. You will want to give your plate a name. Make sure to follow the guidance in :ref:`lims_conventions-link` for a rerun plate.
@@ -31,6 +32,7 @@ Moving the samples
 If you’ve decided to physically move the samples in the matrix plates, you’ll need to move them from the extraction plates you created in the LIMS as well. You’ll need the Extraction IDs of the original samples for this process. Following the steps below will modify your original extraction plates in the LIMS, but it should not break the link between the samples and all the work you have done on them thus far. 
 
 To move the samples to a new extraction plate in the LIMS:
+
 * Click the “New Reaction” button on the Geneious toolbar, just as if you were creating a new extraction plate. 
 * In the “New Reaction” window, make sure the Type of reaction is set to “Extraction”, and that “96 well plate” is ticked. Click OK.
 * A new window will open showing an empty plate map. You will want to give your plate a name. Make sure to follow the guidance in :ref:`lims_conventions-link` for a rerun plate.
