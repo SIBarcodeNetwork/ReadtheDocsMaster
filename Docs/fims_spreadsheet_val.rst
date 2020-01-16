@@ -36,7 +36,7 @@ Validation and loading
 
 	**Note: While the expedition title can be modified at any time, the expedition code is a unique identifier and cannot be changed.**
 	
-	b) If you are adding to or updating data you have previously uploaded, simply select the associated plate name from the Expedition Name drop-down. **Do not click “Replace expedition data”** unless you want all of the previously uploaded data to be replaced with the new data. 
+	b) If you are adding to or updating data you have previously uploaded, simply select the associated project from the Expedition Name drop-down. **Do not click “Replace expedition data”** unless you want all of the previously uploaded data to be replaced with the new data. 
 5.	If you are ready to upload your spreadsheet, click the Load button. If there are no errors, the screen should return a “Successfully Validated!” message.
 
 *A few notes:* 

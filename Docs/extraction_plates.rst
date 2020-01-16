@@ -39,7 +39,7 @@ To create an extraction plate:
 .. figure:: /images/enter_plate_id.png
   :align: center
 
-* Here you must enter the extractionPlateID value that was included in the FIMS spreadsheet for this plate/expedition. Click "OK" once complete.
+* Here you must enter the tissuePlate value that was included in the FIMS spreadsheet for this expedition. Click "OK" once complete.
 
 * A new window will appear indicating the LIMS is fetching the tissue ID's from the FIMS database. When successful, the "Tissue Sample Id" fields in the "Edit Plate" window will be populated. Alternatively, if you receive a message indicating that the plate cannot be found in the FIMS, check:
 
