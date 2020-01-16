@@ -19,7 +19,7 @@ To create a new plate of aliquots in the LIMS:
 
 .. image:: /images/reruns_aliquoting.png
 	:align: center
-	:scale: 50 %
+	:scale: 25 %
 
 * When the new Extraction IDs have been generated, click OK. 
 
@@ -39,7 +39,7 @@ To move the samples to a new extraction plate in the LIMS:
 
 .. image:: /images/reruns_moving.png
 	:align: center
-	:scale: 50 %
+	:scale: 25 %
 
 * At this point you should see the error screen below: 
 
