@@ -53,6 +53,7 @@ Updates
 	extraction_plates
 	pcr_plates
 	cyclesequencing_plates
+	cherry_picking
 	
 .. toctree::
 	:maxdepth: 2
