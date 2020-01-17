@@ -10,12 +10,12 @@ If you’ve decided the best plan of action is making aliquots from your working
 
 To create a new plate of aliquots in the LIMS:
 
-* Click the “New Reaction” button on the Geneious toolbar, just as if you were creating a new extraction plate. 
+* Click the “New Reaction” button on the Geneious toolbar, just as if you were creating a new extraction plate.
 * In the “New Reaction” window, make sure the Type of reaction is set to “Extraction”, and that “96 well plate” is ticked. Click OK.
 * A new window will open showing an empty plate map. You will want to give your plate a name. Make sure to follow the guidance in :ref:`lims_conventions-link` for a rerun plate.
-* Click the Bulk Edit button to enter the sample information that will link this plate to the FIMS/LIMS data already entered. 
-* In the Edit Plate window that opens, paste in your Tissue Sample IDs to the corresponding wells. 
-* Paste your Extraction IDs into the Parent Extraction ID column, again making sure the well order is correct. 
+* Click the Bulk Edit button to enter the sample information that will link this plate to the FIMS/LIMS data already entered.
+* In the Edit Plate window that opens, paste in your Tissue Sample IDs to the corresponding wells.
+* Paste your Extraction IDs into the Parent Extraction ID column, again making sure the well order is correct.
 * Click on the Tools button and select “Generate New Extraction IDs”. At this point, your window should look like this: 
 
 .. image:: /images/reruns_aliquoting.png
