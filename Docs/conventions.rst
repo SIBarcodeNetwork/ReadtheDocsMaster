@@ -59,7 +59,7 @@ Cycle Sequencing Plate:
 	Examples: FY19Orthoptera_P01_Seq01_dgLCO_F for the cycle sequencing plate for the forward strand using the dgLC01490 primer; and FY19Orthoptera_P01_Seq01_dgHCO_R for the reverse strand using the dgHCO2198 primer. 
 
 Reruns Plate:
-	*[expedition code]_Reruns_[plate number]
+	*[expedition code]_Reruns_[plate number]*
 
 	Example: 144 samples from the FY19Orthoptera expedition have been cherry picked into two rerun plates. The first plate will be called “FY19Orthoptera_Reruns_P01” and the second will be called “FY19Orthoptera_Reruns_P02”. 
 
