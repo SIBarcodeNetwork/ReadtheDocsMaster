@@ -21,7 +21,7 @@ This name will then be used for the:
 	:align: center
 	:scale: 50 %
 
-The SI Barcode Network creates the plate name from [Expedition Name]P[Sequential Number]
+The SI Barcode Network creates the plate name from [Expedition Name]_P[Sequential Number]
 	Example: FY19Orthoptera_P01 for the first plate/batch from the Orthopterans project from Fiscal Year 2019
 
 This name corresponds to the plate name in the lab and will be used for the tissuePlate field in the FIMS spreadsheet: 
@@ -57,4 +57,11 @@ Cycle Sequencing Plate:
 	*[plate name]_Seq[Sequencing attempt number]_[primer used]_[F or R]*
 
 	Examples: FY19Orthoptera_P01_Seq01_dgLCO_F for the cycle sequencing plate for the forward strand using the dgLC01490 primer; and FY19Orthoptera_P01_Seq01_dgHCO_R for the reverse strand using the dgHCO2198 primer. 
+
+Reruns Plate:
+
+	*[expedition code]_Reruns_[plate number]
+
+	Example: 144 samples from the FY19Orthoptera expedition have been cherry picked into two rerun plates. The first plate will be called “FY19Orthoptera_Reruns_P01” and the second will be called “FY19Orthoptera_Reruns_P02”. 
+
 	
