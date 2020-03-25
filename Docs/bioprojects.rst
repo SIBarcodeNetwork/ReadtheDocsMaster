@@ -37,7 +37,7 @@ To create a BioProject, navigate to the new NCBI Submission Portal: https://subm
 
   ..
 
-2. After signing in, you should be directed back to the Submission Portal page. Now click on the link for BioProject.
+2. After signing in, you should be directed back to the Submission Portal page. In the search box, type “bioproject” and you should see the suggestion “BioProject and BioSample”. Click on this link to get to the bioproject submission tool. 
 
 .. figure:: /images/ncbi_submission_portal_bioproject.png
   :align: center
@@ -45,7 +45,15 @@ To create a BioProject, navigate to the new NCBI Submission Portal: https://subm
 
   ..
 
-3. Click the New Submission button.
+3. Feel free to click through the headings on the left of the What You Should Expect section to learn more about the requirements and the submission process. When you’re ready to continue, click the Submit button.
+
+.. figure:: /images/ncbi_submission_bioprojects_and_biosamples.png
+  :align: center
+  :target: /en/latest/_images/ncbi_submission_bioprojects_and_biosamples.png
+
+  ..
+
+4. Click the New Submission button.
 
 .. figure:: /images/ncbi_submission_portal_new_submission.png
   :align: center
@@ -53,7 +61,7 @@ To create a BioProject, navigate to the new NCBI Submission Portal: https://subm
 
   ..
 
-4. Fill out the Submitter page.
+5. Fill out the Submitter page.
 
 .. figure:: /images/bioproject_submitter_page.png
   :align: center
@@ -61,7 +69,7 @@ To create a BioProject, navigate to the new NCBI Submission Portal: https://subm
 
   ..
 
-5. Select "Targeted Locus (Loci)" for Project Data Type, and "Multispecies" for Sample scope.
+6. Select "Targeted Locus (Loci)" for Project Data Type, and "Multispecies" for Sample scope.
 
 .. figure:: /images/bioproject_project_type.png
   :align: center
@@ -69,7 +77,7 @@ To create a BioProject, navigate to the new NCBI Submission Portal: https://subm
 
   ..
 
-6. Give a short description for "Multispecies description".
+7. Give a short description for "Multispecies description".
 
 .. figure:: /images/bioproject_target.png
   :align: center
@@ -77,7 +85,7 @@ To create a BioProject, navigate to the new NCBI Submission Portal: https://subm
 
   ..
 
-7. The submission portal will create an automated Project Title based on your previous entries, but overwrite this with the title of your project. Give a good description of the project in "Public description", because this will be front-and-center on the BioProject page. Finally, check the "Yes" box to indicate that this project is part of a larger initiative. 
+8. The submission portal will create an automated Project Title based on your previous entries, but overwrite this with the title of your project. Give a good description of the project in "Public description", because this will be front-and-center on the BioProject page. Finally, check the "Yes" box to indicate that this project is part of a larger initiative. 
 
 * If this BioProject falls under the SI Barcode Network, then enter "SI Barcode Network" for Initiative description, and "PRJNA81359" for BioProject Accession. 
 * If this BioProject falls under GGI, then enter "Global Genome Initiative" for Initiative description, and "PRJNA384793" for BioProject Accession. 
@@ -90,7 +98,7 @@ Leave the rest of entries on this page blank.
 
   ..
 
-8. Enter any links you would like to display as part of your project. Add the Consortium and/or Data provider, if needed.
+9. Enter any links you would like to display as part of your project. Add the Consortium and/or Data provider, if needed.
 
 .. figure:: /images/bioproject_links_and_consortium.png
   :align: center
@@ -98,7 +106,7 @@ Leave the rest of entries on this page blank.
 
   ..
 
-9. If you would like to enter any grants, click the Add grants link to enter the relevant information. 
+10. If you would like to enter any grants, click the Add grants link to enter the relevant information. 
 
 .. figure:: /images/bioproject_grant_info.png
   :align: center
@@ -106,9 +114,9 @@ Leave the rest of entries on this page blank.
 
   ..
 
-10. Skip the BioSample page.
-11. Add any Publications your project has generated on the Publications page. Don't worry, you can come back and add publications later.
-12. Finally, the Overview tab will show all of your entries in one place. This will be your last chance to make any changes before submitting.
+11. Skip the BioSample page.
+12. Add any Publications your project has generated on the Publications page. Don't worry, you can come back and add publications later.
+13. Finally, the Overview tab will show all of your entries in one place. This will be your last chance to make any changes before submitting.
 
 .. figure:: /images/bioproject_submission_review.png
   :align: center
@@ -116,7 +124,7 @@ Leave the rest of entries on this page blank.
 
   ..
 
-13. After a few days, you will receive an email from NCBI informing you that your BioProject has been successfully created. Most importantly, they will send your BioProject ID, which you can now add to existing GenBank records or include in new GenBank submissions.
+14. After a few days, you will receive an email from NCBI informing you that your BioProject has been successfully created. Most importantly, they will send your BioProject ID, which you can now add to existing GenBank records or include in new GenBank submissions.
 
 
 How to update BioProject information
