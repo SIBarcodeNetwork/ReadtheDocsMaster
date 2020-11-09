@@ -14,6 +14,9 @@ Updates
 .. image:: https://img.shields.io/badge/GenBank%20Upload%20Plugin%20Version-1.6.7-green.svg
     :target: http://assets.geneious.com/plugins/GenbankSubmission_1_6_7.gplugin
 
+1 October, 2020
+	The Biocode plugin was updated to fix an issue with detecting duplicate column names when annotating with FIMS data.
+
 6 March, 2019
 	The Biocode plugin now includes the following fields: genbankCountry, genbankDate, and genbankLatLng. 
 
