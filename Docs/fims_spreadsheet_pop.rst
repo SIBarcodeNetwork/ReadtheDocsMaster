@@ -4,7 +4,7 @@ Populating the GeOMe FIMS spreadsheet
 The GeOMe FIMS spreadsheet template
 -----------------------------
 
-The SI Barcode Network GeOMe FIMS spreadsheet template is hosted on the SI Barcode Network GitHub page at https://github.com/SIBarcodeNetwork/SIBarcodeNetwork, called "SI Barcoding Specimen Spreadsheet.xlsx". (The direct link to download it is `here <https://github.com/SIBarcodeNetwork/SIBarcodeNetwork/raw/master/SI%20Barcoding%20Specimen%20Spreadsheet.xlsx>`_.) If you would like to personalize the columns included in your template, you also have the option to generate it directly through GeOMe, by following `this link <https://geome-db.org/workbench/template>`_.
+The SI Barcode Network GeOMe FIMS spreadsheet template is hosted on the SI Barcode Network GitHub page at https://github.com/SIBarcodeNetwork/SIBarcodeNetwork, called "SI Barcoding Specimen Spreadsheet.xlsx". (The direct link to download it is `here <https://github.com/SIBarcodeNetwork/SIBarcodeNetwork/raw/master/SI%20Barcoding%20Specimen%20Spreadsheet.xlsx>`_.) If you would like to personalize the columns included in your template, you will need to create a new account on GeOMe and then you will have the option to generate a customized template by following `this link <https://geome-db.org/workbench/template>`_.
 
 .. figure:: /images/spreadsheet_on_github.png
   :align: center
@@ -25,7 +25,7 @@ There are four tabs in the spreadsheet: Instructions, Samples, Samples_Fields, a
 Source of columns
 ~~~~~~~~~~~~~~~~~
 
-The GeOMe FIMS, which we will be using to store and interface with specimen data, allows projects to completely customize the fields that they use -- along with the validation rules that accompany those fields. Since the goal of the SI Barcode Network is to get BARCODE keyword sequences into GenBank, we limited the specimen fields to those that will end up in a GenBank record. However, we also based our fields on `DarwinCore <http://rs.tdwg.org/dwc/terms/#dcindex>`_ fields, which you should notice in the field names. Our subset of fields acts as a bridge between permanent collection databases (like `NMNH EMu <http://collections.nmnh.si.edu/search/>`_) and GenBank.
+The GeOMe FIMS, which we will be using to store and interface with specimen data, allows projects to completely customize the fields that they use -- along with the validation rules that accompany those fields. Since the goal of the SI Barcode Network is to get high quality sequences onto GenBank, we limited the specimen fields to those that will end up in a GenBank record. However, we also based our fields on `DarwinCore <http://rs.tdwg.org/dwc/terms/#dcindex>`_ fields, which you should notice in the field names. Our subset of fields acts as a bridge between permanent collection databases (like `NMNH EMu <http://collections.nmnh.si.edu/search/>`_) and GenBank.
 
 Column colors
 ~~~~~~~~~~~~~
@@ -41,10 +41,10 @@ materialSampleID
   The collector's specimen number. This number must be unique among the IDs within the expedition. You can use the field number or voucherCatalogNumber, if no field number exists.
 
 institutionCode 
-  This is the acronym for the institution or repository where the specimen voucher is stored. `The Global Registry of Scientific Collections <https://www.gbif.org/grscicoll/institution/search>`_ is a registry for all institution codes, and the institutionCode field will be validated against its list of codes. Vouchers accessioned at the Smithsonian will usually have the institutionCode “USNM”.
+  This is the acronym for the institution or repository where the specimen voucher is stored. `The GBIF Registry of Scientific Collections <https://www.gbif.org/grscicoll/institution/search>`_ is a registry for all institution codes, and the institutionCode field will be validated against its list of codes. Vouchers accessioned at the Smithsonian will usually have the institutionCode “USNM”.
 
 collectionCode    
-  The name, acronym, coden, or initialism identifying the collection or data set from which the record was derived. This collectionCode should be registered, along with the institutionCode, in `The Global Registry of Scientific Collections <https://www.gbif.org/grscicoll/institution/search>`_.
+  The name, acronym, coden, or initialism identifying the collection or data set from which the record was derived. This collectionCode should be registered, along with the institutionCode, in `The GBIF Registry of Scientific Collections <https://www.gbif.org/grscicoll/institution/search>`_.
 
 catalogNumber          
   An identifier (preferably unique) for the record within the data set or collection.
