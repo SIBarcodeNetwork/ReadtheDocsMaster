@@ -1,3 +1,5 @@
+.. _mark_pass-link:
+
 Marking assemblies as Pass or Fail in LIMS
 ==========================================
 
