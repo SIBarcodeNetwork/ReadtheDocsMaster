@@ -1,3 +1,5 @@
+.. _rapid_data_release-link:
+
 Rapid Data Release Policy
 =========================
 
