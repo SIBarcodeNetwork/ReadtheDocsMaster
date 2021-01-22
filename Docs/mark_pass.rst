@@ -1,5 +1,9 @@
+.. _mark_pass-link:
+
 Marking assemblies as Pass or Fail in LIMS
 ==========================================
+
+Only mark assemblies as pass or fail, as that will push the pass or fail data to both cycle sequencing plates in the LIMS. Passing or failing from consensus sequences will require you to set read direction and then will only mark as pass or fail on one of the Cycle sequencing plates in LIMS (whichever read direction you chose).
 
 Using the "Mark as Pass in LIMS" tool
 -------------------------------------

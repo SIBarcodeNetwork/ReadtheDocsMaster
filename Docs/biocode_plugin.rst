@@ -1,3 +1,5 @@
+.. _biocode_plugin-link:
+
 Connecting with the Geneious Biocode Plugin
 ===========================================
 

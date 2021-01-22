@@ -143,9 +143,13 @@ Adding a BioProject ID to sequence records that are already published to GenBank
 Adding a BioProject to new GenBank submissions
 ----------------------------------------------
 
-Unfortunately, out of the several different methods of publishing sequences to GenBank (BankIt, Sequin, tbl2asn, Geneious, and BOLD), only tbl2asn has a straightforward method for adding a BioProject ID to a batch submission.
+Unfortunately, out of the several different methods of publishing sequences to GenBank (Genbank Submission Portal, BankIt, Sequin, tbl2asn, Geneious, and BOLD), only tbl2asn has a straightforward method for adding a BioProject ID to a batch submission.
+
+Because of this, we recommend submitting the sequences first and treating the sequences as "existing Genbank records" (see above).
 
 We are currently working with the Geneious developers to have BioProjects added to the :ref:`gb_submission_details` section of the GenBank Upload Plugin.
+
+If submitting through tbl2asn, follow below instructions for bioproject addition.
 
 tbl2asn
 ~~~~~~~
