@@ -32,7 +32,7 @@ Source information
 
 The GenBank "source modifiers" are any of the fields in a GenBank record that pertain to the Specimen metadata portion of the Barcode Data Standard. To make a change to one or more of these fields, you will need to prepare a spreadsheet table with Accession in the first column, and all of the fields you want to change in the subsequent columns.
 
-TO DO: Add instructions for using genetic_collections to download a source table to start with.
+Coming Soon: Add instructions for using genetic_collections to download a source table to start with.
 
 Save the spreadsheet as a tab-separated text file (.tsv), and attach to an email to gb-admin@ncbi.nlm.nih.gov with the following text:
   
