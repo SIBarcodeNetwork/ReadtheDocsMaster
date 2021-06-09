@@ -88,15 +88,7 @@ After the initial extraction plate has been created in the LIMS, you can easily 
    :scale: 50%
    
 •	As before, a new window will open displaying a plate map, except this time most of the data should already be populated. Go ahead and give your working stock a name, following the LIMS naming conventions. 
-•	Click on Bulk Edit to see the data that was pulled in from the extraction plate. You will notice that the Extraction Barcodes column is empty. We need to tell the LIMS we are using DNA from this same extraction. 
-•	Click on the Tools drop-down and select Import Extraction Barcodes from FIMS. Make sure the Extraction Barcode Field says tissueOtherCatalogNumbers and press OK. 
-•	At this point you should see the error screen below:
-
-.. figure:: /images/extractions_already_exist.png
-   :align: center
-   :scale: 50%
-
-•	Click the Create aliquots button.
+•	Click on Bulk Edit to see the data that was pulled in from the extraction plate. You will notice that the Extraction Barcodes column is empty. Leave it empty. Re-entering Extraction Barcodes here will remove them from the parent plate. The working stock plate extractions are linked to the original extraction by the Parent Extraction ID.
 •	Click Save to save your working stock plate to the LIMS.
 
 Additional Information:
@@ -112,7 +104,7 @@ Under the "Tools" menu within the "Bulk Edit" window there are a number of optio
 	* The "Get Tissue ID's from archive plate" option allows the extraction plate to be filled with extraction IDs from the FIMS data source.
 	* "Import Extraction Barcodes from File" allows the extraction barcode values to be directly imported from the output file of the scanner if 2D well barcodes are being used.
 	* "Import Extraction Barcodes from FIMS" allows the extraction barcode values to be directly imported from the FIMS.
-	* "Fetch extractions from barcodes" is used during "cherry picking" to populate newly reconstituted plates from prior plate locations.
+	* "Fetch extractions from barcodes" is used during "cherry picking" to populate newly reconstituted plates from prior plate locations if physically moving the extractions from original plate to cherry picked plate. Can also use to pull sample info if cherry picked plate is aliquoted, but remember to delete the extraction barcodes before saving cherry picked plate so the barcodes stay in their original locations in LIMS.
 	* "Generate Extraction IDs" automatically generates appropriate extraction IDs based on the tissue sample IDs.
 
 More information on editing wells in the plate:
