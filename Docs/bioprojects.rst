@@ -1,3 +1,5 @@
+.. _Bioprojects-link:
+
 Organizing GenBank Records with BioProjects
 ===========================================
 
