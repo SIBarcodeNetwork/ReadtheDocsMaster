@@ -9,10 +9,16 @@ Updates
 -------
 
 .. image:: https://img.shields.io/badge/Biocode%20Plugin%20Version-3.0.14-green.svg
-    :target: https://github.com/biocodellc/biocode-lims/releases/download/v3.0.14/BiocodePlugin_3_0_14.gplugin
+    :target: https://github.com/biocodellc/biocode-lims/releases/download/v3.0.15/BiocodePlugin_3_0_15.gplugin
 
 .. image:: https://img.shields.io/badge/GenBank%20Upload%20Plugin%20Version-1.6.7-green.svg
-    :target: http://assets.geneious.com/plugins/GenbankSubmission_1_6_7.gplugin
+    :target: https://assets.geneious.com/plugins/GenbankSubmission_1_6_8.gplugin
+
+24 February, 2021
+	The Biocode plugin was updated to fix issues with large tissue queries against GEOME failing. 
+
+15 February, 2021
+	The Genbank submission plugin was updated to version 1.6.8, to include substitution of disallowed characters with hyphens to prevent submission failure, and an improved error message regarding non-ASCII characters.
 
 1 October, 2020
 	The Biocode plugin was updated to fix an issue with detecting duplicate column names when annotating with FIMS data.
