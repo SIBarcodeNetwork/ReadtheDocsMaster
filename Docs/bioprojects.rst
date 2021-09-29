@@ -1,3 +1,5 @@
+.. _Bioprojects-link:
+
 Organizing GenBank Records with BioProjects
 ===========================================
 
@@ -143,13 +145,14 @@ Adding a BioProject ID to sequence records that are already published to GenBank
 Adding a BioProject to new GenBank submissions
 ----------------------------------------------
 
-Unfortunately, out of the several different methods of publishing sequences to GenBank (Genbank Submission Portal, BankIt, Sequin, tbl2asn, Geneious, and BOLD), only tbl2asn has a straightforward method for adding a BioProject ID to a batch submission.
+Out of the several different methods of publishing sequences to GenBank (Genbank Submission Portal, BankIt, Sequin, tbl2asn, Geneious, and BOLD), only the Genbank Submission Portal and tbl2asn have methods for adding a BioProject ID to a batch submission.
 
-Because of this, we recommend submitting the sequences first and treating the sequences as "existing Genbank records" (see above).
+If submitting C01 or rDNA through the Genbank Submission Portal, when creating the source modifier table for upload to the portal, simply add a column containing the PRNJ bioproject number with the column header "Bioproject" (without the quotations).
 
-We are currently working with the Geneious developers to have BioProjects added to the :ref:`gb_submission_details` section of the GenBank Upload Plugin.
+If submitting through tbl2asn, follow instructions in the section below for bioproject addition.
 
-If submitting through tbl2asn, follow below instructions for bioproject addition.
+We are working with the Geneious developers to have BioProjects added to the :ref:`gb_submission_details` section of the Geneious Prime GenBank Upload Plugin. Currently, if submitting barcodes through the Geneious Prime Genbank Upload Plugin, we recommend submitting the sequences first and treating the sequences as "existing Genbank records" (see above).
+
 
 tbl2asn
 ~~~~~~~

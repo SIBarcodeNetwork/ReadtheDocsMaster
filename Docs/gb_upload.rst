@@ -1,5 +1,12 @@
+**Notice: Below protocol outdated. Updated Genbank Upload Protocols coming soon.**
+===============
+Please contact redmondn@si.edu for further information at this time.
+
+
+
 GenBank Upload
 ==============
+
 
 Installing the Geneious Plug-in
 -------------------------------
