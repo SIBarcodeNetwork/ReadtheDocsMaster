@@ -3,7 +3,9 @@
 Marking assemblies as Pass or Fail in LIMS
 ==========================================
 
-Only mark assemblies as pass or fail, as that will push the pass or fail data to both cycle sequencing plates in the LIMS. Passing or failing from consensus sequences will require you to set read direction and then will only mark as pass or fail on one of the Cycle sequencing plates in LIMS (whichever read direction you chose).
+Only mark assemblies as pass or fail, as that will push the pass or fail data to both cycle sequencing plates in the LIMS. Passing or failing from consensus sequences will require setting read direction and then will only mark as pass or fail on one of the Cycle sequencing plates in LIMS (whichever read direction was chosen).
+
+It is recommended that assemblies are re-annotated with FIMS/LIMS data prior to marking as pass or fail, to ensure the most current data is associated with the sequence in LIMS. See :ref:`Annotating_FIMS_LIMS-link`page for instruction on how to re-annotate assemblies.
 
 Using the "Mark as Pass in LIMS" tool
 -------------------------------------
