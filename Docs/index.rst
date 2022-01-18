@@ -71,6 +71,7 @@ Updates
 	downloading_traces
 	assembling_contigs
 	sequence_qc
+	batch_rename
 	mark_pass
 
 .. toctree::
