@@ -72,6 +72,7 @@ Updates
 	assembling_contigs
 	sequence_qc
 	batch_rename
+	annotating_fims_lims
 	mark_pass
 
 .. toctree::
