@@ -51,7 +51,7 @@ Validation and loading
 Can I add a few records to an existing expedition by just uploading those new records?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-YES! As long as you do not tick the “Reload Data” option, GeOMe will add new data to existing data. Just make sure you select the correct expedition to add the records to.
+YES! As long as you do not tick the “Replace expedition data” option, GeOMe will add new data to existing data. Just make sure you select the correct expedition to add the records to.
 
 Check that the spreadsheet was successfully uploaded
 ----------------------------------------------------

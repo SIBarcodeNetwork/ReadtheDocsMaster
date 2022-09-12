@@ -8,11 +8,14 @@ This documentation site describes the best practices for the informatics pipelin
 Updates
 -------
 
-.. image:: https://img.shields.io/badge/Biocode%20Plugin%20Version-3.0.14-green.svg
-    :target: https://github.com/biocodellc/biocode-lims/releases/download/v3.0.15/BiocodePlugin_3_0_15.gplugin
+.. image:: https://img.shields.io/badge/Biocode%20Plugin%20Version-3.0.16-green.svg
+    :target: https://github.com/biocodellc/biocode-lims/releases/download/v3.0.16/BiocodePlugin_3_0_16.gplugin
 
-.. image:: https://img.shields.io/badge/GenBank%20Upload%20Plugin%20Version-1.6.7-green.svg
+.. image:: https://img.shields.io/badge/GenBank%20Upload%20Plugin%20Version-1.6.8-green.svg
     :target: https://assets.geneious.com/plugins/GenbankSubmission_1_6_8.gplugin
+
+24 August, 2022
+	Updated contact email for asking for help. Adding "tentative", in addition to "passed" or "failed". Tentative to be used in cases where we may still need to check taxonomy but sequence is OK. Note that you should not be able to submit as "passed" while in "tentative".
 
 24 February, 2021
 	The Biocode plugin was updated to fix issues with large tissue queries against GEOME failing. 
@@ -71,6 +74,8 @@ Updates
 	downloading_traces
 	assembling_contigs
 	sequence_qc
+	batch_rename
+	annotating_fims_lims
 	mark_pass
 
 .. toctree::
