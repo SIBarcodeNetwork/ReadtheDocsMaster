@@ -82,7 +82,8 @@ Updates
 	:maxdepth: 2
 	:caption: Data Publication
 
-	gb_upload
+	gb_upload_sub_portal
+	gb_upload_Geneious_plugin
 	noncoding_annotation
 	rapid_data_release
 	gb_update
