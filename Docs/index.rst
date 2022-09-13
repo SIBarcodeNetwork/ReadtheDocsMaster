@@ -69,7 +69,7 @@ Updates
 	
 .. toctree::
 	:maxdepth: 2
-	:caption: Sequence Assembly and Publication
+	:caption: Sequence Assembly and Quality Control
 
 	downloading_traces
 	assembling_contigs
