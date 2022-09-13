@@ -19,7 +19,7 @@ This function is mostly used by SIBN to change the local name of documents such 
   :target: /en/latest/_images/geneious_batch_rename2.png
 
 4. In the “Aspect to Rename” dropdown menu, select “Fields of Document”. 
-  * Note - if renaming assembly or alignment documents and “Sequences in alignment” is selected here, the documents that will be changed are the .abi files or sequences that make up the assembly or alignment, rather than the assembly or alignment itself. 
+  * Note - if renaming assembly or alignment documents and “Sequences in alignment” is selected here, the documents that will be changed are the trace files or sequences that make up the assembly or alignment, rather than the assembly or alignment itself. 
 
 5. In the “Field to rename” dropdown menu, select “Name”. 
 
