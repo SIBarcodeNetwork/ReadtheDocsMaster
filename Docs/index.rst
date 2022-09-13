@@ -15,7 +15,7 @@ Updates
     :target: https://assets.geneious.com/plugins/GenbankSubmission_1_6_8.gplugin
 
 24 August, 2022
-	Updated contact email for asking for help. Adding "tentative", in addition to "passed" or "failed". Tentative to be used in cases where we may still need to check taxonomy but sequence is OK. Note that you should not be able to submit as "passed" while in "tentative".
+	Updated contact email for asking for help. Adding "tentative", in addition to "passed" or "failed". Tentative to be used in cases where we may still need to check taxonomy but sequence is OK. Note that you should not be able to mark as "submitted" while in "tentative".
 
 24 February, 2021
 	The Biocode plugin was updated to fix issues with large tissue queries against GEOME failing. 
@@ -77,6 +77,8 @@ Updates
 	batch_rename
 	annotating_fims_lims
 	mark_pass
+	download_fasta
+	download_metadata
 
 .. toctree::
 	:maxdepth: 2
