@@ -25,11 +25,11 @@ This function is mostly used by SIBN to change the local name of documents such 
 
 6. Below the “Rename Method” box, there are three methods listed for renaming the documents.
 
-  * If using “Replace with” it’s possible to choose up to three different FIMS data fields  from the dropdown menus such as materialSampleID, voucherCatalogNumber, tissuePlate, tissueWell. 
+  * If using “Replace with” it’s possible to choose up to three different FIMS data fields from the dropdown menus such as materialSampleID, voucherCatalogNumber, tissuePlate, tissueWell. For example:
 
     * Documents often need to be named with materialSampleID, and/or tissuePlate and tissueWell fields prior to performing the Biocode Annotate with FIMS/LIMS functions.
 
-    * Consensus sequence documents need to be named with voucherCatalogNumber when downloading for import to Genbank via the NCBI Submission Portal.
+    * Sequence documents need to be named with voucherCatalogNumber when downloading for import to Genbank via the NCBI Submission Portal.
 
   * There is also an option to “Add” additional text either to the start or end of the Name. 
 
