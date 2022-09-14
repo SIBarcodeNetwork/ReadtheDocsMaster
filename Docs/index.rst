@@ -77,8 +77,8 @@ Updates
 	batch_rename
 	annotating_fims_lims
 	mark_pass
-	downloading_fasta
-	downloading_metadata
+	exporting_fasta
+	exporting_metadata
 
 .. toctree::
 	:maxdepth: 2
