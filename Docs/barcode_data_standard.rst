@@ -4,7 +4,9 @@ Barcode Data Standard
 Introduction
 ------------
 
-The Barcode Data Standard was established by the Consortium of the Barcode of Life soon after the first scientific paper by Dr. Paul Hebert was published that proposed the method of DNA Barcoding. You can view and download the official data standard document `here <https://github.com/SIBarcodeNetwork/SIBarcodeNetwork/blob/master/BARCODE%20Data%20Standards%20v2.4.pdf>`_.
+The Barcode Data Standard was established by the Consortium of the Barcode of Life soon after the first scientific paper by Dr. Paul Hebert was published that proposed the method of DNA Barcoding. You can view and download the official data standard document `here <https://github.com/SIBarcodeNetwork/SIBarcodeNetwork/blob/master/BARCODE%20Data%20Standards%20v2.4.pdf>`_. 
+
+	Please note that, while the GenBank keyword BARCODE is no longer actively assigned by NCBI, this document is still referred to in the attempt to create barcode quality sequence records on GenBank. The portions referring to submission of trace files are no longer applicable, as the NCBI Trace Archive has been retired.
 
 The data standard consists of several required and strongly recommended elements that have to do either with specimen metadata or sequence data. We will go through each element, give a brief explanation, and try to highlight any commonly seen mistakes.
 
@@ -46,12 +48,6 @@ The data standard consists of several required and strongly recommended elements
 +----------------------------------------+---------------------+------------------------------+
 | | "the names of the forward and        | PCR_primers         | Strongly recommended         |
 | | reverse primers"                     |                     |                              |
-+----------------------------------------+---------------------+------------------------------+
-| | "trace files for the forward and     | NCBI Trace Archive  | Required                     |
-| | reverse sequencing runs              |                     |                              |
-| | submitted to the NCBI Trace          |                     |                              |
-| | Archive or the Ensembl Trace         |                     |                              |
-| | Server"                              |                     |                              |
 +----------------------------------------+---------------------+------------------------------+
 | | "at least 75% contiguous, high       | nucleotide_sequence | Required                     |
 | | quality bases from within the        |                     |                              |
@@ -98,8 +94,10 @@ Specimen Voucher -- Required
 	Not only is a unique identifier required for the specimen voucher, but it also needs to be in a specific format. It is very easy to miss since this format is specified in a footnote, but the data standard document specifies that the voucher specimen identifier should use a triplet structure based on elements of the Darwin Core (DwC) separated by a colon::
 
 		institutionCode:collectionCode:catalogNumber
+		
+	There are also instances where the voucher specimen identifier uses a doublet separated by a colon, such as in the cases of botanical collections in herbaria. For example, the doublet US:12345678 would represent a voucher specimen in the United States National Herbarium, where the code US represents both institution code and collection code.
 
-	To ensure that specimen voucher identifiers are unique and traceable, CBOL maintains the Global Registry of Biorepositories (`GRBio.org <http://grbio.org/>`_), which is a community-curated directory of all biological collections in natural history museums, herbaria, and other biorepositories.
+	To ensure that specimen voucher identifiers are unique and traceable, GBIF maintains the GBIF Registry of Scientific Collections (`GBIF.org <https://www.gbif.org/grscicoll/>`_), which builds on GRSciColl, a comprehensive, community-curated clearinghouse of collections information originally developed by Consortium of the Barcode of Life (CBOL).
 
 Organism -- Required
 	The scientific name of the organism that provided the sequenced genetic material. The text from the data standard reads "the name of a formally described species or a provisional label for an unpublished species", which allows for the exception of allowing for organism names only identified to the Order or Family level. It is recommended by GenBank to give provisional names the values of the specimen voucher for reproducibility reasons.
@@ -116,10 +114,8 @@ Nucleotide Sequence -- Required
 PCR Primer Sequence(s) -- Required
 	This refers to the sequences for the PCR primers used to amplify the DNA Barcode region. All sequences should be presented in 5'>3' order.
 
-	Fill this in with complicated examples of cocktail primers vs. multiple pcr attempts.
-
 PCR Primer Name(s) -- Highly Recommended
-	This refers to the "common names" of the primer sequences. Unfortunately this field is optional, and the vast majority of BARCODE keyword records do not have primer names listed.
+	This refers to the "common names" of the primer sequences. Unfortunately this field is optional, and the vast majority of barcode records do not have primer names listed.
 
-Trace Files -- Required
-	Trace files for the forward and reverse sequencing runs must be submitted to the NCBI Trace Archive or the Ensembl Trace Server.	
+Trace Files -- Optional
+	If desired, trace files for the forward and reverse sequencing runs may be submitted to the NCBI Sequence Read Archive (SRA). See https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/ for further information.	
