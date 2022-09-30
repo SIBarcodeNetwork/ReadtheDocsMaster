@@ -35,7 +35,7 @@ In the *Select Format* window that pops up, choose  “Fasta sequences/alignment
  :align: center
  :target: /en/latest/_images/geneious_select_format.png
 
-After naming the fasta file and selecting the local directory in which to save it, click “Proceed” on the Potential Data Loss notice.
+After naming the fasta file and selecting the local directory in which to save it, click “Proceed” on the *Potential Data Loss* window.
 
 .. figure:: /images/geneious_PotentialDataLoss_fasta.png
  :align: center
