@@ -17,7 +17,7 @@ To export the documents in FASTA format, first select all relevant documents, th
  :align: center
  :target: /en/latest/_images/geneious_export_other_consensus.png
 
-In the Consensus window will pop up, choose settings as appropriate or leave as defaults. Click “OK”.
+In the *Consensus* window that pops up, choose settings as appropriate or leave as defaults. Click “OK”.
 
 .. figure:: /images/geneious_consensus_window.png
  :align: center
@@ -29,7 +29,7 @@ In the Consensus window will pop up, choose settings as appropriate or leave as 
  :align: center
  :target: /en/latest/_images/geneious_export_documents.png
 
-In the Select Format window that pops up, choose  “Fasta sequences/alignment (*.fasta)”. Click “OK”.
+In the *Select Format* window that pops up, choose  “Fasta sequences/alignment (*.fasta)”. Click “OK”.
  
 .. figure:: /images/geneious_select_format.png
  :align: center
@@ -41,7 +41,7 @@ After naming the fasta file and selecting the local directory in which to save i
  :align: center
  :target: /en/latest/_images/geneious_PotentialDataLoss_fasta.png
 
-In the FASTA sequences/alignment Export window that appears, ensure that only the middle option “Replace spaces in sequence name with underscores” is checked. Uncheck the other two options. Choose Uppercase or Lowercase based on user preference. 
+In the *FASTA sequences/alignment Export* window that appears, ensure that only the middle option “Replace spaces in sequence name with underscores” is checked. Uncheck the other two options. Choose Upper case or Lower case based on user preference. 
  
 .. figure:: /images/geneious_fasta_export.png
  :align: center
