@@ -13,7 +13,11 @@ Click on “Log in” in the upper right corner.  NCBI now uses third party acco
  :align: center
  :target: /en/latest/_images/ncbi_submission_portal_sign_in.png
 
-Back on the Submission Portal page, in the search box, type “GenBank” and the link to the GenBank submission tool will appear as one of the suggested options. filename: ncbi_submission_portal_genbank.png
+Back on the Submission Portal page, in the search box, type “GenBank” and the link to the GenBank submission tool will appear as one of the suggested options. 
+
+.. figure:: /images/ncbi_submission_portal_genbank.png
+ :align: center
+ :target: /en/latest/_images/ncbi_submission_portal_genbank.png
 
 On the first page of the GenBank submission process, it is possible to click through the headings on the left of the “What You Should Expect” section to learn more about the requirements. 
 
@@ -31,7 +35,8 @@ Click the “New submission” button.
 
 This will lead to a series of 8 tabs where data will be filled in or uploaded. If there is organism information that is new to NCBI, an extra “Organism” tab will appear later on. The tabs are detailed below.
 
-1. Submission Type Tab:
+
+Submission Type Tab
 ---------------------
 
 .. figure:: /images/gb_subportal_submission_type.png
@@ -40,7 +45,8 @@ This will lead to a series of 8 tabs where data will be filled in or uploaded. I
 
 Choose the region to be submitted and specify any further details as necessary. Specifying a “Submission title” can be useful for organizing submissions within one’s NCBI account. Click “Continue”.
 
-2. Submitter Tab:
+
+Submitter Tab
 ---------------------
 
 .. figure:: /images/gb_subportal_submitter.png
@@ -49,7 +55,8 @@ Choose the region to be submitted and specify any further details as necessary. 
 
 Fill in the submitter’s affiliated institution and contact information. Click “Continue”.
 
-3. Sequencing Technology Tab:
+
+Sequencing Technology Tab
 ---------------------
 
 .. figure:: /images/gb_subportal_seqtech.png
@@ -58,7 +65,8 @@ Fill in the submitter’s affiliated institution and contact information. Click 
  
 Indicate the technology used to obtain sequences and whether sequences are assembled or unassembled. 
 
-4. Sequences Tab: 
+
+Sequences Tab 
 ---------------------
 
 .. figure:: /images/gb_subportal_sequences.png
@@ -71,13 +79,15 @@ Sequences need to be uploaded in a FASTA file. Sequences can be exported in this
 
 Before exporting from Geneious Prime, ensure that local Geneious files have been renamed by the voucherCatalogNumber (the DwC triplet or doublet from GeOMe FIMS) using the :ref:`Batch_rename-link` instructions. 
   
-  Note: This assumes that voucher numbers represented by voucherCatalogNumber are unique across the sequences to be submitted. If this is not the case, another unique value such as tissueBarcode may be used to name sequences with the Batch Rename function.
+.. note::
+        This assumes that voucher numbers represented by voucherCatalogNumber are unique across the sequences to be submitted. If this is not the case, another unique value such as tissueBarcode may be used to name sequences with the Batch Rename function.
     
 Once the FASTA file has been exported from Geneious Prime, follow the instructions on the GenBank Submission Portal to upload. Click “Continue”.
 
 The Submission Portal now processes and validates the uploaded sequences to ensure the correct sequence type has been selected and that there are no stop codons, if submitting COI. If any sequences are flagged, the Portal will create a downloadable report identifying problematic sequences. These need to be fixed before proceeding.
 
-5. Source Information Tab:
+
+Source Information Tab
 --------------------------
 
 .. figure:: /images/gb_subportal_source_information.png
@@ -86,9 +96,11 @@ The Submission Portal now processes and validates the uploaded sequences to ensu
 
 As most SIBN funded projects generate sequence data from DNA derived from accessioned vouchers, indicate that sequence IDs (sequence name from Geneious Prime) represent the Specimen-voucher in the final sequence records in GenBank. If the sequences were named by their voucherCatalogNumber (DwC triplet or doublet), this will allow GenBank to form a link to the collection of origin for the specimen sequenced.
 
- Note: if sequences were named in the previous step by a value other than the DwC voucher number, then indicate that sequence IDs (sequence name from Geneious Prime) represent Isolate. DwC voucher number will need to be added with the rest of the Source Modifiers in the Source Modifiers tab, described below.
+.. note::
+        If sequences were named in the previous step by a value other than the DwC voucher number, then indicate that sequence IDs (sequence name from Geneious Prime) represent Isolate. DwC voucher number will need to be added with the rest of the Source Modifiers in the Source Modifiers tab, described below.
 
-6. Source Modifiers Tab:
+
+Source Modifiers Tab
 --------------------------
 
 .. figure:: /images/gb_subportal_sourcemodifiers.png
@@ -102,7 +114,7 @@ To export the sequence metadata from Geneious Prime, see :ref:`Exporting_metadat
 Once the metadata are exported as a tsv file, in Excel or a text editor, change the column headers to the corresponding GenBank Source Modifier names so the Submission Portal will recognize them. See below table for corresponding names.
 
 +-----------------------------------+------------------------+
-| Field in Geneious Prime           | Genbank modifier field |
+| Field in Geneious Prime           | GenBank modifier field |
 +===================================+========================+
 | voucherCatalogNumber*             | Sequence_ID**          |
 +-----------------------------------+------------------------+
@@ -153,7 +165,8 @@ Upload the tsv file as a tab-delimited table to the GenBank Submission Portal. C
 
 After clicking Continue, the Portal will validate the metadata table and check if the Sequence IDs provided in the table match with the sequence FASTA file. The Portal will note anything it finds problematic such as data formatting or names not in the NCBI taxonomy database. Any data formatting problems will need to be corrected before proceeding.
 
-7. Organism Info Tab:
+
+Organism Info Tab
 -------------------------
 
 Skip to the next tab instructions if no unknown organism names were detected.
@@ -174,7 +187,8 @@ If submitting COI sequences (not seen in this example), also indicate “Mitocho
 
 Once all details for unknown names are filled out, click “Continue”.
 
-8. References Tab:
+
+References Tab
 --------------------
 
 This tab is used to fill in details on who produced the sequences and any relevant publication data. If a publication is or will be associated with the sequences, always include at least one publication author as a sequence author. **Important: Only sequence authors can edit the records in GenBank.**
@@ -187,7 +201,8 @@ For records associated with USNM collections, SIBN strongly recommends that the 
 
 Once publication details are filled in, click “Continue”.
 
-9. Review and submit:
+
+Review and submit
 ------------------------
 
 This last tab provides a review of all data entries both raw and how it will be displayed in the GenBank records. This is the last opportunity to change anything before submitting.

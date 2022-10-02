@@ -15,21 +15,23 @@ Export the sequence metadata by using the Export function in the Geneious Prime 
   :align: center
   :target: /en/latest/_images/geneious_export_documents.png
 
-A “Select Format” window will open, but will contain different options dependent on whether export is from consensus sequence or assembly files.
+A *Select Format* window will open, but will contain different options dependent on whether export is from consensus sequence or assembly files.
 
-.. image:: /images/geneious_tsv_export_consensus.png
+.. figure:: /images/geneious_tsv_export_consensus.png
   :align: center
   :target: /en/latest/_images/geneious_tsv_export_consensus.png 
-*“Select Format” window when exporting from consensus sequence files*
+   
+  The *Select Format* window when exporting from consensus sequence files
 
-.. image:: /images/geneious_tsv_export_assembly.png
+.. figure:: /images/geneious_tsv_export_assembly.png
   :align: center
   :target: /en/latest/_images/ggeneious_tsv_export_assembly.png
-*“Select Format” window when exporting from assembly files*
+   
+  The *Select Format* window when exporting from assembly files
 
 In either case, select “TSV tab-separated table (*.tsv)”.
 
-Next, name the fasta file, select the local directory in which to save it, and click “Proceed” on the Potential Data Loss window.
+Next, name the fasta file, select the local directory in which to save it, and click “Proceed” on the *Potential Data Loss* window.
 
 .. image:: /images/geneious_PotentialDataLoss_tsv.png
   :align: center
@@ -37,10 +39,11 @@ Next, name the fasta file, select the local directory in which to save it, and c
 
 A list of FIMS and LIMS column headers should then appear. FIMS column headers start with a lowercase letter, and LIMS column headers start with an uppercase letter.
 
-.. image:: /images/geneious_column_headers_assembly.png
+.. figure:: /images/geneious_column_headers_assembly.png
   :align: center
   :target: /en/latest/_images/geneious_column_headers_assembly.png
-*“TSV tab-separated Export” window that appears when exporting from assembly files*
+  
+  *TSV tab-separated Export* window that appears when exporting from assembly files
 
 If exporting from assembly files, at the top of the window, ensure that “Documents” is selected. This will not be necessary if exporting from consensus sequence files. 
 
