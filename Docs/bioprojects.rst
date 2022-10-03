@@ -1,7 +1,7 @@
 .. _Bioprojects-link:
 
-Organizing GenBank Records with BioProjects
-===========================================
+NCBI BioProjects
+===============
 
 What is a BioProject?
 ---------------------
