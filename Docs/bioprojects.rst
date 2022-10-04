@@ -89,8 +89,7 @@ To create a BioProject, navigate to the new NCBI Submission Portal: https://subm
 
 8. The submission portal will create an automated Project Title based on previous entries, but this can be overwriten with the title of choice for the project. Give a good description of the project in "Public description", because this will be front-and-center on the BioProject page. Finally, check the "Yes" box to indicate that this project is part of a larger initiative. 
 
-* If this BioProject falls under the SI Barcode Network, then enter "SI Barcode Network" for Initiative description, and "PRJNA81359" for BioProject Accession. 
-* If this BioProject falls under GGI, then enter "Global Genome Initiative" for Initiative description, and "PRJNA384793" for BioProject Accession. 
+* If this BioProject falls under the SI Barcode Network, then enter "SI Barcode Network" for Initiative description, and "PRJNA81359" for BioProject Accession.  
 
 Leave the rest of entries on this page blank.
 
