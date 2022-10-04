@@ -69,6 +69,7 @@ To trim traces:
 A "Trim Ends" window will open and this is essentially the same as the "Trim Options" window described earlier. Proceed with directions as laid out for that window.
 
 To assemble previously trimmed raw traces into a contig:
+
 * Select all of the traces to assemble (and a reference sequence or list if applicable) then click the "Align/Assemble" drop-down button in the Toolbar. 
 * Select "De Novo Assemble". 
 * The "De Novo Assemble" window opens. See previous section for description of the options available in this window. The only difference is noted below.
