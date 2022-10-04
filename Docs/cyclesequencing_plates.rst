@@ -31,7 +31,7 @@ To add a trace file to a single cycle sequencing reaction:
 To bulk upload traces to a cycle sequencing plate or set of reactions:
 
 * Open the appropriate cycle sequencing plate and click "Bulk Add Traces" on the plate’s toolbar. 
-* Click "Browse" to point Geneious to the location of the trace files. Traces are matched to their corresponding cycle sequencing reactions based on components found in the trace file name (i.e., well number or field) along with name delimiters. For example, to attach a sample’s trace file to it’s corresponding well position based on the well position in the trace file name (in this case, well number 3726294_\ **A01**\ _capture.ab1), the user would select the "Well number" button followed by "Match 2nd part of name", "separated by_(Underscore)" in the "Bulk add traces" dialog window.
+* Click "Browse" to point Geneious to the location of the trace files. Traces are matched to their corresponding cycle sequencing reactions based on components found in the trace file name (i.e., well number or field) along with name delimiters. For example, to attach a sample’s trace file to it’s corresponding well position based on the well position in the trace file name (in this case, well number 3726294_ \ **A01**\ _capture.ab1), the user would select the "Well number" button followed by "Match 2nd part of name", "separated by_(Underscore)" in the "Bulk add traces" dialog window.
 
 .. figure:: /images/bulk_add_traces_well.png
   :align: center 
