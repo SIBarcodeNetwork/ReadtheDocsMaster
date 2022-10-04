@@ -1,3 +1,5 @@
+.. _trace_download-link:
+
 Downloading traces from LIMS
 ============================
 
