@@ -215,6 +215,10 @@ This last tab provides a review of all data entries both raw and how it will be 
 
 Once all details are confirmed to be correct, click “Submit”.
 
+
+After Submission
+-----------------
+
 A few days after submission, an email should be received from the NCBI admin team confirming the submission and assigning GenBank accession numbers to each of the sequences. Any issues that may have come up during post-submission processing will also be addressed.
 
-Accession numbers should be reported back to the relevant departmental staff so they can be linked to the genetic sample records in EMu. 
+Accession numbers should be reported back to the relevant departmental staff so they can be linked to the genetic sample records in EMu. If the sequencing project was funded by SIBN, please also report accession numbers back to the SIBN project manager.
