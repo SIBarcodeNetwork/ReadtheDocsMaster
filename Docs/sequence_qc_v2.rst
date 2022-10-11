@@ -15,8 +15,8 @@ Select and open an assembly. The below steps can be done in any order as per use
 
 .. _qc_fails-link:
 
-Noting Failed Sequences
----------------------------
+Failed Sequences
+----------------
 
 Traces that were not assembled due to low quality through the Geneious De Novo Assembler are considered fails. 
 
