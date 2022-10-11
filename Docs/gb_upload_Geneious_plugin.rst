@@ -1,10 +1,7 @@
-GenBank Upload
-==============
+.. _GBplugin-link:
 
-Notice: 2021-09: Below protocol outdated. Updated Genbank Upload Protocols coming soon
----------------------------------------------------------------------------------------------
-
-Please contact redmondn@si.edu for further information at this time.
+GenBank Upload Pipeline 2: Geneious Prime GenBank Submission Tool
+===================================================================
 
 
 Installing the Geneious Plug-in
@@ -12,18 +9,18 @@ Installing the Geneious Plug-in
 
 .. note::
 
-   The most up-to-date GenBank Submission plug-in version is 1.6.7, which can be found `here
+   The most up-to-date GenBank Submission plug-in version is 1.6.8, which can be found `here
    <https://www.geneious.com/plugins/genbank-submission-plugin/>`_.
 
-We will be using Geneious's GenBank Submission plug-in to submit completed sequences to GenBank. The Geneious GenBank Submission Plug-in does all of the hard work of bundling together the various parts of a GenBank submission -- sequence data, specimen metadata, trace files, etc.
+The Geneious Prime’s GenBank Submission plugin tool utilizes BankIT to submit sequences to GenBank for all DNA barcode markers **excluding** metazoan (multicellular) COI or rRNA sequences such as 18S, 16S, 23S, 28S, ITS1, ITS2, etc. which must be submitted using the :ref:`GBsubport-link`.
 
-The easiest way to install the plug-in is within Geneious. Go to Tools > Plugins. In the top "Available Plugins" section, you should see "GenBank Submission" as one of the featured plugins (that's why there is a star next to it).
+The easiest way to install the plugin is within Geneious Prime. Go to Tools > Plugins. A *Preferences* window will pop up. In the top “Available Plugins” section, scroll to the “GenBank Submission” plugin.
 
 .. image:: /images/plugin_list.png
   :align: center
   :target: /en/latest/_images/plugin_list.png  
 
-Click "Install", and Geneious will start downloading it from the Internet. If all goes well, you should see a message telling you that installation was successful, and that a restart will be needed. Restart Geneious.
+Click “Install”, and Geneious Prime will start downloading it from the Internet. If all goes well, a window will pop up to say the installation was successful, and that a restart will be needed. Click “OK” to restart Geneious Prime.
 
 .. image:: /images/install_success.png
   :align: center
@@ -32,11 +29,14 @@ Click "Install", and Geneious will start downloading it from the Internet. If al
 Using the plug-in
 -----------------
 
-Because traces are a required part of a BARCODE keyword record on GenBank, **use the Assembly as the basis of GenBank submission.**
+Please note, it is possible to submit to GenBank from either assemblies or consensus sequences. The directions laid out below will only describe submitting consensus sequences, as that is SIBN best practice.
 
-Organize the assemblies you want to submit, and then go to Tools > Submit to GenBank. Make sure to only select assemblies from one gene at a time. For example, you will have to make a separate submission package for rbcL and matK sequences.
+Before starting a GenBank submission, organize all high quality consensus sequences to be submitted. Make sure the most up-to-date GeOMe FIMS data and Biocode LIMS data are associated with the sequences. To do this, follow the instructions on the :ref:`Annotating_FIMS_LIMS-link` page to annotate the sequence files with the current GeOMe FIMS and Biocode LIMS data.
 
-You will see a window appear that has the following sections. Each section is detailed below.
+Keep consensus sequences from different markers in separate folders as only one marker can be submitted at a time. It is possible to submit a single sample or a batch of samples at once. Also make sure to separate submissions based on organism type so that the correct genetic code can be selected for each submission.
+
+Once ready, go to Tools > Submit to GenBank.  A window will appear that has the following sections. Each section is detailed below.
+
 
 .. image:: /images/genbank_submit_colorcoded_si.png
   :align: center
@@ -47,7 +47,20 @@ You will see a window appear that has the following sections. Each section is de
 Submission Details
 ------------------
 
-The first part of the GenBank submission deals with filling out the contact details and attributions for your sequence submission, as well as choosing how to submit to GenBank. Give the "Submission Name" field a descriptive name for your submission. This entry will not show up in the GenBank record. Also, be sure to select the option of "Save a local file (.tar)".
+The first part of the GenBank submission deals with filling out the contact details and attributions for a sequence submission, as well as choosing submission type and how to submit to GenBank.
+
+Give the “Submission Name” field a descriptive name. This entry will not show up in the GenBank record. 
+
+Choose the Submission Type based on the descriptions in the dropdown menu. This choice is enabled when submitting multiple sequences. In most projects for the SI Barcode Network, the submission type will be “Phylogenetic Study Set”.
+
+Then choose between “Save a local file (.tar)” or “Upload New Submission” to indicate how the submission will be packaged and sent to GenBank. User should choose which option, SIBN does not recommend one over the other.
+
+Differences between the two submission options: 
+
+* Save a local file (.tar) - A zipped file is produced through tbl2asn that must be emailed by the user to the GenBank submission team at gb-sub@ncbi.nlm.nih.gov. 
+
+* Upload New Submission - Sequences will be bundled and sent directly to GenBank through the Geneious Prime BankIt ID. 
+
 
 .. image:: /images/submission_details.png
   :align: center
@@ -60,19 +73,19 @@ Click on the "Edit Publisher Details…" button to bring up the Publisher Detail
   :target: /en/latest/_images/publisher_details.png
 
 Contact Information
-  Fill out the top section with the contact information for your submission. This will be the information that GenBank staff will use to contact the submitter with questions or updates for the submission.
+  Fill out the top section with the contact information for the submission. This will be the information that GenBank staff will use to contact the submitter with questions or updates for the submission.
 
 Affiliation
   Fill out the relevant information for the institution that produced these sequences. The entries in this section will show up in the GenBank record, so be sure to provide accurate and consistent information.
 
 Sequence Authors
-  List as many people who were involved in the production of these sequences as you can think of. Keep in mind that only these people will be authorized to make changes to the GenBank record, if not value is entered for **Consortium**.
+  List any individuals who were involved in the production of these sequences, and particularly anyone who may need to make edits in the future to the GenBank records. Keep in mind that **only those listed on the record** will be authorized to make changes to the GenBank record. If a publication is or will be associated with these sequences, make sure to include at least one publication author as a sequence author.
 
 Consortium
-  This is an optional field that enables people other than the sequence authors to make edits to the record. For SI Barcode Network records, we enter the value "CBOL", which allows anyone from CBOL to make edits to the record. 
+  This is an optional field that links the records to any group that may be associated with the sequence data. However, only individuals who are listed as Sequence Authors have authority to edit GenBank records. 
 
 Publication Status and Title
-  Since the SI Barcode Network attempts to get sequence records published to GenBank as quickly as possible, there will generally not be an associated publication yet. For cases like these, we will select "Unpublished" for the Publication Status, and the project name for Publication Title. This allows for easier searching and filtering, and we will be able to add publications to sequences as they are published.
+  Since the SI Barcode Network attempts to get sequence records published to GenBank as quickly as possible, there will generally not be an associated publication yet. For cases like these, select “Unpublished” for the Publication Status, and the project name for the Publication Title. This allows for easier searching and filtering, and publications can be added to sequences later as they are published.
 
 .. figure:: /images/gb_record_publisher_details.png
   :align: center
@@ -83,7 +96,7 @@ Publication Status and Title
 Fields Mapping
 --------------
 
-The next part of the GenBank submission, will be to map all of the different specimen metadata fields to your GenBank record.
+The next part of the *Submit to GenBank* window will be used to map all of the different specimen metadata fields to the GenBank record.
 
 .. figure:: /images/genbank_fields.png
   :align: center
@@ -92,42 +105,55 @@ The next part of the GenBank submission, will be to map all of the different spe
   This screenshot shows the appropriate FIMS fields to select for each of the GenBank fields.
 
 Project Name
-  Just like the "Submission Name" field at the beginning, this entry won't end up in the GenBank record, but should be a meaningful name used to organize your sequences.
+  Just like the “Submission Name” field at the beginning, this entry won’t end up in the GenBank record, but should be a meaningful name used to organize the sequences.
 
 Country
-  This will become the "country" field in GenBank. It corresponds with the FIMS field "countryOrOcean", which has already been validated to be part of the NCBI country list.
+  This will become the “country” field in GenBank. This corresponds to the field “genbankCountry'' found in the Geneious LIMS data. Within the GeOMe FIMS, this is separated into “Country” and “Locality” fields so that the “Country” value can be validated according to the INSDC country list (http://www.insdc.org/country.html). Geneious should automatically combine these two fields into the field “genbankCountry”, if the sequences are annotated correctly.
 
 Specimen Voucher
-  This will become the "specimen_voucher" field in GenBank. It corresponds with the FIMS field "voucherID", which should be a colon-separated triplet comprised of [institutionCode]:[collectionCode]:[catalogNumber].
+  This will become the “specimen_voucher” field in GenBank. It corresponds with the GeOMe FIMS field “voucherCatalogNumber”, which should be a colon-separated triplet consisting of [institutionCode]:[collectionCode]:[catalogNumber]. If the voucher is from a botanical collection, the voucherCatalogNumber should be a doublet consisting of [herbariumCode]:[catalogNumber] or [collector surname]:[collector number].
 
 Sequence ID
-  This field will not be published as part of the GenBank record, but it is very important because this field will connect the specimen data, sequence data, and trace data. Select the LIMS field "Workflow Name" for this.
+  This field will not be published as part of the GenBank record, but it is very important because this field will connect the specimen data and sequence data. Select the LIMS field “Workflow Name” for this.
 
 Identified by
-  This will become the "identified_by" field in GenBank. It corresponds with the FIMS field "identifiedBy". It is required for the BWP Data Standard, but if it is unknown you can select *None*.
+  This will become the “identified_by” field in GenBank. It corresponds with the GeOMe FIMS field “identifiedBy”. If it is unknown, select *None*.
 
 Collection Date
-  This will become the "collection_date" field in GenBank. We separated this into "yearCollected", "monthCollected", and "dayCollected" fields in FIMS so that each could be validated. However, Geneious *should* automatically combine these fields into one "Collection Date" field if your assemblies are annotated correctly.
+  This will become the “collection_date” field in GenBank. In GeOMe FIMS, this is separated into “yearCollected”, “monthCollected”, and “dayCollected” fields so that each could be validated. However, Geneious *should* automatically combine these fields into one “genbankDate” field if the sequences are annotated correctly.
 
 Collected by
-  This will become the "collected_by" field in GenBank. It corresponds with the FIMS field "collectedBy". It is required for the BWP Data Standard, but if it is unknown you can select *None*.
+  This will become the “collected_by” field in GenBank. It corresponds with the GeOMe FIMS field “collectorList”.  If it is unknown, select *None*.
 
 Organism
-  This field corresponds with the "scientificName" field from FIMS. It will be checked against the NCBI taxonomy database, so make sure that it is already in the database, or be prepared to create a new entry in the database. The name should only be the binomial name (or trinomial if subspecies), and should not include the taxonomic name authority.
+  This field corresponds with the “scientificName" field from GeOMe FIMS. It will be checked against the NCBI taxonomy database, so if it is not already in the database, NCBI staff will create a new entry in the database. This will be the case with any names not identified to species and any morphospecies. The name should only be the binomial name (or trinomial if subspecies), and should not include the taxonomic name authority.
 
 Molecule Type
   This will always be "Genomic DNA" for DNA Barcode records.
 
 Genetic Code
-  For COI barcode sequences, this will be either "Vertebrate Mitochondrial" or "Invertebrate Mitochondrial". *(Make sure to separate vertebrates and invertebrate submissions, as you can only choose one.)* Plant barcode sequences (matK and rbcL) will always be "Baterial" (the full name that Geneious abbreviated is "The Bacterial, Archaeal, and **Plant** Plastid Code").
+  For animal cytB barcode sequences, this will be either “Vertebrate Mitochondrial” or “Invertebrate Mitochondrial”. Plant barcode sequences (matK and rbcL) will always be “Bacterial” (the full name that Geneious abbreviates is “The Bacterial, Archaeal, and **Plant** Plastid Code”). For non-coding sequences, Genetic Code may be left on the default “Standard” and will not be used.
 
 Genetic Location
-  For COI barcode sequences, this will be "Mitochondrion". For plant barcode sequences (matK and rbcL), this will be "Chloroplast".
+  For cytB sequences, this will be “Mitochondrion”. For plant barcode sequences (matK, rbcL, and psbA-trnH - a common secondary barcode region), this will be “Chloroplast”. For any nuclear derived regions, this will be “Genomic”.
+  
+Include Extra Fields
+---------------------
+  
+If there is any extra collection information that should be included in these GenBank records, it can be added by checking the “Include extra fields” option below the set Fields discussed above. Click “Choose” and the *Choose Additional Fields* window should appear with dropdown menu options. 
+
+The most common GenBank field to add from the Field Name menu is “Lat_Lon”. If latitude and longitude data are available in the GeOMe FIMS in separate “decimalLatitude” and “decimalLongitude'' fields, Geneious *should* automatically combine these fields into “genbankLatLng”  which can be found in the "Field Value" dropdown menu.
+  
+.. image:: /images/choose_additional_fields.png
+  :align: center
+  :target: /en/latest/_images/choose_additional_fields.png
+
+Examples of other fields that might be used here from the Field Name dropdown menu are “Host”, “Isolate”, or “Bio_material”, depending on the nature of the samples and metadata.
 
 Gene and CDS Features
 ---------------------
 
-The next step will be to let GenBank know which gene was sequenced. As you can see in the snippet from a sample GenBank record below, this will also provide enough information for Geneious to automatically generate the protein amino acid sequence as well.
+When submitting protein-coding sequences, the next step will be to indicate which protein-coding gene was sequenced. As seen in the snippet from a sample GenBank record below, this will also provide enough information for Geneious to automatically generate the protein amino acid sequence as well.
 
 .. image:: /images/genbank_gene_cds.png
   :align: center
@@ -139,75 +165,44 @@ Since DNA barcodes are not full gene sequences, select "Partial" for both Gene F
   :align: center
   :target: /en/latest/_images/features_from_fields.png
 
-The following table will show the corresponding Gene and CDS Product name for each DNA barcode region. You can copy and paste directly from here.
+The following table shows the corresponding Gene and CDS Product name for various markers commonly used in DNA barcoding. Copy and paste directly from here, or look up existing sequences in GenBank to see the preferred notation for any protein-coding genes not listed here.
 
 ==== =============================================================
 Gene CDS Product
 ==== =============================================================
-COI  cytochrome oxidase subunit 1
 matK maturase K
 rbcL ribulose-1,5-bisphosphate carboxylase/oxygenase large subunit
+CytB cytochrome b
+psbA Photosystem II protein D1 
 ==== =============================================================
 
-Non-BARCODE region sequences
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+However, when creating submission files for sequences that are non-coding, such as the psba-trnH intergenic spacer or pseudogenes, follow the instructions laid out in the :ref:`noncoding_annotation-link`SOP.
 
-If you are creating submission files for sequences for protein-coding regions that are not part of the DNA Barcode Data Standard, you can still use the Gene and CDS Features. However, it is very important that you ensure that "Experimental Strategy" in the Traces tab is set to "TARGETED LOCUS". This is reiterated in the "Traces and Sequencing Primers" section below.
+Primers
+-------
 
-If you are creating submission files for sequences that are NOT protein-coding, follow the instructions laid out in the :ref:`noncoding_annotation-link` special SOP.
-
-Here are the Gene and corresponding CDS Product for common non-barcode regions. If you are unsure, look at existing sequence on GenBank.
-
-==== =============
-Gene CDS Product
-==== =============
-CytB cytochrome b
-==== =============
-
-Consensus and Primers
----------------------
-
-Since we are submitting from an assembly of traces, we need to specify to Geneious how to calculate the sequence to submit to GenBank. Keep the default settings.
-
-.. image:: /images/consensus_defaults.png
-  :align: center
-  :target: /en/latest/_images/consensus_defaults.png
-
-PCR Primers are a required component of the Barcode Data Standard. You will need to tell Geneious which of your fields holds the PCR primer names, and PCR primer sequences. The appropriate fields should be populated automatically.
+When submitting from consensus sequences, the LIMS fields that hold the PCR primer names and PCR primer sequences should be populated automatically. Otherwise, it may be necessary to choose the correct fields from the dropdown menus in Geneious.
 
 .. image:: /images/primer_defaults.png
   :align: center
   :target: /en/latest/_images/primer_defaults.png
 
-Traces and Sequencing Primers
------------------------------
+Confirming Submission
+---------------------
 
-Experimental Strategy
-  Choose "BARCODE" for this field if you are creating a submission for one of the official BARCODE gene regions (COI for animals, or rbcL and matK for plants). If you are submitting another region, then choose "TARGETED LOCUS".
+Once all fields have been appropriately populated in the *Submit to GenBank* window, click “OK” on the lower right of the window. 
 
-Sequencing Strategy
-  Always choose "PCR", even for non BARCODE gene regions.
+A *Submission Warnings* window will appear with three tabs.
 
-Center Project Name
-  Enter the name of the location where the traces were generated.
-
-Base Calling Program
-  If you generated your traces with an Applied Biosystems sequencer (your trace files will all end with ".ab1"), then enter "KB Basecaller". This is the name of the software that is on all ABI sequencers that decides what each base in your trace files are.
-
-DNA Source Type
-  This will always be "Genomic DNA".
-
-Trace End
-  Leave this as the default value of "*Let Geneious determine*"
-
-.. figure:: /images/traces_defaults.png
+.. image:: /images/submission_warnings.png
   :align: center
-  :target: /en/latest/_images/traces_defaults.png
+  :target: /en/latest/_images/submission_warnings.png
 
-  **If your version of the Geneious plug-in does not show this exact set of field options for "Traces", then you need to upgrade to version 1.6.5.**
+Address any warnings seen on the first tab “Validation errors/warnings” if they will result in the submission being rejected.
 
-Just like for the previous "PCR Primers" section, these fields should all be populated by Geneious automatically.
+Warnings concerning date format or collection code (seen here) can generally be ignored. Also view the “GenBank Preview” tab to make sure all features and metadata will appear in GenBank records as expected.
 
-.. image:: /images/sequencing_primers_defaults.png
-  :align: center  
-  :target: /en/latest/_images/sequencing_primers_defaults.png
+If submitting through “Save a local file (.tar)”, once ready, click “Save Tar file” in the lower right corner and email the resulting zipped file to gb-sub@ncbi.nlm.nih.gov.
+
+If submitting directly through “Upload New Submission”, once ready, click "Submit to GenBank" in the lower right corner and a BankIt submission which includes the sequences, annotations, and metadata will be sent to GenBank directly.
+
