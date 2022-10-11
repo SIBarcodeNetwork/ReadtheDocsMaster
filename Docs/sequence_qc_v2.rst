@@ -3,7 +3,7 @@ Quality Control of Assembled Contigs
 
 Here is an overview of the steps for sequence QC in Geneious. See below for more detailed information. 
 
-1.	Create a "fails" folder and move all obvious fails to this folder
+1.	Note "failed" sequences
 2.	Check primers have been removed for all remaining contigs 
 3.	Set the correct genetic code
 4.	Multiple alignments (There may be multiple iterations of this step)
@@ -13,9 +13,17 @@ Here is an overview of the steps for sequence QC in Geneious. See below for more
 Go to the relevant folder in the local directory where the assembled bidirectional contigs are stored.
 Select and open an assembly. The below steps can be done in any order as per user preference.
 
-Obvious Fails
+.. _qc_fails-link:
+
+Noting Failed Sequences
 ---------------------------
-Highlight red (or color preferred by user) and mark as fail
+
+Traces that were not assembled due to low quality through the Geneious De Novo Assembler are considered fails. 
+
+Assemblies that have less than 75% High Quality base calls (Geneious Prime field "% HQ") are also potential fails. As per the Barcode Data Standard, assemblies need to be 75% or over to be considered a high quality barcode sequence. However, the user may want to pursue further quality control on assemblies under 75% and not consider them failed based on importance of the sample.  
+
+Traces and assembled contigs that are considered fails need to be noted in Geneious Prime. Based on user preference, notation can consist of color coding fails (right click on highlighted sequence files and choose "Set Document Color"), or dragging and dropping all fails into a unique folder within the local project Geneious Prime directory. The "Mark as Fail in LIMS..." Biocode Plugin tool should be used on failed sequences. See the :ref:`mark_pass-link` for instructions.
+
 
 
 Manually Editing Assemblies
@@ -92,7 +100,7 @@ BLAST is a useful way to check the taxonomic ID of a questionable barcode sequen
 
 To BLAST the consensus of a single assembly, it is quickest to highlight and copy the consensus sequence from Geneious Prime and enter it into the online BLAST search page on the NCBI website (see http://blast.ncbi.nlm.nih.gov/Blast.cgi). 
 
-Geneious Prime also provides the ability to BLAST several sequences at a time from within the program itself. It is recommended to only BLAST small batches of 15 or less sequences when using this below method. To BLAST entire sequence datasets, see the (LINK to BLAST SOP) instructions to BLAST through the Biocode Plugin or within the Smithsonian High Compyting Cluster "Hydra".
+Geneious Prime also provides the ability to BLAST a single or several sequences at a time from within the program itself, but is more time consuming. It is recommended to only BLAST small batches of 15 or less sequences when using this below method. To BLAST entire sequence datasets at once, see the (LINK to BLAST SOP) instructions to BLAST through the Biocode Plugin or within the Smithsonian High Compyting Cluster "Hydra".
 
 To use BLAST small batches of assemblies, follow these directions:
 
