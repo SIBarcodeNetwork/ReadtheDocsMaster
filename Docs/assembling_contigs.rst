@@ -83,6 +83,14 @@ To assemble previously trimmed raw traces into a contig:
 * The *De Novo Assemble* window opens. See previous section for description of the options available in this window. The only difference is noted below.
 * Since the trace sequences were previously trimmed, select "Use existing trim regions" in the "Trim Before Assembly" part of the window. 
 
+Assembly Report
+-----------------
+The assembly report is found in the assemblies folder, regardless of implementing Option 1 or Option 2. It provides a record of which traces were assembled successfully and which traces failed. The blue hyperlink next to the green checkmark at the top of the report links to all traces that assembled successfully. The blue hyperlink next to the red "X" points the user to all traces that failed to assemble. Click the hyperlink to highlight all trace files that were not assembled. See the :ref:`qc_fails-link` instructions to handle failed traces.
+
+.. figure:: /images/assembly_report.png
+  :align: center 
+  
+
 Additional Information
 ----------------------
 
@@ -99,9 +107,4 @@ On the *Add Annotation* window, choose "Trimmed" for the annotation type and cli
   :align: center
 
 If a trace has multiple trimmed annotations for the same region, the largest trimmed annotation will be used.
-
-The assembly report is found in the assemblies folder, regardless of implementing Option 1 or Option 2. It provides a record of which traces were assembled successfully and which traces failed. The blue hyperlink next to the green checkmark at the top of the report links to all traces that assembled successfully. The blue hyperlink next to the red "X" points the user to all traces that failed to assemble. Click the hyperlink to highlight all trace files that were not assembled. See the (LINK) protocol to handle failed traces.
-
-.. figure:: /images/assembly_report.png
-  :align: center 
 
