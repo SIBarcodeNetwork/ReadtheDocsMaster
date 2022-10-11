@@ -176,7 +176,7 @@ CytB cytochrome b
 psbA Photosystem II protein D1 
 ==== =============================================================
 
-However, when creating submission files for sequences that are non-coding, such as the psba-trnH intergenic spacer or pseudogenes, follow the instructions laid out in the :ref:`noncoding_annotation-link`SOP.
+However, when creating submission files for sequences that are non-coding, such as the psba-trnH intergenic spacer or pseudogenes, follow the :ref:`noncoding_annotation-link` instructions.
 
 Primers
 -------
@@ -205,4 +205,11 @@ Warnings concerning date format or collection code (seen here) can generally be 
 If submitting through “Save a local file (.tar)”, once ready, click “Save Tar file” in the lower right corner and email the resulting zipped file to gb-sub@ncbi.nlm.nih.gov.
 
 If submitting directly through “Upload New Submission”, once ready, click "Submit to GenBank" in the lower right corner and a BankIt submission which includes the sequences, annotations, and metadata will be sent to GenBank directly.
+
+After Submission
+----------------
+
+A few days after submission, an email should be received from the NCBI admin team confirming the submission and assigning GenBank accession numbers to each of the sequences. Any issues that may have come up during post-submission processing will also be addressed.
+
+Accession numbers should be reported back to the relevant departmental staff so they can be linked to the genetic sample records in EMu. If the sequencing project was funded by SIBN, please also report accession numbers back to the SIBN project manager.
 
