@@ -23,16 +23,16 @@ Definitions of each status are as follows:
 
 Only mark **assemblies** as Pass, Tentative, or Fail, as that will push the data to both cycle sequencing plates in the LIMS. Marking the Reaction Status from consensus sequences will require setting read direction and then will only mark a value on one of the Cycle sequencing plates in LIMS (whichever read direction was chosen).
 
-It is recommended that assemblies are updated with current FIMS/LIMS data prior to marking the Reaction Status, to ensure the most current data is associated with the sequence in LIMS. See :ref:`Annotating_FIMS_LIMS-link`page for instruction on how to annotate assemblies.
+It is recommended that assemblies are updated with current FIMS/LIMS data prior to marking the Reaction Status, to ensure the most current data is associated with the sequence in LIMS. See :ref:`Annotating_FIMS_LIMS-link` page for instruction on how to annotate assemblies.
 
-Using the "Mark as Pass in LIMS" tool
--------------------------------------
+Mark as Pass in LIMS
+---------------------
 
 * Log in to the Biocode Plugin (see :ref:`biocode_plugin-link`)
 
 * Select the assemblies to be passed in LIMS.
 
-* Select the 'Biocode' Icon on the Geneious Prime Toolbar and then 'Mark as Pass in LIMS....' from the dropdown menu. A new window will appear.
+* Select the "Biocode" Icon on the Geneious Prime Toolbar and then "Mark as Pass in LIMS...." from the dropdown menu. A new window will appear.
 
 .. figure:: /images/mark_pass.png
   :align: center 
@@ -46,8 +46,8 @@ Using the "Mark as Pass in LIMS" tool
 
 * Leave the rest of the fields as the default selection, and click "OK" for the operation to run.
 
-Using the "Mark as Tentative in LIMS" tool
--------------------------------------
+Mark as Tentative in LIMS
+---------------------------
 
 * Log into the Biocode Plugin.
 
@@ -65,8 +65,8 @@ Using the "Mark as Tentative in LIMS" tool
 
 * Leave the rest of the fields as the default selection, and click "OK" for the operation to run.
   
-Using the "Mark as Fail in LIMS" tool
--------------------------------------
+Mark as Fail in LIMS
+---------------------
 
 Once final sequences have been marked as ‘Passed’ in LIMS, failed sequences should also be marked in LIMS in the same manner:
 
@@ -74,7 +74,7 @@ Once final sequences have been marked as ‘Passed’ in LIMS, failed sequences 
 
 * Select failed assemblies.
 
-* Select the "Biocode" icon on the Geneious Prime Toolbar and then "Mark as FAIL in LIMS...." from the dropdown menu. A new window will appear.
+* Select the "Biocode" icon on the Geneious Prime Toolbar and then "Mark as Fail in LIMS...." from the dropdown menu. A new window will appear.
 
 .. figure:: /images/mark_fail.png
   :align: center 
@@ -88,8 +88,8 @@ Once final sequences have been marked as ‘Passed’ in LIMS, failed sequences 
 
 * Leave the rest of the fields as the default selection, and click "OK" for the operation to run.
   
-Using the "Mark as Submitted in LIMS" tool
--------------------------------------
+Mark as Submitted in LIMS
+---------------------------
 
 Once previously passed sequences have been submitted to a public database, mark these same sequences as submitted in LIMS.
 
