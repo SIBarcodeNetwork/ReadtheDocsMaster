@@ -1,6 +1,5 @@
 .. _Annotating_FIMS_LIMS-link:
 
-
 Annotating with FIMS/LIMS data
 ===============================
 
