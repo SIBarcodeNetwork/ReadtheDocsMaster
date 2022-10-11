@@ -85,7 +85,9 @@ To assemble previously trimmed raw traces into a contig:
 
 Assembly Report
 -----------------
-The assembly report is found in the assemblies folder, regardless of implementing Option 1 or Option 2. It provides a record of which traces were assembled successfully and which traces failed. The blue hyperlink next to the green checkmark at the top of the report links to all traces that assembled successfully. The blue hyperlink next to the red "X" points the user to all traces that failed to assemble. Click the hyperlink to highlight all trace files that were not assembled. See the :ref:`qc_fails-link` instructions to handle failed traces.
+The assembly report is found in the assemblies folder, regardless of implementing Option 1 or Option 2. It provides a record of which traces were assembled successfully and which traces failed. The blue hyperlink next to the green checkmark at the top of the report links to all traces that assembled successfully. 
+
+The blue hyperlink next to the red "X" points the user to all traces that failed to assemble. Click the hyperlink to highlight all trace files that were not assembled.  It is possible that some traces failed to assemble due to assembly parameters that need re-adjusting or incorrect primer annotations. Look through traces that were "not assembled" to check trace quality and ensure that assembly parameters or primer trimming does not need to be adjusted. For those traces that failed simply due to low quality, see the :ref:`qc_fails-link` instructions.
 
 .. figure:: /images/assembly_report.png
   :align: center 
