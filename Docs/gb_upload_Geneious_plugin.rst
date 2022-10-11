@@ -14,7 +14,7 @@ Installing the Geneious Plug-in
 
 The Geneious Prime’s GenBank Submission plugin tool utilizes BankIT to submit sequences to GenBank for all DNA barcode markers **excluding** metazoan (multicellular) COI or rRNA sequences such as 18S, 16S, 23S, 28S, ITS1, ITS2, etc. which must be submitted using the :ref:`GBsubport-link`.
 
-The easiest way to install the plugin is within Geneious Prime. Go to Tools > Plugins. A *Preferences* window will pop up. In the top “Available Plugins” section, scroll to the “GenBank Submission” plugin.
+The easiest way to install the plugin is from the Geneious Prime Menu Bar. Go to Tools > Plugins. A *Preferences* window will pop up. In the top “Available Plugins” section, scroll to the “GenBank Submission” plugin.
 
 .. image:: /images/plugin_list.png
   :align: center
@@ -35,7 +35,7 @@ Before starting a GenBank submission, organize all high quality consensus sequen
 
 Keep consensus sequences from different markers in separate folders as only one marker can be submitted at a time. It is possible to submit a single sample or a batch of samples at once. Also make sure to separate submissions based on organism type so that the correct genetic code can be selected for each submission.
 
-Once ready, go to Tools > Submit to GenBank.  A window will appear that has the following sections. Each section is detailed below.
+Once ready, in the Geneious Prime Menu Bar, go to Tools > Submit to GenBank.  A window will appear that has the following sections. Each section is detailed below.
 
 
 .. image:: /images/genbank_submit_colorcoded_si.png
