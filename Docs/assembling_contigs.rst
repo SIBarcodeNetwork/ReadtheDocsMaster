@@ -53,7 +53,7 @@ Check "Trim Primers" to trim the appropriate PCR primers from each raw trace. Cl
 
 * If using M13 tagged PCR primers, make sure both M13 and untagged primer documents are saved locally. Just select the untagged version of the primer for trimming, since the chance of finding the longer tagged version of the primer is slimmer than finding the untagged version.
 * Select the "Allow Mismatches" option and list "2" - if too high a number is listed here it will "find" the primers at the incorrect locations of the read.
-* For a primer of 15-20 bp in length, select "10" for Minimum Match Length. If too low a number is selected too here it will "find" the primers at incorrect locations of the read.
+* For a primer of 15-20 bp in length, select "10" for Minimum Match Length. If too low a number is selected here it will "find" the primers at incorrect locations of the read.
 
 "Error Probability Limit" value of 0.05 is an appropriate starting value for trimming. This option works by trimming the trace sequence to find the longest possible untrimmed region, which has an overall error probability less than 5%. To trim more aggressively, decrease the limit or manually edit the trim by clicking and dragging either end of the annotation in the Sequence View.
 
@@ -85,12 +85,13 @@ To assemble previously trimmed raw traces into a contig:
 
 Assembly Report
 -----------------
-The assembly report is found in the assemblies folder, regardless of implementing Option 1 or Option 2. It provides a record of which traces were assembled successfully and which traces failed. The blue hyperlink next to the green checkmark at the top of the report links to all traces that assembled successfully. 
-
-The blue hyperlink next to the red "X" points the user to all traces that failed to assemble. Click the hyperlink to highlight all trace files that were not assembled.  It is possible that some traces failed to assemble due to assembly parameters that need re-adjusting or incorrect primer annotations. Look through traces that were "not assembled" to check trace quality and ensure that assembly parameters or primer trimming does not need to be adjusted. For those traces that failed simply due to low quality, see the :ref:`qc_fails-link` instructions.
 
 .. figure:: /images/assembly_report.png
   :align: center 
+  
+The assembly report is found in the assemblies folder, regardless of implementing Option 1 or Option 2. It provides a record of which traces were assembled successfully and which traces failed. The blue hyperlink next to the green checkmark at the top of the report links to all traces that assembled successfully. 
+
+The blue hyperlink next to the red "X" points the user to all traces that failed to assemble. Click the hyperlink to highlight all trace files that were not assembled.  It is possible that some traces failed to assemble due to assembly parameters that need re-adjusting or incorrect primer annotations. Look through traces that were "not assembled" to check trace quality and ensure that assembly parameters or primer trimming does not need to be adjusted. For those traces that failed simply due to low quality, see the :ref:`qc_fails-link` instructions.
   
 
 Additional Information
