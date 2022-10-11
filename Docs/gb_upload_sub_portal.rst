@@ -1,3 +1,5 @@
+.. _GBsubport-link:
+
 GenBank Upload Pipeline 1: GenBank Submission Portal
 =====================================================
 
