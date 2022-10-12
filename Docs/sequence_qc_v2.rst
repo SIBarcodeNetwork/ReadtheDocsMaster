@@ -142,7 +142,7 @@ In the *Tree* window that appears, select options as per user preference or leav
 .. figure:: /images/tree_view.png
   :align: center
 
-The tree file will be located in same local directory as the alignment file. The tree can be viewed in the Document Viewer and various formatting such as Tip Labels can be altered in the Options Panel to the right.
+The tree file will be located in same local directory as the alignment file. The tree can be analyzed in the Document Viewer and various formatting such as Tip Labels can be altered in the Options Panel to the right.
 
 
 BLAST
