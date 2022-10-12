@@ -3,14 +3,14 @@
 Downloading traces from LIMS
 ============================
 
-The Geneious Assembler Module is used to edit, save, export and ultimately publish the sequence data.
+The Geneious Assembler Module is used to edit, save, export and ultimately publish the sequence data. To be able to use the Assembler Module, traces must be imported into the user's local Geneious Prime directory.
 
-You have two options for importing the raw traces to the Assembler Module:
+There are two options for importing the raw traces:
 
 * Downloading the raw traces from the LIMS database
-* Directly importing the traces from disk
+* Directly importing the traces from local disk
 
-The main advantage of the first option is that all of the specimen's associated FIMS and LIMS meta-data are attached to its trace file. Alternatively, if importing traces from disk, none of the specimen's associated FIMS or LIMS meta-data will be attached, and it can prove more difficult to attach this meta-data after import. As a result, you should utilize the first option whenever possible.
+The main advantage of the first option is that all of the specimen's associated FIMS and LIMS metadata are attached to its trace file. Alternatively, if importing traces from disk, none of the specimen's associated FIMS or LIMS metadata will be attached, and it can prove more difficult to attach this metadata after import. As a result, the first option should be utilized whenever possible.
 
 Downloading the raw traces from the LIMS database
 -------------------------------------------------
