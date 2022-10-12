@@ -1,7 +1,7 @@
 Assembling Contigs
 ==================
 
-Once traces have been downloaded and organized within the user's local Geneious directories, the raw data needs to be assembled into bidirectional contigs. The Geneious Assembler Module is used to edit, save, export and ultimately publish the data. 
+Once traces have been downloaded and organized within the user's local Geneious directories, the raw data needs to be assembled into bidirectional contigs.
 
 **Hereafter, these bidirectional contigs will be referred to interchangably as either "contigs" or "assemblies".**
 
