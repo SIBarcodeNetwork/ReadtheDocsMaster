@@ -88,7 +88,7 @@ Checking Sequence Quality with Alignments
 
 After needed edits have been made to individual assemblies, further quality control can be performed in Geneious Prime through alignments of consensus sequences. 
 
-Only align sequences that represent the same marker, i.e. align COI sequences together, rbcL together, etc. It may also be necessary to do multiple alignments of a single marker dataset if the organisms are phylogenetically distant.
+Only align sequences that represent the same marker, i.e. align COI sequences together, rbcL together, etc. It may also be necessary to do multiple alignments of a single marker dataset based on taxonomy if the organisms are phylogenetically distant.
 
 To produce an alignment from assembled contigs:
 
