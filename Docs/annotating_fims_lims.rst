@@ -158,7 +158,7 @@ Once documents to be annotated have materialSampleID in their name, navigate bac
 
 Choose “Use the following plate/well’.
 
-Enter the exact name of **both** the Forward and Reverse Sequencing Plate Names from the LIMS database from which chromatograms were obtained.
+Enter the exact name of **both** the Forward and Reverse Sequencing Plate Names from the LIMS database from which trace files were obtained.
 
 Select materialSampleID as the pivot data field to reconnect the local documents with the LIMS. Select where in the document (consensus sequence or trace file) name materialSampleID will be found and how portions of the document name are separated.
 
