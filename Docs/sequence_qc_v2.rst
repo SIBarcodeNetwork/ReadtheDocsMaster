@@ -2,16 +2,6 @@
 Quality Control of Assembled Contigs
 ====================================
 
-Here is an overview of the steps for sequence QC in Geneious. See below for more detailed information. 
-
-1.	Note "failed" sequences
-2.	Check primers have been removed for all remaining contigs 
-3.	Set the correct genetic code
-4.	Multiple alignments (There may be multiple iterations of this step)
-5.	Trees
-6.      BLAST
-
-
 .. _qc_fails-link:
 
 Failed Sequences
@@ -31,15 +21,23 @@ Manually Editing Assemblies
 
 Continue the quality control process with the remaining assembled contigs.
 
-Click into each assembly individually and scan through to assess whether or not each disagreement or ambiguity (if present) needs a manual edit. A manual edit ONLY needs to made if the user believes the consensus sequences has been called incorrectly based on the chromatogram peaks, or there is an unnecessary gap or base insertion that needs to be deleted. Sometimes it is not apparent that an edit is necessary for a protein coding sequence until the sequence has been translated (see below section). If Geneious Prime calls the consensus sequence correctly, **NO changes** should be made to base calls in individual traces within the assembly.
+Click into each assembly individually and scan through to assess whether or not each disagreement or ambiguity (if present) needs a manual edit. 
+
+A manual edit ONLY needs to made if the user believes the consensus sequences has been called incorrectly based on the chromatogram peaks, or there is an unnecessary gap or base insertion that needs to be deleted. 
   
 .. figure:: /images/manual_edit_ex1.png
   :align: center
-  Example of a called base that can be corrected to avoid an ambiguity in the consensus
+  
+  Example of an incorrectly called base that can be corrected to avoid an ambiguity in the consensus
   
 .. figure:: /images/manual_edit_ex2.png
   :align: center
+ 
   Example of a base deletion that can be corrected to avoid an ambiguity in the consensus
+
+Sometimes it is not apparent that an edit is necessary for a protein coding sequence until the sequence has been translated (see below section). 
+
+If Geneious Prime calls the consensus sequence correctly, **NO changes** should be made to base calls in individual traces within the assembly.
 
 To manually edit an assembly, click the "Allow Editing" button in the toolbar of the "Contig View" tab (seen in above images) and proceed with the edit.
 
@@ -58,7 +56,8 @@ In addition, another window will prompt the application of changes the original 
 .. figure:: /images/assembly_apply_changes_to_originals.png
   :align: center 
 
- Genetic Code for Protein Coding Sequences
+
+Genetic Code for Protein Coding Sequences
 ------------------------------------------
 
 When looking at individual assemblies, check the "Translation" option in the right hand menu of the Display tab on the Geneious Prime Options Panel. 
@@ -82,15 +81,20 @@ Checking Sequence Quality with Alignments
 
 After needed edits have been made to individual assemblies, further quality control can be performed in Geneious Prime through alignments of consensus sequences. 
 
-Analyzing the sequences' alignment will inform the user of any further end trimming needed if the Geneious Prime Assembler neglected to remove primers.
+STEPS AND IMAGES
 
-A sequence alignment is also a more efficient way to ensure that there are no stop codons in protein coding sequences, as the instructions in the above section can also be done with the sequence alignment document. 
+Analyzing the sequences' alignment will inform the user of any further end trimming needed if the Geneious Prime Assembler neglected to remove primers. If this is the case, the assembly in need of trimming will have a consensus sequence be longer than others. 
+
+.. figure:: /images/MAKE IMAGE OF ALIGNMENT TRANSLATION and one seq longer than others
+  :align: center
+ 
+ A sequence alignment is also a more efficient way to ensure that there are no stop codons in protein coding sequences, as the instructions in the above section can also be done with the sequence alignment document. 
 
 Only align sequences that represent the same marker, i.e. align COI sequences together, rbcL together, etc. It may also be necessary to do multiple alignments of a single marker dataset if the organisms are phylogenetically distant. 
 
-STEPS, including setting genetic code
 
-REMOVE BELOW??
+
+**REMOVE BELOW??
 
 Geneious Prime's Translation Alignment program does not always correctly align protein coding sequences in highly variable regions (i.e. regions with homopolymers, etc.). To see a proper alignment in these cases, SIBN recommends the alternate program such an online program called TranslatorX (http://translatorx.co.uk) to create an alignment. 
 
@@ -101,14 +105,8 @@ Geneious Prime's Translation Alignment program does not always correctly align p
 * If the program runs OK and doesn't encounter any errors, it will return an alignment of the nucleotides and also an alignment of the amino acids. You may download the fasta file of both, however, the alignment of amino acids is what will be used for the second quality check. Import the fasta file(s) of the alignments into Geneious for further analyses.
 * Use the alignment to address any issue that you can see i.e. a clear difference between one sequence to the others (Remember this can be possible if the sequences are distantly related but still cross reference the alignment to the individual assemblies). Also, gaps must be assessed and resolved. Major differences in the alignment may also indicate that one or more of the sequences are contaminants (use BLAST to determine this).
 * You may need to repeat the alignment step a number of times as you cross reference the assemblies and make edits. Save the edits, re-export all the consensus sequences and create a new alignment with these new consensus fasta files.
-* If more than a handful of edits need to be made to the consensus sequence, the assembly should be discarded and the sample re-sequenced. You need to make a judgement call on this.
-
-Primer Removal
----------------------------
-
-Geneious may miss some primers with the trim options we provided in the contig assembly step.
-
-In the document table, sort all contigs by consensus length. The desired consensus length can vary depending on which sequencing primers were used but a general rule of thumb is that the COI-5P fragment is ~658 bp. For other barcode markers with less consistent length, use sequence alignments to ascertain if any consensus sequences extend past where the majority of other consensus sequences end. 
+* If more than a handful of edits need to be made to the consensus sequence, the assembly should be discarded and the sample re-sequenced. You need to make a judgement call on this.**
+ 
 
 Trees
 -----
@@ -121,32 +119,35 @@ BLAST is a useful way to check the taxonomic ID of a questionable barcode sequen
 
 To BLAST the consensus of a single assembly, it is quickest to highlight and copy the consensus sequence from Geneious Prime and enter it into the online BLAST search page on the NCBI website (see http://blast.ncbi.nlm.nih.gov/Blast.cgi). 
 
-Geneious Prime also provides the ability to BLAST a single or several sequences at a time from within the program itself, but is more time consuming. It is recommended to only BLAST small batches of 15 or less sequences when using this below method. To BLAST entire sequence datasets at once, see the (LINK to BLAST SOP) instructions to BLAST through the Biocode Plugin or within the Smithsonian High Compyting Cluster "Hydra".
+Geneious Prime also provides the ability to BLAST a single or several sequences at a time from within the program itself, but is more time consuming. It is recommended to only BLAST small batches of 15 or less sequences when using this below method. To BLAST entire sequence datasets at once, see the (LINK to BLAST SOP) instructions to BLAST through the Biocode Plugin or within the Smithsonian Institution High Performance Cluster (SI/HPC) "Hydra".
 
 To use BLAST small batches of assemblies, follow these directions:
 
-* Select assemblies to be compared to the NCBI public DNA sequence database and click on the "BLAST" button in the Geneious Prime Toolbar.
+Select assemblies to be compared to the NCBI public DNA sequence database and click on the "BLAST" button in the Geneious Prime Toolbar.
 
 .. figure:: /images/BLAST_button.png
   :align: center 
 
-* The "BLAST" window appears and has multiple options for consensus, GenBank database, program etc. The selections in the image below are defaults, however, look into the various options and decide what works best for the user's dataset.
+The *BLAST* window appears and has multiple options for consensus, GenBank database, program etc. The selections in the image below are defaults, however, look into the various options and decide what works best for the user's dataset.
 
 .. figure:: /images/BLAST_window.png
   :align: center
 
-* The consensus options allows the user to choose how the program will call the consensus sequence of each assembly.
+The consensus options allows the user to choose how the program will call the consensus sequence of each assembly.
 
 .. figure:: /images/BLAST_consensus_options.png
   :align: center
 
-* Once selections have been made, click "Search" button in the "BLAST" window.
-* The search progress appears in the Document Window. If this is too slow, there is a need to exit the search for whatever reason, click on the "Stop" button in the top left of the Document Window.
-* Once complete, the results are saved in a subfolder (folder name ends with "- (nr_nt) blastn") within the folder containing the query sequence(s). If a batch search was done, there will be further subfolders containing BLAST results for each of the sequences.
-* In the results folder the BLAST results are displayed in the "Hit Table" tab. Various information is included e.g. Hit Accession number, Query coverage, % Pairwise Identity, etc. Click on the manage columns icon found in the upper right of the table to choose what is displayed. Further information is found in the other tabs of the folder (Query Centric View, Annotations, Distances, Info).
+Once selections have been made, click "Search" button in the *BLAST* window.
+
+The search progress appears in the Document Table. If this is too slow, there is a need to exit the search for whatever reason, click on the "Stop" button in the top left of the Document Table.
+
+Once complete, the results are saved in a subfolder (folder name ends with "- (nr_nt) blastn") within the folder containing the query sequence(s). If a batch search was done, there will be further subfolders containing BLAST results for each of the sequences.
+
+In the results folder the BLAST results are displayed in the "Hit Table" tab. Various information is included e.g. Hit Accession number, Query coverage, % Pairwise Identity, etc. Click on the manage columns icon found in the upper right of the table to choose what is displayed. Further information is found in the other tabs of the folder (Query Centric View, Annotations, Distances, Info).
 
 .. figure:: /images/BLAST_hit_table.png
   :align: center
 
-* To get more information about the individual BLAST hits, select one of the hits and the information about that sequence appears in the Document Viewer. Any of the columns can be sorted, rearranged, or resized.
+To get more information about the individual BLAST hits, select one of the hits and the information about that sequence appears in the Document Viewer. Any of the columns can be sorted, rearranged, or resized.
 
