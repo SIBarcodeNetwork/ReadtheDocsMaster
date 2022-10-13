@@ -1,6 +1,6 @@
 .. _Annotating_FIMS_LIMS-link:
 
-Annotating with FIMS/LIMS data
+Annotating with FIMS/LIMS Data
 ===============================
 
 After the QC process has begun on assemblies or consensus sequences locally in Geneious Prime, it is possible that updates were made to the data in the GeOMe FIMS or Biocode LIMS (e.g. taxonomy changes or primer corrections). Also, for various reasons, local files in Geneious can become dissociated from the original LIMS plates or workflows. If a local file does not have a workflow ID listed in the “Workflow Name” Geneious column, it is not associated with its original LIMS plate and needs to be annotated. 
@@ -99,7 +99,7 @@ Click “OK” and Geneious Prime will perform the “Annotate with FIMS Data On
 If the function is successful, updated FIMS data (such as taxonomy) should now be associated with the selected assembly or sequence files.
 
 
-Annotate with FIMS/LIMS data
+Annotate with FIMS/LIMS Data
 -----------------------------
 
 This option should be used when assemblies or consensus sequences need to be re-linked to original LIMS plate or workflows, or if updates have occurred in both the GeOMe FIMS and Biocode LIMS (e.g. updated primer names).
@@ -138,7 +138,7 @@ Click “OK” and Geneious Prime will perform the “Annotate with FIMS/LIMS Da
 If the function is successful, updated FIMS and LIMS data (such as taxonomy, primers, LIMS workflows) should now be associated with the selected assembly or sequence files.
 
 
-Annotate with FIMS/LIMS Data: Option 2: Annotating with cycle sequencing plate/materialSampleID
+Annotate with FIMS/LIMS Data: Option 2: Annotating with Cycle Sequencing Plate/materialSampleID
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 This option is more time consuming as it requires organizing documents by FIMS data field “tissuePlate'' and only one plate can be annotated at a time. 
 
@@ -169,7 +169,7 @@ If the function is successful, updated FIMS and LIMS data (such as taxonomy, pri
 
 .. _relink_trace_files-link:
 
-Re-link trace files to assemblies
+Re-link Trace Files to Assemblies
 ---------------------------------
 
 For various reasons, trace files can become unlinked from the assembly file in Geneious Prime, and this may prevent the “Annotate with FIMS/LIMS Data'' function from working. 
