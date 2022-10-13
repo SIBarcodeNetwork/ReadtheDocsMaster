@@ -15,19 +15,46 @@ The main advantage of the first option is that all of the specimen's associated 
 Downloading the raw traces from the LIMS database
 -------------------------------------------------
 
-* Log in to the Biodcode LIMS plug-in.
+* Log in to the Biodcode LIMS plug-in. See :ref:`biocode_plugin-link` for instructions.
+
+.. figure:: /images/downloading_traces1.png
+  :align: center
+  :target: /en/latest/_images/downloading_traces1.png
+
 * Search for the relevant cycle sequencing plate(s) in the Biocode search window.
+
 * Select the relevant plate(s) from the search results.
-* Click the "Biocode" button in the Toolbar and choose "Download Traces from LIMS" to begin the operation. 
-* A new window will open, prompting you to choose a destination folder in the local directory for the downloaded traces. Either select an existing folder or create a new folder. To generate a new folder, highlight the folder in the Local Directory where you want the new folder to be located, select "New Folder", and provide a name.
-* Once the destination folder has been selected, click "OK "and Geneious will begin downloading the trace files into this folder.
+
+.. figure:: /images/downloading_traces2.png
+  :align: center
+  :target: /en/latest/_images/downloading_traces2.png
+
+* Click the "Biocode" button in the Toolbar and choose "Download Traces from LIMS" to begin the operation. A *Select Destination* window will open.
+
+.. figure:: /images/downloading_traces3.png
+  :align: center
+  :target: /en/latest/_images/downloading_traces3.png
+
+* Choose a destination folder in the local directory for the downloaded traces. Either select an existing folder or create a new folder. To generate a new folder, highlight the folder in the local directory in which the new folder will be located, select "New Folder", and provide a name.
+
+* Once the destination folder has been selected, click "OK" and the *Download traces from LIMS* window will pop up with the names of the previously selected plates automatically filled in.
+
+.. figure:: /images/downloading_traces4.png
+  :align: center
+  :target: /en/latest/_images/downloading_traces4.png 
+
+* Click "OK" on this window to begin downloading the trace files into the designated folder.
+
+.. figure:: /images/downloading_traces5.png
+  :align: center
+  :target: /en/latest/_images/downloading_traces5.png
 
 Alternatively, if the exact names of cycle sequencing plates are known, it is possible to download the plates directly without having to perform a search. To do this:
 
 * Log in to the Biodcode LIMS plug-in.
 * Highlight a destination folder under the Local Directory.
 * Select the "Biocode" button in the Toolbar followed by the "Download Traces from LIMS" option and enter the cycle sequencing plate name manually.
-* If you want to download traces from more than one plate, use the "+" button to add more fields for the additional plate names.
+* If downloading traces from more than one plate, use the "+" button to add more fields for the additional plate names.
 * Once this is complete, click "OK "and Geneious will begin downloading the trace files into this folder.
 
 Directly importing the traces from disk
