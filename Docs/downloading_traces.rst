@@ -22,7 +22,7 @@ Log in to the Biodcode LIMS Plugin. See :ref:`biocode_plugin-link` for instructi
 .. figure:: /images/downloading_traces1.png
   :align: center
 
-Search for the relevant cycle sequencing plate(s) in the Biocode search window.
+Search for the relevant cycle sequencing plate(s) in the Biocode LIMS.
 
 Select the relevant plate(s) from the search results.
 
@@ -36,7 +36,7 @@ Click the "Biocode" button in the Toolbar and choose "Download Traces from LIMS.
 
 Choose a destination folder in the local directory for the downloaded traces. Either select an existing folder or create a new folder. To generate a new folder, highlight the folder in the local directory in which the new folder will be located, select "New Folder", and provide a name.
 
-Once the destination folder has been selected, click "OK" and the *Download traces from LIMS* window will pop up with the names of the previously selected plates automatically filled in.
+Once the destination folder has been selected, click "OK" and the *Download Traces from LIMS* window will pop up with the names of the previously selected plates automatically filled in.
 
 .. figure:: /images/downloading_traces4.png
   :align: center 
@@ -96,6 +96,7 @@ Outside of Geneious Prime, navigate in the computer's file explorer to the trace
 
 Select the trace files to import, and drag them into a selected folder in the local directory of Geneious Prime.
 
+
 Read Direction and Metadata
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -112,7 +113,7 @@ After performing this task, an extra column will be added to the Document Table 
 
 If the forward and reverse traces are in different folders, it's easiest to import all of the traces from one folder, set the read direction for that folder and then import the second folder. 
 
-The Search dialog box or Filter button in the upper right-hand corner of the Geneious window can be used to locate a particular direction of reads based on trace names if both forward and reverse traces are imported in one folder. Both options are highlighted in the above screen shot.
+The Search dialog box or Filter button in the upper right-hand corner of the Geneious Prime window can be used to locate a particular direction of reads based on trace names if both forward and reverse traces are imported in one folder. Both options are highlighted in the above screen shot.
 
 Traces imported into Geneious directly from disk have none of the specimen's associated FIMS or LIMS metadata attached. It is possible to annotate traces with the associated metadata, but this must be done pre-assembly (with the traces) because forward and reverse traces can come from different sequencing plates. 
 
