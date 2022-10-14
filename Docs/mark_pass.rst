@@ -42,7 +42,7 @@ Mark as Pass in LIMS
 
 * Uncheck "Also attach raw traces to sequencing reactions in LIMS".
 
-* Add any relevant notes in the notes field under the user name.
+* Add any relevant notes, such as taxonomy confidence level, in the notes field under the user name. These comments will be stored within the LIMS field "Assembly Notes".
 
 * Leave the rest of the fields as the default selection, and click "OK" for the operation to run.
 
@@ -62,6 +62,8 @@ Mark as Tentative in LIMS
 * Leave the "Remove previous final sequencing results" box checked.
 
 * Uncheck "Also attach raw traces to sequencing reaction in LIMS".
+
+* Add any relevant notes, such as taxonomy confidence level, in the notes field under the user name. These comments will be stored within the LIMS field "Assembly Notes".
 
 * Leave the rest of the fields as the default selection, and click "OK" for the operation to run.
   
