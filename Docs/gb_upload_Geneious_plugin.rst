@@ -148,7 +148,7 @@ The most common GenBank field to add from the Field Name menu is “Lat_Lon”. 
   :align: center
   :target: /en/latest/_images/choose_additional_fields.png
 
-Examples of other fields that might be used here from the Field Name dropdown menu are “Host”, “Isolate”, or “Bio_material”, depending on the nature of the samples and metadata.
+Examples of other fields that might be used here from the Field Name dropdown menu are “Host”, “Isolate”, or “Bio_material”, depending on the nature of the samples and metadata. The "Notes" GenBank field can be added if notes on the taxonomic confidence kept in the LIMS field "Assembly Notes" need to be added to the GenBank records.
 
 Gene and CDS Features
 ---------------------
