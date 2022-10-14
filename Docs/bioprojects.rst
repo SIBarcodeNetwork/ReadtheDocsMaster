@@ -21,17 +21,19 @@ When a GenBank record is added to a BioProject, a link to other records in the s
 .. figure:: /images/bioproject_in_gb_record.png
   :align: center
   :target: /en/latest/_images/bioproject_in_gb_record.png
+  
 
   Here is an example of a BioProject link appearing in a GenBank record (https://www.ncbi.nlm.nih.gov/nuccore/KJ013267)
+  
 
 Creating a BioProject
 ---------------------
 
 A BioProject will need to be created before new GenBank submissions or existing GenBank records can be organized under one.
 
-To create a BioProject, navigate to the new NCBI Submission Portal: https://submit.ncbi.nlm.nih.gov/.
+To create a BioProject, navigate to the NCBI Submission Portal: https://submit.ncbi.nlm.nih.gov/.
 
-1. Click on "Log in". Generally, it is easiest to sign in with a Google or other third party account.
+Click on "Log in". Generally, it is easiest to sign in with a Google or other third party account. An account can also be made with Smithsonian credentials.
 
 .. figure:: /images/ncbi_submission_portal_sign_in.png
   :align: center
@@ -39,7 +41,7 @@ To create a BioProject, navigate to the new NCBI Submission Portal: https://subm
 
   ..
 
-2. After signing in, return to the Submission Portal page. In the search box, type “bioproject” and click on the link “BioProject and BioSample”. This will lead to the bioproject submission tool. 
+After signing in, return to the Submission Portal page. In the search box, type “bioproject” and click on the link “BioProject and BioSample”. This will lead to the BioProject submission tool. 
 
 .. figure:: /images/ncbi_submission_portal_bioproject.png
   :align: center
@@ -47,7 +49,7 @@ To create a BioProject, navigate to the new NCBI Submission Portal: https://subm
 
   ..
 
-3. Feel free to click through the headings on the left of the What You Should Expect section to learn more about the requirements and the submission process. When ready to continue, click the Submit button.
+Feel free to click through the headings on the left of the What You Should Expect section to learn more about the requirements and the submission process. When ready to continue, click the Submit button.
 
 .. figure:: /images/ncbi_submission_bioprojects_and_biosamples.png
   :align: center
@@ -55,7 +57,7 @@ To create a BioProject, navigate to the new NCBI Submission Portal: https://subm
 
   ..
 
-4. Click the New Submission button.
+Click the New Submission button. A series of 7 tabs to be filled out will appear.
 
 .. figure:: /images/ncbi_submission_portal_new_submission.png
   :align: center
@@ -63,99 +65,134 @@ To create a BioProject, navigate to the new NCBI Submission Portal: https://subm
 
   ..
 
-5. Fill out the Submitter page.
+Submitter Tab
+~~~~~~~~~~~~~~
 
 .. figure:: /images/bioproject_submitter_page.png
   :align: center
   :target: /en/latest/_images/bioproject_submitter_page.png
+  
+Fill out the Submitter page. Click "Continue" when ready.
 
   ..
 
-6. Select "Targeted Locus (Loci)" for Project Data Type, and "Multispecies" for Sample scope.
+Project Type Tab
+~~~~~~~~~~~~~~~~~~
 
 .. figure:: /images/bioproject_project_type.png
   :align: center
   :target: /en/latest/_images/bioproject_project_type.png
 
+For traditional DNA barcoding projects, select "Targeted Locus (Loci)" for Project Data Type. For projects that will contain assembled genomes and/or raw reads in the SRA, select "Genome sequencing and assembly" and/or "Raw sequence reads". 
+
+Typically, SIBN funded projects involve sequencing the same markers across many taxonomically different samples, so select "Multispecies" for Sample scope. Click "Continue" when ready.
+
   ..
 
-7. Give a short description for "Multispecies description".
+Target Tab
+~~~~~~~~~~~
 
 .. figure:: /images/bioproject_target.png
   :align: center
-  :target: /en/latest/_images/bioproject_target.png
+  :target: /en/latest/_images/bioproject_target.png 
+
+Give a short description for "Multispecies description".
 
   ..
 
-8. The submission portal will create an automated Project Title based on previous entries, but this can be overwriten with the title of choice for the project. Give a good description of the project in "Public description", because this will be front-and-center on the BioProject page. Finally, check the "Yes" box to indicate that this project is part of a larger initiative. 
-
-* If this BioProject falls under the SI Barcode Network, then enter "SI Barcode Network" for Initiative description, and "PRJNA81359" for BioProject Accession.  
-
-Leave the rest of entries on this page blank.
+General Info Tab
+~~~~~~~~~~~~~~~~~
 
 .. figure:: /images/bioproject_general_info.png
   :align: center
   :target: /en/latest/_images/bioproject_general_info.png
 
-  ..
+The submission portal will create an automated Project Title based on previous entries, but this can be overwriten with the title of choice for the project. 
 
-9. Enter any links to be displayed as part of the bioproject. Add the Consortium and/or Data provider, if needed.
+Give a good description of the project in "Public description", because this will be front-and-center on the BioProject page. 
+
+"Relevance" is not required have a value chosen, but for SIBN funded project this will typically be either "Environmental" or "Evolution".
+
+Finally, check the "Yes" box to indicate that this project is part of a larger initiative. 
+
+* If this BioProject falls under the SI Barcode Network, then enter "SI Barcode Network" for Initiative description, and "PRJNA81359" for BioProject Accession.  
 
 .. figure:: /images/bioproject_links_and_consortium.png
   :align: center
   :target: /en/latest/_images/bioproject_links_and_consortium.png
 
-  ..
-
-10. To enter any grants, click the Add grants link to enter the relevant information. 
+Enter any links to be displayed as part of the BioProject. Add the Consortium and/or Data provider, if applicable.
 
 .. figure:: /images/bioproject_grant_info.png
   :align: center
   :target: /en/latest/_images/bioproject_grant_info.png
 
+To enter any grants, click the Add grants link to enter the relevant information. 
+
+Click "Continue" when ready.
+
   ..
 
-11. Skip the BioSample page.
-12. Add any Publications the project has generated on the Publications page. Don't worry, publications can always be added back in later. 
-13. Finally, the Overview tab will show all of the entries in one place. This will be the last chance to make any changes before submitting.
+Biosample Tab
+~~~~~~~~~~~~~
+
+SIBN funded projects are not required to create biosamples for sequenced samples, so skip the BioSample page.
+
+Publications Tab
+~~~~~~~~~~~~~~~~
+
+Add any Publications the project has generated. Publications can always be added back in later.
+
+Review & Submit Tab
+~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: /images/bioproject_submission_review.png
   :align: center
   :target: /en/latest/_images/bioproject_submission_review.png
+  
+All BioProject data that has been entered is summarized in one place for review. This will be the last chance to make any changes before submitting.
+ 
+ ..
 
-  ..
-
-14. After a few hours or days, NCBI will send an email to note that the Bioproject has been successfully created. Most importantly, they will send the BioProject ID, which can then be added to existing GenBank records or include in new GenBank submissions.
+Shortly afterwards, NCBI will send an email to note that the BioProject has been successfully created. Most importantly, they will send the BioProject ID, which can then be added to existing GenBank records or include in new GenBank submissions.
 
 
-How to update BioProject information
+How to Update BioProject Information
 ------------------------------------
 
-If a BioProject has already been published and entries from the BioProject creation process need to be updated (i.e any typo corrections or perhaps an addition of a publication), email the changes to bioprojecthelp@ncbi.nlm.nih.gov.
+If a BioProject has already been published and data need to be updated (i.e any typo corrections or perhaps an addition of a publication), log into the NCBI Submission Portal, navigate to the "My submissions" tab and it should bring up a list of BioProject submissions.
 
-Adding a BioProject to existing GenBank records
+.. figure:: /images/bioproject_manage_data.png
+  :align: center
+  :target: /en/latest/_images/bioproject_manage_data.png
+
+From the list of processed projects, click "Manage Data" to right in the "Status" column. Most changes can be applied by user directly to the BioProject here.
+
+However, if any changes are needed that cannot be made here, email the update request to bioprojecthelp@ncbi.nlm.nih.gov.
+
+Adding a BioProject to Existing GenBank Records
 -----------------------------------------------
 
 Adding a BioProject ID to sequence records that are already published to GenBank is a manual procedure done through email. There are two options:
 
 Either - Email bioprojecthelp@ncbi.nlm.nih.gov with:
 	
-	* the Bioproject ID in the subject line
-	* the range of GenBank accessions to be added to the Bioproject in the body of the email
+	* the BioProject ID in the subject line
+	* the range of GenBank accessions to be added to the BioProject in the body of the email
 	
-Or - Treat the bioproject as a source modifier update to the GenBank accessions and email gb-admin@ncbi.nlm.nih.gov with:
+Or - Treat the BioProject as a source modifier update to the GenBank accessions and email gb-admin@ncbi.nlm.nih.gov with:
 	* the range of GenBank accessions to be updated in the subject line
-	* attach a text file table that contains the fields "acc. num." and "Bioproject" (without the quotations) 
+	* attach a text file table that contains the fields "Accession" and "Bioproject" (without the quotations) 
 
 
-Adding a BioProject to new GenBank submissions
+Adding a BioProject to New GenBank Submissions
 ----------------------------------------------
 
 Out of the several different methods of publishing sequences to GenBank (Genbank Submission Portal, BankIt, Sequin, tbl2asn, Geneious, and BOLD), only the Genbank Submission Portal and tbl2asn have methods for adding a BioProject ID to a batch submission.
 
-If submitting C01 or rDNA through the Genbank Submission Portal, when creating the source modifier table for upload to the portal, simply add a column containing the bioproject ID with the column header "Bioproject" (without the quotations).
+If submitting metazoan C01 or rDNA through the Genbank Submission Portal, when creating the source modifier table for upload to the portal, simply add a column containing the BioProject ID with the column header "Bioproject" (without the quotations).
 
-If submitting through tbl2asn, follow instructions in the section below for bioproject addition.
+If submitting through tbl2asn, follow instructions in the section below for BioProject addition.
 
 SIBN is working with the Geneious developers to have BioProjects added to the :ref:`gb_submission_details` section of the Geneious Prime GenBank Upload Plugin. Currently, if submitting barcodes through the Geneious Prime Genbank Upload Plugin, submit the sequences first and treat the sequences as "existing Genbank records" (see above).
 
