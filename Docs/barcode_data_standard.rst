@@ -58,10 +58,10 @@ The data standard consists of several required and strongly recommended elements
 
    The full official definitions and descriptions for all of these terms can be found at on the INSDC Feature Table page at http://www.insdc.org/files/feature_table.html#7.3
 
-Specimen metadata
+Specimen Metadata
 -----------------
 
-Collection metadata
+Collection Metadata
 ~~~~~~~~~~~~~~~~~~~
 
 Country -- Required
@@ -85,7 +85,7 @@ Collection Date -- Strongly Recommended
 		* "YYYY-MM": 2016-01
 
 
-Voucher metadata
+Voucher Metadata
 ~~~~~~~~~~~~~~~~
 
 Specimen Voucher -- Required
@@ -105,7 +105,7 @@ Organism -- Required
 Identifier Name -- Highly Recommended
 	The name of the person(s) or institute that identified the specimen. Just as with Collector Name, GenBank does not provide any guidance on how to structure name ("Give Name Surname" vs. "Surname, Given Name") or how to group multiple names, but at least be consistent.
 
-Sequence metadata
+Sequence Metadata
 -----------------
 
 Nucleotide Sequence -- Required
