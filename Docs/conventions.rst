@@ -1,12 +1,12 @@
-Naming conventions
+Naming Conventions
 ==================
 
 .. _conventions-link:
 
-FIMS naming conventions
+FIMS Naming Conventions
 -----------------------
 
-Once tissues are available to be processed in the lab, they are divided into a batch, or batches, of tissues that will be processed together through the full laboratory pipeline (extraction through to sequencing). Each batch is also known as a “plate” and is saved as an “expedition” in the GeOMe FIMS database. These terms will be used repeatedly throughout our instructions for the FIMS and LIMS. Specimen spreadsheets must be completed for each plate of tissues prior to their processing in the lab. 
+Once tissues are available to be processed in the lab, they are divided into a batch, or batches, of tissues that will be processed together through the full laboratory pipeline (extraction through to sequencing). Each batch is also known as a “plate” and is saved as an “expedition” in the GEOME FIMS database. These terms will be used repeatedly throughout our instructions for the FIMS and LIMS. Specimen spreadsheets must be completed for each plate of tissues prior to their processing in the lab. 
 
 The SI Barcode Network creates the expedition name from [Fiscal Year][Project Abbreviation]
 	Example: FY19Orthoptera for the Orthopterans project from Fiscal Year 2019
@@ -34,18 +34,18 @@ This name will also be used in the LIMS system (see below)
 
 .. _lims_conventions-link:
 
-LIMS naming conventions
+LIMS Naming Conventions
 -----------------------
 
 Extraction Plate:
 	*[plate name]_X[extraction attempt number]*
 
-	Example: FY19Orthoptera_P01_X01 for the first extraction plate from the plate/batch of samples in the expedition named “FY19Orthoptera_P01”. If you were to re-extract DNA from all of the samples in FY19Orthoptera_P01, then this second extraction plate would be called FY19Orthoptera_P01_X02.
+	Example: FY19Orthoptera_P01_X01 for the first extraction plate from the plate/batch of samples in the expedition named “FY19Orthoptera_P01”. If DNAs of all samples in FY19Orthoptera_P01 were re-extracted, then the second extraction plate would be called FY19Orthoptera_P01_X02.
 
 Working Stock of Extraction Plate:
 	*[plate name]_X[extraction attempt number][working stock number]*
 
-	Example: FY19Orthoptera_P01_X01_W01 for the first working stock plate created from the FY19Orthoptera_P01_X01 extraction plate. If you were to create a second working stock from this same extraction plate, you would name it FY19Orthoptera_P01_X01_W02.
+	Example: FY19Orthoptera_P01_X01_W01 for the first working stock plate created from the FY19Orthoptera_P01_X01 extraction plate. A second working stock from this same extraction plate would be named FY19Orthoptera_P01_X01_W02.
 
 PCR Plate:
 	*[plate name]_PCR[PCR attempt number]_[fwd primer]_[rev primer]*
