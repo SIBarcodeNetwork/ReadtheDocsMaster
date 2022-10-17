@@ -1,4 +1,4 @@
-Populating the GEOME FIMS Spreadsheet
+Populating the FIMS Spreadsheet
 ===============================
 
 The GEOME FIMS Spreadsheet Template
