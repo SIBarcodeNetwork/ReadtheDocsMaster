@@ -44,7 +44,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'SI Barcode Network Informatics Documentation'
-copyright = u'2016-2022, Niamh Redmond, Mike Trizna, Allison Becker, Julia Steier'
+copyright = u'2016-2022, Niamh Redmond, Julia Steier, Mike Trizna, Allison Becker.'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -199,7 +199,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
   ('index', 'SIBarcodeInformatics.tex', u'SI Barcode Network Informatics Documentation',
-   u'Niamh Redmond, Mike Trizna, Allison Becker, Julia Steier', 'manual'),
+   u'Niamh Redmond, Julia Steier, Mike Trizna, Allison Becker', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -229,7 +229,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'SIBarcodeInformatics', u'SI Barcode Network Informatics Documentation',
-     [u'Niamh Redmond, Mike Trizna, Allison Becker, Julia Steier'], 1)
+     [u'Niamh Redmond, Julia Steier, Mike Trizna, Allison Becker'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -243,7 +243,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   ('index', 'SIBarcodeInformatics', u'SI Barcode Network Informatics Documentation',
-   u'Niamh Redmond, Mike Trizna, Allison Becker, Julia Steier', 'BWPInformatics', 'One line description of project.',
+   u'Niamh Redmond, Julia Steier, Mike Trizna, Allison Becker', 'BWPInformatics', 'One line description of project.',
    'Miscellaneous'),
 ]
 
