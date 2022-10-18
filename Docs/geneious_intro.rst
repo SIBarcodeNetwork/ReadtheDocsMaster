@@ -27,7 +27,15 @@ Click on "Tools" in the Menu bar then select "Plugins" from the dropdown menu. A
 
 .. image:: /images/plugin_install_window.png
 
-One way to install a plugin is to click on the "Install" button for the relevant plugin in the available list, or alternatively, a plugin can be downloaded from an outside source. If this has been done, click on "Install plugin from a gplugin file...".
+To install a plugin:
+
+Click on the "Install" button for the relevant plugin in the available list.
+
+Alternatively, a plugin can be downloaded from an outside source. 
+
+ If this has been done, click on "Install plugin from a gplugin file...", find the gplugin, click "Open" and "Install Plugin". 
+ 
+ Geneious Prime will need to be restarted once plugin installation is complete.
 
 Within this window, plugins can also be uninstalled, checked for version information and updates etc.  
 
@@ -42,13 +50,11 @@ To add a new primer, highlight the destination folder, then in the Menu Bar sele
 
 .. image:: /images/primer_new_create.png
 
-Once a primer has been created, any associated information can be edited. Highlight the primer in the Document Table, and go to the "Info" tab in the Document Viewer. Here,various meta-data such as Gene, Organism, Direction etc. can be added. Fill in as much information as possible for future reference.
+Once a primer has been created, any associated information can be edited. Highlight the primer in the Document Table, and go to the "Info" tab in the Document Viewer. Here, various meta-data such as Gene, Organism, Direction etc. can be added. Fill in as much information as possible for future reference.
 
 .. image:: /images/primer_metadata.png
 
-A very convenient tool is the ability to export and import folders of primers. To export a folder from the Local, simply select the folder and in the Toolbar click on "Export", "Export Fol.. image:: /images/fims_validation_upload.png
-  :align: center
-  :target: /en/latest/_images/fims_validation_upload.pngder...", choose the file destination and name, and click "Save".
+A very convenient tool is the ability to export and import folders of primers. To export a folder from the Local, simply select the folder and in the Toolbar click on "Export", "Export Folder...", choose the file destination and name, and click "Save".
 
 There are two options for importing a folder or file into Geneious Prime:
   
