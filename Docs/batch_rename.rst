@@ -5,7 +5,7 @@ Using the Batch Rename Function
 
 This function is mostly used by SIBN to change the local name of documents such as assemblies, consensus sequences and chromatograms. For more information on other ways this functionality can be used, see the `Geneious Prime website <https://www.geneious.com/prime/>`_.
 
-Highlight documents to be renamed.
+Highlight documents to be *renamed*.
 
 Navigate to the Edit dropdown menu in the Geneious Prime Menu Bar.
 
