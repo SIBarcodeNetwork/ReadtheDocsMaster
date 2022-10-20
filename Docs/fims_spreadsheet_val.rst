@@ -43,7 +43,11 @@ After logging in, go to Workbench and then click Load Data from the menu on the 
 
 Where it says ‘Excel Workbook’, click the Browse button to select the appropriate spreadsheet. 
 	
-If the samples being uploaded are not part of an existing expedition within GEOME, a new one needs to be created. In the Expedition Name drop-down that appears, click the plus sign to the right of the box and enter the SIBN project name. (The same name should go in Expedition Title and Expedition Code.) Remember to follow the :ref:`conventions-link`, and make sure not to repeat a previously created expedition code.
+If the samples being uploaded are not part of an existing expedition within GEOME, a new one needs to be created.
+
+	In the Expedition Name drop-down that appears, click the plus sign to the right of the box and enter the SIBN project name. (The same name should go in Expedition Title and Expedition Code.) 
+	
+	Remember to follow the :ref:`conventions-link`, and make sure not to repeat a previously created expedition code.
 
 .. note::
 
@@ -82,4 +86,13 @@ If the expedition is found, select it and click the Search button.
 
 This will display an HTML table view of the specimen records in this expedition. Look through this to ensure new data was uploaded successfully.
 
-In the upper right, click the download button to download a fresh Excel spreadsheet of this expedition. However, be advised that the wells will be out of order from the original spreadsheet uploaded and any styling (colors, bold/italics, etc.) will not have been retained. Also, the default spreadsheet name is "geome-fims-output.xlsx", so be sure to rename it with the expedition name immediately. This spreadsheet can be edited with any updated information and re-uploaded as the project progresses and updates are available.
+Downloading Data from GEOME
+-----------------------
+
+In the upper right of the HTML table view of the specimen records previously search for, click the download button to download a fresh Excel spreadsheet of this expedition. 
+
+	Be advised that the wells will be out of order from the original spreadsheet uploaded and any styling (colors, bold/italics, etc.) will not have been retained. 
+	
+	Also, the default spreadsheet name is "geome-fims-output.xlsx", so be sure to rename it with the expedition name immediately. 
+
+This spreadsheet can be edited with any updated information and re-uploaded as the project progresses and updates are available.
