@@ -56,7 +56,6 @@ To create an extraction plate:
 
 .. figure:: /images/import_extraction_barcode_FIMS.png
   :align: center
-  :scale: 50 %
 
 * *Option 2:* Select "Import Extraction Barcodes from File" from the "Tools" dropdown menu. Select the file generated from the plate scanner. Ensure that the well order of the plate scan matches the well order displayed in the *Edit Plate* window.
 
@@ -84,7 +83,6 @@ Make sure the box next to “Create plate from existing plate documents” is ti
 
 .. figure:: /images/new_working_stock.png
    :align: center
-   :scale: 50%
    
 As before, a new window will open displaying a plate map, except this time all needed data should already be populated. Give the working stock a name, following the :ref:`lims_conventions-link`. 
 
@@ -135,7 +133,6 @@ The available fields are shown in the left hand pane, and when fields are in the
 
 .. figure:: /images/display_options.png
   :align: center
-  :scale: 50 %
 
 Each well can be color-coded according to a particular field value. To select the field for color-coding use the "Color wells based on" dropdown menu found at bottom of the dialog window. All possible values for that field will be displayed and a color can be assigned to each of the values using the color chart.
 
