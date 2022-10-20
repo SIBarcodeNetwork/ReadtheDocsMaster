@@ -57,7 +57,7 @@ The fully-completed *Biocode Connections* window should look like this:
 
 .. figure:: /images/biocode_connection_details_completed.png
   :align: center
-  :scale: 50 %
+  :scale: 80 %
   :target: /en/latest/_images/biocode_connection_details_completed.png
   
 Click "OK" to log into the Biocode Plugin to be able to utilize the LIMS.
