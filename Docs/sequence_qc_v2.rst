@@ -117,7 +117,7 @@ Analyzing the sequences' alignment will inform the user of any further end trimm
 .. figure:: /images/alignment_view.png
   :align: center
  
- A sequence alignment is also a more efficient way to ensure that there are no stop codons in protein coding sequences, as the instructions in the above section can also be done with the sequence alignment document. See the above image for an example of this.
+A sequence alignment is also a more efficient way to ensure that there are no stop codons in protein coding sequences, as the instructions in the above section can also be done with the sequence alignment document. See the above image for an example of this.
  
 
 Phylogenetic Trees
