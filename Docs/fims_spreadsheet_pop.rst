@@ -132,6 +132,9 @@ tissueCatalogNumber
 boldProcessID
   BOLD Process IDs are unique codes automatically generated for each new record added to a project within the Barcode of Life Database.
   
+boldBIN
+  Add boldBIN provided by BOLD for COI barcodes here. For example: BOLD:AAF0202.
+  
 associatedSequences	
   A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the specimen. GenBank accession numbers can be backfilled into this field. 
   
