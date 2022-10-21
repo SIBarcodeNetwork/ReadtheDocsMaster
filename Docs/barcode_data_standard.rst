@@ -4,11 +4,11 @@ Barcode Data Standard
 Introduction
 ------------
 
-The Barcode Data Standard was established by the Consortium of the Barcode of Life soon after the first scientific paper by Dr. Paul Hebert was published that proposed the method of DNA Barcoding. You can view and download the official data standard document `here <https://github.com/SIBarcodeNetwork/SIBarcodeNetwork/blob/master/BARCODE%20Data%20Standards%20v2.4.pdf>`_. 
+The Barcode Data Standard was established by the Consortium of the Barcode of Life soon after the first scientific paper by Dr. Paul Hebert was published that proposed the method of DNA Barcoding. View and download the official data standard document `here <https://github.com/SIBarcodeNetwork/SIBarcodeNetwork/blob/master/BARCODE%20Data%20Standards%20v2.4.pdf>`_. 
 
 	Please note that, while the GenBank keyword BARCODE is no longer actively assigned by NCBI, this document is still referred to in the attempt to create barcode quality sequence records on GenBank. The portions referring to submission of trace files are no longer applicable, as the NCBI Trace Archive has been retired.
 
-The data standard consists of several required and strongly recommended elements that have to do either with specimen metadata or sequence data. We will go through each element, give a brief explanation, and try to highlight any commonly seen mistakes.
+The data standard consists of several required and strongly recommended elements that have to do either with specimen metadata or sequence data. Below are brief summaries and explanations of each element, and try to highlight any commonly seen mistakes.
 
 +----------------------------------------+---------------------+------------------------------+
 | **Specimen Metadata**                                                                       |
@@ -43,11 +43,11 @@ The data standard consists of several required and strongly recommended elements
 | | barcode" ... "Include the name of    |                     |                              |
 | | the region used"                     |                     |                              |
 +----------------------------------------+---------------------+------------------------------+
-| | "the sequences of all forward and    | PCR_primers         | Required                     |
-| | reverse primers used"                |                     |                              |
+| | "the sequences of all forward and    | Fwd_primer_seq/     | Required                     |
+| | reverse primers used"                | Rev_primer_seq      |                              |
 +----------------------------------------+---------------------+------------------------------+
-| | "the names of the forward and        | PCR_primers         | Strongly recommended         |
-| | reverse primers"                     |                     |                              |
+| | "the names of the forward and        | Fwd_primer_name/    | Strongly recommended         |
+| | reverse primers"                     | Rev_primer_name     |                              |
 +----------------------------------------+---------------------+------------------------------+
 | | "at least 75% contiguous, high       | nucleotide_sequence | Required                     |
 | | quality bases from within the        |                     |                              |
@@ -58,10 +58,10 @@ The data standard consists of several required and strongly recommended elements
 
    The full official definitions and descriptions for all of these terms can be found at on the INSDC Feature Table page at http://www.insdc.org/files/feature_table.html#7.3
 
-Specimen metadata
+Specimen Metadata
 -----------------
 
-Collection metadata
+Collection Metadata
 ~~~~~~~~~~~~~~~~~~~
 
 Country -- Required
@@ -85,7 +85,7 @@ Collection Date -- Strongly Recommended
 		* "YYYY-MM": 2016-01
 
 
-Voucher metadata
+Voucher Metadata
 ~~~~~~~~~~~~~~~~
 
 Specimen Voucher -- Required
@@ -105,7 +105,7 @@ Organism -- Required
 Identifier Name -- Highly Recommended
 	The name of the person(s) or institute that identified the specimen. Just as with Collector Name, GenBank does not provide any guidance on how to structure name ("Give Name Surname" vs. "Surname, Given Name") or how to group multiple names, but at least be consistent.
 
-Sequence metadata
+Sequence Metadata
 -----------------
 
 Nucleotide Sequence -- Required

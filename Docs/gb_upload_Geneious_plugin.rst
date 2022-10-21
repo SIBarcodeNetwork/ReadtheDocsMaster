@@ -14,7 +14,7 @@ Installing the Geneious Plug-in
 
 The Geneious Prime’s GenBank Submission plugin tool utilizes BankIT to submit sequences to GenBank for all DNA barcode markers **excluding** metazoan (multicellular) COI or rRNA sequences such as 18S, 16S, 23S, 28S, ITS1, ITS2, etc. which must be submitted using the :ref:`GBsubport-link`.
 
-The easiest way to install the plugin is within Geneious Prime. Go to Tools > Plugins. A *Preferences* window will pop up. In the top “Available Plugins” section, scroll to the “GenBank Submission” plugin.
+The easiest way to install the plugin is from the Geneious Prime Menu Bar. Go to Tools > Plugins. A *Preferences* window will pop up. In the top “Available Plugins” section, scroll to the “GenBank Submission” plugin.
 
 .. image:: /images/plugin_list.png
   :align: center
@@ -35,7 +35,7 @@ Before starting a GenBank submission, organize all high quality consensus sequen
 
 Keep consensus sequences from different markers in separate folders as only one marker can be submitted at a time. It is possible to submit a single sample or a batch of samples at once. Also make sure to separate submissions based on organism type so that the correct genetic code can be selected for each submission.
 
-Once ready, go to Tools > Submit to GenBank.  A window will appear that has the following sections. Each section is detailed below.
+Once ready, in the Geneious Prime Menu Bar, go to Tools > Submit to GenBank.  A window will appear that has the following sections. Each section is detailed below.
 
 
 .. image:: /images/genbank_submit_colorcoded_si.png
@@ -148,7 +148,7 @@ The most common GenBank field to add from the Field Name menu is “Lat_Lon”. 
   :align: center
   :target: /en/latest/_images/choose_additional_fields.png
 
-Examples of other fields that might be used here from the Field Name dropdown menu are “Host”, “Isolate”, or “Bio_material”, depending on the nature of the samples and metadata.
+Examples of other fields that might be used here from the Field Name dropdown menu are “Host”, “Isolate”, or “Bio_material”, depending on the nature of the samples and metadata. The "Notes" GenBank field can be added if notes on the taxonomic confidence kept in the LIMS field "Assembly Notes" need to be added to the GenBank records.
 
 Gene and CDS Features
 ---------------------
@@ -176,7 +176,7 @@ CytB cytochrome b
 psbA Photosystem II protein D1 
 ==== =============================================================
 
-However, when creating submission files for sequences that are non-coding, such as the psba-trnH intergenic spacer or pseudogenes, follow the instructions laid out in the :ref:`noncoding_annotation-link`SOP.
+However, when creating submission files for sequences that are non-coding, such as the psba-trnH intergenic spacer or pseudogenes, follow the :ref:`noncoding_annotation-link` instructions.
 
 Primers
 -------
@@ -205,4 +205,11 @@ Warnings concerning date format or collection code (seen here) can generally be 
 If submitting through “Save a local file (.tar)”, once ready, click “Save Tar file” in the lower right corner and email the resulting zipped file to gb-sub@ncbi.nlm.nih.gov.
 
 If submitting directly through “Upload New Submission”, once ready, click "Submit to GenBank" in the lower right corner and a BankIt submission which includes the sequences, annotations, and metadata will be sent to GenBank directly.
+
+After Submission
+----------------
+
+A few days after submission, an email should be received from the NCBI admin team confirming the submission and assigning GenBank accession numbers to each of the sequences. Any issues that may have come up during post-submission processing will also be addressed.
+
+Accession numbers should be reported back to the relevant departmental staff so they can be linked to the genetic sample records in EMu. If the sequencing project was funded by SIBN, please also report accession numbers back to the SIBN project manager.
 
