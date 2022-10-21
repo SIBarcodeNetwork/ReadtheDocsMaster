@@ -77,7 +77,9 @@ After DNA extraction, the extracts are typically stored in a 2D matrix plate for
 
 After the initial extraction plate has been created in the LIMS, it is easy to create a working stock from this same plate. 
 
-Search for the recently created extraction plate in the Biocode Plugin. Highlight the plate and click "New Reaction" in the Genenious Prime Toolbar. 
+Search for the recently created extraction plate in the Biocode Plugin. See :ref:`search_for_plates-link` for instructions. 
+
+Highlight the plate and click "New Reaction" in the Genenious Prime Toolbar. 
 
 Make sure the box next to “Create plate from existing plate documents” is ticked, and that the "Type of reaction" is set to "Extraction". Click "OK". 
 
