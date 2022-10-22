@@ -1,27 +1,29 @@
-Generating PCR plates
+Generating PCR Plates
 =====================
 
-Searching for existing plates
+.. _search_for_plates-link:
+
+Searching for Existing Plates
 -----------------------------
 
 Biocode LIMS searches can return four types of documents: 
 
 * Tissue sample documents – Each of these represents a tissue sample in the field database. Tissue documents contain collection and specimen information. 
 * Plate documents – These represent a plate in the LIMS, and can be extraction, PCR, or cycle sequencing plate types.
-* Workflow documents – These contain a set of linked reactions performed on an extraction. 
-* Sequence documents - Sequences entered into the LIMS when traces/assemblies are marked as passed/failed. 
+* Workflow documents – These contain a set of linked reactions performed on an extraction based on the marker sequenced. 
+* Sequence documents - Sequences entered into the LIMS when assembled contigs are marked as pass/tentative/fail (see :ref:`mark_pass-link`). 
  
-Searches are performed by entering text into the search box (found above the Display Table) and will return all matching documents.
+Searches are performed by entering text into the search box (found above the Document Table) and will return all matching documents.
 
 .. figure:: /images/search_window_collapsed.png
   :align: center
 
-Searches are restricted to particular types of documents by deselecting the checked boxes in the search window. To explicitly search against particular fields, click the "More Options" button. Click the "+" and "–" buttons on the right hand side to add or remove fields from the search. Choose the search fields of interest using the left-most drop-down menu and choose the middle drop-down menu to constrain search conditions.
+Searches are restricted to particular types of documents by deselecting the checked boxes in the search window. To explicitly search against particular fields, click the "More Options" button. Click the "+" and "–" buttons on the right hand side to add or remove fields from the search. Choose the search fields of interest using the left-most dropdown menu and choose the middle dropdown menu to constrain search conditions.
 
 .. figure:: /images/search_window_expanded.png
   :align: center
 
-Creating a PCR Plate from an existing extraction plate
+Creating a PCR Plate from an Existing Extraction Plate
 ------------------------------------------------------
 
 From this point forward, generating new plates, whether PCR or cycle sequencing, is very similar to the way the extraction plate is generated. Geneious can use an existing plate as a guide to create a new plate, so that new reactions are appended onto corresponding workflows. To do this, select an existing plate from the Biocode LIMS plug-in Search Results Window found in the Document Table.
@@ -60,7 +62,7 @@ From this point forward, generating new plates, whether PCR or cycle sequencing,
 Additional Information
 ----------------------
 
-Creating thermocycling protocols:
+Creating Thermocycling Protocols:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * To create custom thermocycler profiles, click "View/Add Thermocycles" in the "New PCR" windown.
@@ -80,7 +82,7 @@ Creating thermocycling protocols:
 .. note::
 	It is not possible to modify thermocycler profiles once they are created and profiles can only be deleted if they are not associated with a workflow. As a result, double check any new profiles you create before saving them.
 
-Creating custom PCR cocktails:
+Creating Custom PCR Cocktails:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Click "Edit Cocktails", then click the + button in the dialog, and enter the volumes and concentrations in the fields provided. 
@@ -93,7 +95,7 @@ Creating custom PCR cocktails:
 .. figure:: /images/edit_cocktails.png
   :align: center 
 
-Attaching and scoring gel images:
+Attaching and Scoring Gel Images:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Gel images can be attached to all types of plates at various points in the pipeline. If attaching a gel (or gels) when creating a new plate click the "Attach GEL image" button found in the toolbar of the plate. When attaching a gel or gels to an existing plate, click "GEL images" in the plate's toolbar. In both cases the "Edit Gel Images" window will appear. Click "Add", then browse to find the image or image files to be attached. Geneious will accept images in JPEG, GIF, PNG, and TIFF formats. Notes can also be added each gel image at this point. 
