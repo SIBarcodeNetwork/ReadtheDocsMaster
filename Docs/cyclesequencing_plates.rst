@@ -25,6 +25,7 @@ Like with PCR plates, enter a plate name in the box provided in the *New CycleSe
 
 On the *New CycleSequencing* window, set the thermocycling profile in the same manner as the PCR plate.
 
+Select "Edit All Wells" in the upper right of the *New CycleSequencing* window.
 
 .. figure:: /images/edit_CS_wells.png
   :align: center
@@ -47,7 +48,10 @@ To add a trace file to a single cycle sequencing reaction:
 
 Double click to open the reaction well of interest in the *New CycleSequencing* window.  
 
-In the *Edit Wells* window that now appears, select the "Add/Edit Traces" button. 
+.. figure:: /images/edit_CS_wells_addtrace.png
+  :align: center
+
+In the *Edit Wells* window that now appears, select the "Add/Edit Traces" button. This option only appears if a single well was selected and opened.
 
 .. figure:: /images/add_trace_well.png
   :align: center
