@@ -49,7 +49,7 @@ After signing in, return to the Submission Portal page. In the search box, type 
 
   ..
 
-Feel free to click through the headings on the left of the What You Should Expect section to learn more about the requirements and the submission process. When ready to continue, click the Submit button.
+Feel free to click through the headings on the left of the "What You Should Expect" section to learn more about the requirements and the submission process. When ready to continue, click the Submit button.
 
 .. figure:: /images/ncbi_submission_bioprojects_and_biosamples.png
   :align: center
