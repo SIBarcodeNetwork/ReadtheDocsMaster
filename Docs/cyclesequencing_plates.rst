@@ -4,18 +4,39 @@ Generating Cycle Sequencing Plates
 Creating the Plate
 ------------------
 
-To append new cycle sequencing reactions onto existing PCR workflows, log onto the Biocode Plugin ( and search for corresponding PCR plate. See :ref:`search_for_plates-link` for instructions.
+To append new cycle sequencing reactions onto existing PCR workflows, follow the :ref:`biocode_plugin-link` page to log onto the Biocode Plugin. Search for the corresponding PCR plate.
 
-Highlight the PCR plate that is brought up from the search and click "New Reaction" in the Geneious Primer Toolbar.
+.. figure:: /images/search_results_CS.png
+  :align: center 
+
+Highlight the PCR plate that is brought up from the search and click "New Reaction" in the Geneious Prime Toolbar.
+
+.. figure:: /images/create_CS_plate.png
+  :align: center
 
 Select "Create plate from existing document" in the *New Reaction* window. 
 
-Also select "Cycle Sequencing" from the dropdown menu for "Type of reaction". Click "Ok". A cycle sequencing plate, similar to a PCR plate, will be generated. 
-* Cycle sequencing plates can be edited in the same manner as PCR plates are edited using the *Edit Wells* window.
-* As described for PCR plates, set the thermocycling profile, reaction cocktail, primer, date etc.
-* Also set the direction as Forward or Reverse. 
-* If the cycle sequencing plate contains reactions for both directions, then highlight the forward reaction wells, click on "Edit Selected Wells" and set the direction and primer. Do the same for the remaining reaction wells in the opposite direction.
-* Add any additional comments in the Notes section, including which thermocycler was used, as well as the Full Plate Label field submitted in Signout. (This inlcudes the number Signout assigned to the plate when submitted for sequencing.)
+Also select "Cycle Sequencing" from the dropdown menu for "Type of reaction". Click "OK". A cycle sequencing plate, similar to a PCR plate, will be generated. 
+
+.. figure:: /images/empty_CS_plate.png
+  :align: center
+
+Like with PCR plates, enter a plate name in the box provided in the *New CycleSequencing* window. This name should be descriptive and unique to allow easy and successful searching in the LIMS. (See :ref:`lims_conventions-link`)
+
+On the *New CycleSequencing* window, set the thermocycling profile in the same maner as the PCR plate.
+
+Cycle sequencing plates can be further edited in the same manner as PCR plates are edited using the *Edit Wells* window.
+
+.. figure:: /images/edit_CS_wells.png
+  :align: center
+
+In the *Edit Wells* window, be sure to set the direction as Forward or Reverse.
+
+As described for PCR plates, set the reaction cocktail, primer, date etc.
+
+Add any additional comments in the Notes section of the *Edit Wells* window, including which thermocycler was used, as well as the "Full Plate Label" field submitted in Signout (on labdb.si.edu - this inlcudes the number Signout assigned to the plate when submitted for sequencing).
+
+If the cycle sequencing plate contains reactions for both directions, then highlight the forward reaction wells, click on "Edit Selected Wells" on the top right of the *New CycleSequencing* window and set the direction and primer. Do the same for the remaining reaction wells in the opposite direction.
 
 Attaching Raw Traces to a Cycle Sequencing Plate
 ------------------------------------------------
