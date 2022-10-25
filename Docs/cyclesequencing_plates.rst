@@ -50,6 +50,7 @@ Double click to open the reaction well of interest in the *New CycleSequencing* 
 
 .. figure:: /images/edit_CS_wells_addtrace.png
   :align: center
+  :scale: 70%
 
 In the *Edit Wells* window that now appears, select the "Add/Edit Traces" button. This option only appears if a single well was selected and opened.
 
