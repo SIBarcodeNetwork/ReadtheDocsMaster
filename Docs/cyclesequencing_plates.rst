@@ -1,20 +1,23 @@
-Generating cycle sequencing plates
+Generating Cycle Sequencing Plates
 ==================================
 
-Creating the plate
+Creating the Plate
 ------------------
 
-* To append new cycle sequencing reactions onto existing PCR workflows, log onto the Biocode Plugin and search for corresponding PCR plate. 
-* Highlight the PCR plate that is brought up from the search and click "New Reaction" in the Geneious Primer Toolbar.
-* Select "Create plate from existing document" in the *New Reaction* window. 
-* Also select "Cycle Sequencing" from the drop-down menu for "Type of reaction". Click "Ok". A cycle sequencing plate, similar to a PCR plate, will be generated. 
+To append new cycle sequencing reactions onto existing PCR workflows, log onto the Biocode Plugin ( and search for corresponding PCR plate. See :ref:`search_for_plates-link` for instructions.
+
+Highlight the PCR plate that is brought up from the search and click "New Reaction" in the Geneious Primer Toolbar.
+
+Select "Create plate from existing document" in the *New Reaction* window. 
+
+Also select "Cycle Sequencing" from the dropdown menu for "Type of reaction". Click "Ok". A cycle sequencing plate, similar to a PCR plate, will be generated. 
 * Cycle sequencing plates can be edited in the same manner as PCR plates are edited using the *Edit Wells* window.
 * As described for PCR plates, set the thermocycling profile, reaction cocktail, primer, date etc.
 * Also set the direction as Forward or Reverse. 
 * If the cycle sequencing plate contains reactions for both directions, then highlight the forward reaction wells, click on "Edit Selected Wells" and set the direction and primer. Do the same for the remaining reaction wells in the opposite direction.
 * Add any additional comments in the Notes section, including which thermocycler was used, as well as the Full Plate Label field submitted in Signout. (This inlcudes the number Signout assigned to the plate when submitted for sequencing.)
 
-Attaching raw traces to a cycle sequencing plate
+Attaching Raw Traces to a Cycle Sequencing Plate
 ------------------------------------------------
 
 To add a trace file to a single cycle sequencing reaction:
