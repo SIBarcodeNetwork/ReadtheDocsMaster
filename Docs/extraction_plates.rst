@@ -6,6 +6,8 @@ Creating the Plate (96 wells)
 
 The first step of the LIMS workflow is the generation of a DNA extraction plate. In LIMS terms, an "extraction plate" is a set of DNA extractions following identical protocols and can include anywhere from a single extraction up to a plate of 384 extractions. This set of extraction will be moved through the entire pipeline together.
 
+.. _creating_extraction_plate-link:
+
 To create an extraction plate:
 
 Click the "New Reaction" button on the Geneious Prime Toolbar. 
@@ -18,7 +20,7 @@ In the dropdown menu of the *New Reaction* window, choose "Extraction" from the 
 .. figure:: /images/new_extraction_plate.png
   :align: center
 
-A new window will open displaying a map of a 96 well extraction plate. The FIMS data must be uploaded to an empty extraction plate so that the each specimen's field data is correctly associated with that same specimen's laboratory workflow. 
+A new window will open displaying a map of a 96 well extraction plate. The FIMS data must be uploaded to an empty extraction plate so that each specimen's field data is correctly associated with that same specimen's laboratory workflow. 
 
 .. figure:: /images/empty_extraction_plate.png
   :align: center
@@ -28,6 +30,10 @@ Insert a name for the extraction plate into the relevant field in the window. (S
 Click the "Bulk Edit" button. 
 
 A new *Edit Plate* window will appear. Within this window, LIMS can pull the GEOME FIMS metadata for all tissues to be eventually attached to each tissue's LIMS workflow ID. 
+
+If creating a rerun extraction plate from existing LIMS Tissue IDs, continue with the :ref:`creating_rerun_plate-link` instructions. 
+
+If creating a new extraction plate with new Tissue IDs, continue below. 
 
 .. figure:: /images/get_tissue_ids.png
   :align: center
