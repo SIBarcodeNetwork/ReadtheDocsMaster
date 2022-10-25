@@ -8,67 +8,67 @@ The first step of the LIMS workflow is the generation of a DNA extraction plate.
 
 To create an extraction plate:
 
-* Click the "New Reaction" button on the Geneious Prime Toolbar. 
+Click the "New Reaction" button on the Geneious Prime Toolbar. 
 
 .. figure:: /images/new_reaction_button.png
   :align: center
 
-* In the dropdown menu of the *New Reaction* window, choose "Extraction" from the "Type of reaction" dropdown menu. Select the "96 well plate" size option and click "OK". 
+In the dropdown menu of the *New Reaction* window, choose "Extraction" from the "Type of reaction" dropdown menu. Select the "96 well plate" size option and click "OK". 
 
 .. figure:: /images/new_extraction_plate.png
   :align: center
 
-* A new window will open displaying a map of a 96 well extraction plate. The FIMS data must be uploaded to an empty extraction plate so that the each specimen's field data is correctly associated with that same specimen's laboratory workflow. 
+A new window will open displaying a map of a 96 well extraction plate. The FIMS data must be uploaded to an empty extraction plate so that the each specimen's field data is correctly associated with that same specimen's laboratory workflow. 
 
 .. figure:: /images/empty_extraction_plate.png
   :align: center
 
-* Insert a name for the extraction plate into the relevant field in the window. (See the :ref:`lims_conventions-link` for best practices)
+Insert a name for the extraction plate into the relevant field in the window. (See the :ref:`lims_conventions-link` for best practices)
 
-* Click the "Bulk Edit" button. 
+Click the "Bulk Edit" button. 
 
-* A new *Edit Plate* window will appear. Within this window, LIMS can pull the GEOME FIMS metadata for all tissues to be eventually attached to each tissue's LIMS workflow ID. 
+A new *Edit Plate* window will appear. Within this window, LIMS can pull the GEOME FIMS metadata for all tissues to be eventually attached to each tissue's LIMS workflow ID. 
 
 .. figure:: /images/get_tissue_ids.png
   :align: center
 
-* Click on "Tools" and select "Get Tissue ID's From Archive Plate" from the dropdown menu.
+Click on "Tools" and select "Get Tissue ID's From Archive Plate" from the dropdown menu.
 
-* Another new window *Get FIMS plate* will appear.
+Another new window *Get FIMS plate* will appear.
 
 .. figure:: /images/enter_plate_id.png
   :align: center
 
-* Here, enter the tissuePlate value that was included in the GEOME FIMS spreadsheet for this expedition. Click "OK" once complete.
+Here, enter the tissuePlate value that was included in the GEOME FIMS spreadsheet for this expedition. Click "OK" once complete.
 
-* A new window will appear indicating the LIMS is fetching the tissue ID's from the FIMS database. When successful, the "Tissue Sample Id" fields in the *Edit Plate* window will be populated. Alternatively, if a message indicating that the plate cannot be found in the FIMS is recieved, check:
+A new window will appear indicating the LIMS is fetching the tissue ID's from the FIMS database. When successful, the "Tissue Sample Id" fields in the *Edit Plate* window will be populated. Alternatively, if a message indicating that the plate cannot be found in the FIMS is recieved, check:
 
 	* that the plate ID is spelled exactly as it was included in the GEOME FIMS spreadsheet and/or 
 
 	* that the FIMS spreadsheet was successfully uploaded to the GEOME FIMS.
 
 
-* After successful upload, select "Generate New Extraction IDs" from the "Tools" dropdown menu in the *Edit Plate* window. The LIMS will automatically populate the second column of the window ("Extraction ID"). The .1 indicates this is the first extraction in the LIMs for that particular tissue, .2 would indicate it is the second and so on.
+After successful upload, select "Generate New Extraction IDs" from the "Tools" dropdown menu in the *Edit Plate* window. The LIMS will automatically populate the second column of the window ("Extraction ID"). The .1 indicates this is the first extraction in the LIMs for that particular tissue, .2 would indicate it is the second and so on.
 
-* Finally, import the Extraction Barcodes (the 2D barcode on the bottom of the matrix tubes) for each DNA extract. This can be done in two different ways:
+Finally, import the Extraction Barcodes (the 2D barcode on the bottom of the matrix tubes) for each DNA extract. This can be done in two different ways:
 
-* *Option 1:* This is the recommended method. Select "Import Extraction Barcodes from FIMS" from the "Tools" dropdown menu. A new window will appear, and select the GEOME FIMS column that contains the extraction barcodes from the dropdown menu - typically this is "tissueOtherCatalogNumbers". For this to work, ensure that the FIMS contains the unique extraction barcodes.
+*Option 1:* This is the recommended method. Select "Import Extraction Barcodes from FIMS" from the "Tools" dropdown menu. A new window will appear, and select the GEOME FIMS column that contains the extraction barcodes from the dropdown menu - typically this is "tissueOtherCatalogNumbers". For this to work, ensure that the FIMS contains the unique extraction barcodes.
 
 .. figure:: /images/import_extraction_barcode_FIMS.png
   :align: center
 
-* *Option 2:* Select "Import Extraction Barcodes from File" from the "Tools" dropdown menu. Select the file generated from the plate scanner. Ensure that the well order of the plate scan matches the well order displayed in the *Edit Plate* window.
+*Option 2:* Select "Import Extraction Barcodes from File" from the "Tools" dropdown menu. Select the file generated from the plate scanner. Ensure that the well order of the plate scan matches the well order displayed in the *Edit Plate* window.
 
-* Once this is complete Click "OK". Clicking "OK" will attach the FIMS metadata to the new extraction plate.
+Once this is complete Click "OK". Clicking "OK" will attach the FIMS metadata to the new extraction plate.
 
-* Back on the "*New Extraction* window, click on "Edit All Wells" to open a new window. 
+Back on the *New Extraction* window, click on "Edit All Wells" to open a new window. 
 
 .. figure:: /images/edit_extraction_wells.png
   :align: center
 
-* Enter information about the extraction - date, method, technician etc. into this window. Once complete, click "OK". 
+Enter information about the extraction - date, method, technician etc. into this window. Once complete, click "OK". 
 
-* Click "OK" in the *New Extraction* window for the LIMS to save the extraction plate.
+Click "OK" in the *New Extraction* window for the LIMS to save the extraction plate.
 
 Creating the Working Stock (96 wells)
 -------------------------------------
