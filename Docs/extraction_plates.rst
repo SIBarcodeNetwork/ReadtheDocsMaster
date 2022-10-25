@@ -73,7 +73,7 @@ Click "OK" in the *New Extraction* window for the LIMS to save the extraction pl
 Creating the Working Stock (96 wells)
 -------------------------------------
 
-After DNA extraction, the extracts are typically stored in a 2D matrix plate for eventual storage in the biorepository while aliquots are kept in a separate plate to be used in PCR reactions. This protects the bulk of the DNA from freeze/thaw cycles as well as possible contamination during lab work. It is therefore considered best practice to create a working stock extraction plate in the LIMS to represent this aliquoted plate in the lab.
+After DNA extraction, the extracts are typically stored in archive plate for eventual storage in the biorepository while aliquots are kept in a separate plate to be used in PCR reactions. This protects the bulk of the DNA from freeze/thaw cycles as well as possible contamination during lab work. It is therefore considered best practice to create a working stock extraction plate in the LIMS to represent this aliquoted plate in the lab.
 
 After the initial extraction plate has been created in the LIMS, it is easy to create a working stock from this same plate. 
 
