@@ -23,7 +23,7 @@ Also select "Cycle Sequencing" from the dropdown menu for "Type of reaction". Cl
 
 Like with PCR plates, enter a plate name in the box provided in the *New CycleSequencing* window. This name should be descriptive and unique to allow easy and successful searching in the LIMS. (See :ref:`lims_conventions-link`)
 
-On the *New CycleSequencing* window, set the thermocycling profile in the same maner as the PCR plate.
+On the *New CycleSequencing* window, set the thermocycling profile in the same manner as the PCR plate.
 
 
 .. figure:: /images/edit_CS_wells.png
