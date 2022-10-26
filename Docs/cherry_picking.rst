@@ -17,8 +17,11 @@ To create a rerun extraction plate (either aliquoted or phycially moved):
 
 Follow instructions in the :ref:`create_ext_plate-link` instuctions until the point indicated.
 
+..
 
 .. _create_rerun-link:
+
+..
 
 Depending on whether aliquoting or moving tubes, follow the below instructions.
 
