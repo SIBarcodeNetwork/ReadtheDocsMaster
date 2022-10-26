@@ -18,7 +18,7 @@ To create a rerun extraction plate (either aliquoted or phycially moved):
 Follow instructions in the :ref:`create_ext_plate-link` instuctions until the point indicated.
 
 
-.. _create_rerun_plate:
+.. _create_rerun-link:
 
 
 Depending on whether aliquoting or moving tubes, follow the below instructions.
@@ -34,7 +34,7 @@ Paste Extraction IDs into the **Parent Extraction ID** column, again making sure
 
 .. image:: /images/reruns_aliquoting.png
 	:align: center
-	:scale: 25 %
+	:scale: 50 %
 
 Click on the "Tools" button and select “Generate New Extraction IDs”.
 
@@ -58,7 +58,7 @@ When creating the extraction plate, once at the *Edit Plate* window, paste in Ex
 
 .. image:: /images/reruns_moving.png
 	:align: center
-	:scale: 25 %
+	:scale: 50 %
 
 This notice will appear: 
 
