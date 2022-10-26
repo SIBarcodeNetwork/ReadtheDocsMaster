@@ -70,8 +70,10 @@ This notice will appear:
 
 Click the "Move extractions" button. 
 
-Data from FIMS should now be associated with the wells in the rerun plate based on the Extraction ID and the Extraction Barcode should now also be moved to this plate.  
+Data from FIMS should now be associated with the wells in the rerun plate based on the Extraction ID and the Extraction Barcodes should now also be moved to this plate.  
 
 On the *New Extraction* window, click "OK" to save the rerun plate. 
 
 If viewing the original extraction plate, wells that held samples now in the rerun plate should be empty.
+
+Note: The "Create Aliquots" option in the above window will still result in physical movement of extraction barcodes across extraction plates. Do not use this option when creating an aliquot plate, follow the above section. 
