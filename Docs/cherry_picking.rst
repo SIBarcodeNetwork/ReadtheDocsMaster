@@ -11,13 +11,14 @@ There are two options when cherry picking to build a rerun plate:
 
 * Entire tubes of sample DNA will pulled from the archive plate and moved to new plate. 
 
-It is SIBN best practise that the rerun plate is build first in the lab, then in LIMS. Entering the plate data into LIMS allows for correction of any error in planned well order that may occur while aliquoting or moving tubes. 
+It is SIBN best practise that the rerun plate is build first in the lab, then in LIMS. Entering the plate data into LIMS after plate is built allows for correction of any error in planned well order that may occur while aliquoting or moving tubes. 
 
 To create a rerun extraction plate (either aliquoted or phycially moved):
 
-Follow instructions in the :ref:`creating_extraction_plate-link` instuctions until the point indicated.
+Follow instructions in the :ref:`create_ext_plate-link` instuctions until the point indicated.
 
-.. _creating_rerun_plate-link:
+
+.. _create_rerun_plate-link:
 
 Depending on whether aliquoting or moving tubes, follow the below instructions.
 
