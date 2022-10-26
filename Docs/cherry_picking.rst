@@ -17,16 +17,17 @@ To create a rerun extraction plate (either aliquoted or phycially moved):
 
 Follow instructions in the :ref:`create_ext_plate-link` instuctions until the point indicated.
 
-..
 
 .. _create_rerun-link:
 
-..
+
+Creating the Rerun Plate
+------------------------
 
 Depending on whether aliquoting or moving tubes, follow the below instructions.
 
 Aliquoting
-----------
+~~~~~~~~~~
 
 If taking aliquots for reruns, gather Extraction ID and Tissue Sample ID of rerun samples into a text list. Following the steps below will ensure that the original LIMS extraction plates are not altered. 
 
@@ -48,7 +49,7 @@ On the *New Extraction* window, click "OK" to save the aliquoted rerun plate.
 
 
 Moving from Archive Plate
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If physically moving the sample tubes from the archive plate to a new plate, the "Extraction Barcodes" stored in LIMS also need to be moved from the original extraction plates. 
 
