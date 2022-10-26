@@ -1,54 +1,73 @@
 Cherry Picking
-==================================
+==============
 
-After you’ve finished your sequence QC and marked your assemblies as Pass or Fail in the LIMS, you may need to perform additional lab work to finish off your project. You will need to decide which samples will be included in your rerun plates and how you plan to organize these samples in a new plate or plates. You will probably choose to either aliquot from your working stock into a new plate, or go back to your archive plate and pull out the samples that need to be rerun. 
+Once the first round of sequence assembly and quality control is finished, and assembled contigs have been marked as Pass, Tentative, or Fail in the LIMS, some samples may need to be rerun through lab processes before project is considered complete. The process of selecting specific samples to be rerun is called "Cherry Picking".
+
+Identify which samples will be cherry picked for reruns and plan how to organize these samples on new rerun plate(s). 
+
+There are two options when cherry picking to build a rerun plate:
+
+* Samples will either be aliquoted (subsampled) from the working stock plate (recommended) or archive plate OR
+
+* Entire tubes of sample DNA will pulled from the archive plate and moved to new plate. 
+
+It is SIBN best practise that the rerun plate is build first in the lab, then in LIMS. Entering the plate data into LIMS allows for correction of any error in planned well order that may occur while aliquoting or moving tubes. 
+
+To create a rerun extraction plate (either aliquoted or phycially moved):
+
+Follow instructions in the :ref:`creating_extraction_plate-link` instuctions until the point indicated.
+
+.. _creating_rerun_plate-link:
+
+Depending on whether aliquoting or moving tubes, follow the below instructions.
 
 Aliquoting
-------------------
+----------
 
-If you’ve decided the best plan of action is making aliquots from your working stock, you’ll want to create the rerun plate in the lab, and then create it in the LIMS as well. You’ll need the Extraction IDs and Tissue Sample IDs from the samples you are including for this process. Following the steps below will ensure that your original extraction plates are not modified in the LIMS. 
+If taking aliquots for reruns, gather Extraction ID and Tissue Sample ID of rerun samples into a text list. Following the steps below will ensure that the original LIMS extraction plates are not altered. 
 
-To create a new plate of aliquots in the LIMS:
+When creating the extraction plate, once at the *Edit Plate* window, paste in Tissue Sample IDs from text list to the corresponding wells in the **Tissue Sample ID** column.
 
-* Click the “New Reaction” button on the Geneious toolbar, just as if you were creating a new extraction plate.
-* In the “New Reaction” window, make sure the Type of reaction is set to “Extraction”, and that “96 well plate” is ticked. Click OK.
-* A new window will open showing an empty plate map. You will want to give your plate a name. Make sure to follow the guidance in :ref:`lims_conventions-link` for a rerun plate.
-* Click the Bulk Edit button to enter the sample information that will link this plate to the FIMS/LIMS data already entered.
-* In the Edit Plate window that opens, paste in your Tissue Sample IDs to the corresponding wells.
-* Paste your Extraction IDs into the Parent Extraction ID column, again making sure the well order is correct.
-* Click on the Tools button and select “Generate New Extraction IDs”. At this point, your window should look like this: 
+Paste Extraction IDs into the **Parent Extraction ID** column, again making sure the well order is correct.
 
 .. image:: /images/reruns_aliquoting.png
 	:align: center
 	:scale: 25 %
 
-* When the new Extraction IDs have been generated, click OK. 
+Click on the "Tools" button and select “Generate New Extraction IDs”.
 
-You should now see that the data from your FIMS is included in the plate you have created. Don’t forget to save the plate. 
+When the new Extraction IDs have been generated, click "OK". 
 
-Moving the samples
-------------------
+FIMS data should now be associated with the wells in the rerun plate based on the Tissue Sample IDs. 
 
-If you’ve decided to physically move the samples in the matrix plates, you’ll need to move them from the extraction plates you created in the LIMS as well. You’ll need the Extraction IDs of the original samples for this process. Following the steps below will modify your original extraction plates in the LIMS, but it should not break the link between the samples and all the work you have done on them thus far. 
+On the *New Extraction* window, click "OK" to save the aliquoted rerun plate.
 
-To move the samples to a new extraction plate in the LIMS:
 
-* Click the “New Reaction” button on the Geneious toolbar, just as if you were creating a new extraction plate. 
-* In the “New Reaction” window, make sure the Type of reaction is set to “Extraction”, and that “96 well plate” is ticked. Click OK.
-* A new window will open showing an empty plate map. You will want to give your plate a name. Make sure to follow the guidance in :ref:`lims_conventions-link` for a rerun plate.
-* Click the Bulk Edit button to enter the sample information that will link this plate to the FIMS/LIMS data already entered. 
-* In the Edit Plate window that opens, paste in your Extraction IDs to the corresponding wells. Click OK. 
+Moving from Archive Plate
+-------------------------
+
+If physically moving the sample tubes from the archive plate to a new plate, the "Extraction Barcodes" stored in LIMS also need to be moved from the original extraction plates. 
+
+For each rerun sample being physically moved, gather the original Extraction IDs only into a text file. 
+
+Following the steps below will modify the original extraction plates in the LIMS, but will not break the link between the samples and workflows created thus far. 
+
+When creating the extraction plate, once at the *Edit Plate* window, paste in Extraction IDs to the corresponding wells in the **Extraction ID** column. Click "OK". 
 
 .. image:: /images/reruns_moving.png
 	:align: center
 	:scale: 25 %
 
-* At this point you should see the error screen below: 
+This notice will appear: 
 
 .. image:: /images/extractions_already_exist.png
 	:align: center
 	:scale: 50 %
 
-* Click the Move extractions button. 
+Click the "Move extractions" button. 
 
-You should now see that the data from your FIMS is included in the plate you have created. Don’t forget to save the plate. 
+Data from FIMS should now be associated with the wells in the rerun plate based on the Extraction ID and the Extraction Barcode should now also be moved to this plate.  
+
+On the *New Extraction* window, click "OK" to save the rerun plate. 
+
+If viewing the original extraction plate, wells that held samples now in the rerun plate should be empty.
