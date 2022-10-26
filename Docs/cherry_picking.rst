@@ -15,10 +15,10 @@ It is SIBN best practise that the rerun plate is build first in the lab, then in
 
 To create a rerun extraction plate (either aliquoted or phycially moved):
 
-Follow instructions in the :ref:`create_ext_plate-link` instuctions until the point indicated.
+Follow instructions in the :ref:`create_ext_plate` instuctions until the point indicated.
 
 
-.. _create_rerun_plate-link:
+.. _create_rerun_plate:
 
 Depending on whether aliquoting or moving tubes, follow the below instructions.
 
