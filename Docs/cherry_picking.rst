@@ -20,7 +20,6 @@ Follow instructions in the :ref:`create_ext_plate-link` instuctions until the po
 
 .. _create_rerun-link:
 
-
 Depending on whether aliquoting or moving tubes, follow the below instructions.
 
 Aliquoting
