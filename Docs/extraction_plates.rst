@@ -1,3 +1,6 @@
+.. _create_ext_plate-link:
+
+
 Generating Extraction Plates
 ============================
 
@@ -5,10 +8,6 @@ Creating the Plate (96 wells)
 -----------------------------
 
 The first step of the LIMS workflow is the generation of a DNA extraction plate. In LIMS terms, an "extraction plate" is a set of DNA extractions following identical protocols and can include anywhere from a single extraction up to a plate of 384 extractions. This set of extraction will be moved through the entire pipeline together.
-
-
-.. _create_ext_plate:
-
 
 To create an extraction plate:
 
