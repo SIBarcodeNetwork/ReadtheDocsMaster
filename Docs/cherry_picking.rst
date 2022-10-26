@@ -7,7 +7,7 @@ Identify which samples will be cherry picked for reruns and plan how to organize
 
 There are two options when cherry picking to build a rerun plate:
 
-* Samples will either be aliquoted (subsampled) from the working stock plate (recommended) or archive plate OR
+* Samples will either be aliquoted (subsampled) from the working stock plate or archive plate OR
 
 * Entire tubes of sample DNA will pulled from the archive plate and moved to new plate. 
 
@@ -15,10 +15,11 @@ It is SIBN best practise that the rerun plate is build first in the lab, then in
 
 To create a rerun extraction plate (either aliquoted or phycially moved):
 
-Follow instructions in the :ref:`create_ext_plate` instuctions until the point indicated.
+Follow instructions in the :ref:`create_ext_plate-link` instuctions until the point indicated.
 
 
 .. _create_rerun_plate:
+
 
 Depending on whether aliquoting or moving tubes, follow the below instructions.
 
