@@ -32,9 +32,9 @@ Click the "Bulk Edit" button.
 
 A new *Edit Plate* window will appear. Within this window, LIMS can pull the GEOME FIMS metadata for all tissues to be eventually attached to each tissue's LIMS workflow ID. 
 
-If creating a rerun extraction plate from existing LIMS extractions, continue with the :ref:`create_rerun_plate` instructions. 
+If creating a **rerun** extraction plate from existing LIMS extractions, continue with the :ref:`create_rerun_plate-link` instructions. 
 
-If creating a new extraction plate with new Tissue IDs, continue below. 
+If creating a **new** extraction plate with new Tissue IDs, continue below. 
 
 .. figure:: /images/get_tissue_ids.png
   :align: center
