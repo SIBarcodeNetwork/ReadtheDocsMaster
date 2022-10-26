@@ -73,7 +73,7 @@ Updates
 
 	downloading_traces
 	assembling_contigs
-	sequence_qc
+	sequence_qc_v2
 	batch_rename
 	annotating_fims_lims
 	mark_pass
