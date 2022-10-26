@@ -36,7 +36,7 @@ Paste Extraction IDs into the **Parent Extraction ID** column, again making sure
 
 .. image:: /images/reruns_aliquoting.png
 	:align: center
-	:scale: 50 %
+	:scale: 90 %
 
 Click on the "Tools" button and select “Generate New Extraction IDs”.
 
@@ -60,13 +60,13 @@ When creating the extraction plate, once at the *Edit Plate* window, paste in Ex
 
 .. image:: /images/reruns_moving.png
 	:align: center
-	:scale: 50 %
+	:scale: 90 %
 
 This notice will appear: 
 
 .. image:: /images/extractions_already_exist.png
 	:align: center
-	:scale: 50 %
+	:scale: 90 %
 
 Click the "Move extractions" button. 
 
