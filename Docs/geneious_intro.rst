@@ -50,7 +50,7 @@ To add a new primer, highlight the destination folder, then in the Menu Bar sele
 
 .. image:: /images/primer_new_create.png
 
-Once a primer has been created, any associated information can be edited. Highlight the primer in the Document Table, and go to the "Info" tab in the Document Viewer. Here, various meta-data such as Gene, Organism, Direction etc. can be added. Fill in as much information as possible for future reference.
+Once a primer has been created, any associated information can be edited. Highlight the primer in the Document Table, and go to the "Info" tab in the Document Viewer. Here, various metadata such as Gene, Organism, Direction etc. can be added. Fill in as much information as possible for future reference.
 
 .. image:: /images/primer_metadata.png
 
