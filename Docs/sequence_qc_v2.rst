@@ -123,7 +123,7 @@ A sequence alignment is also a more efficient way to ensure that there are no st
 Phylogenetic Trees
 ------------------
 
-Once individual assembly and alignment quality checks have been completed, a quick general identification check can be performed through making a phylogenetic tree in Geneious Prime. 
+Once individual assembly and alignment quality checks have been completed, a quick general identification check can be performed through making a phylogenetic tree in Geneious Prime. For further details on the tree building in Geneious Prime, see their online `tutorial <https://help.geneious.com/hc/en-us/articles/360045071271-How-to-build-a-phylogenetic-tree-in-Geneious-Prime>`_.
 
 To produce a phylogenetic tree:
 
