@@ -3,15 +3,15 @@
 Exporting Sequences in FASTA format
 ===================================
 
-In Geneious Prime, gather all assemblies or consensus sequences to be exported into a local folder.
+In Geneious Prime, gather all assembled contigs or consensus sequences to be exported into a local folder.
 
-Make sure the most up-to-date metadata are associated with the sequences. To do this, follow the instructions on the :ref:`Annotating_FIMS_LIMS-link` page to annotate the sequence files with the current GeOMe FIMS and Biocode LIMS data. 
+Make sure the most up-to-date metadata are associated with the sequences. To do this, follow the instructions on the :ref:`Annotating_FIMS_LIMS-link` page to annotate the sequence files with the current GEOME FIMS and Biocode LIMS data. 
 
-If assemblies or consensus sequences need to be renamed, follow the :ref:`Batch_rename-link` instructions.
+If contigs or consensus sequences need to be renamed, follow the :ref:`Batch_rename-link` instructions.
 
 To export the documents in FASTA format, first select all relevant documents, then follow one of the two options outlined below depending on file type.
 
-**To export from assembly files**: click on “Export” in the toolbar, then select “Export other” and “Consensus”. 
+**To export from contig files**: click on “Export” in the toolbar, then select “Export other” and “Consensus”. 
 
 .. figure:: /images/geneious_export_other_consensus.png
  :align: center
