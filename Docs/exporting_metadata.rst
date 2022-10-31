@@ -5,7 +5,7 @@ Exporting Sequence Metadata in TSV format
 
 In Geneious Prime, gather all assemblies or consensus sequences from which metadata will be exported into a local folder.
 
-Make sure the most up-to-date FIMS and LIMS metadata are associated with the sequences. To do this, follow the instructions on the :ref:`Annotating_FIMS_LIMS-link` page to annotate the sequence files with the current GeOMe FIMS and Biocode LIMS data. 
+Make sure the most up-to-date FIMS and LIMS metadata are associated with the sequences. To do this, follow the instructions on the :ref:`Annotating_FIMS_LIMS-link` page to annotate the sequence files with the current GEOME FIMS and Biocode LIMS data. 
 
 To export sequence metadata, first select all relevant files.
 
@@ -15,7 +15,7 @@ Export the sequence metadata by using the Export function in the Geneious Prime 
   :align: center
   :target: /en/latest/_images/geneious_export_documents.png
 
-A *Select Format* window will open, but will contain different options dependent on whether export is from consensus sequence or assembly files.
+A *Select Format* window will open, but will contain different options dependent on whether export is from consensus sequence or contig files.
 
 .. figure:: /images/geneious_tsv_export_consensus.png
   :align: center
@@ -27,7 +27,7 @@ A *Select Format* window will open, but will contain different options dependent
   :align: center
   :target: /en/latest/_images/ggeneious_tsv_export_assembly.png
    
-  The *Select Format* window when exporting from assembly files
+  The *Select Format* window when exporting from contig files
 
 In either case, select “TSV tab-separated table (*.tsv)”.
 
@@ -43,8 +43,8 @@ A list of FIMS and LIMS column headers should then appear. FIMS column headers s
   :align: center
   :target: /en/latest/_images/geneious_column_headers_assembly.png
   
-  *TSV tab-separated Export* window that appears when exporting from assembly files
+  *TSV tab-separated Export* window that appears when exporting from contig files
 
-If exporting from assembly files, at the top of the window, ensure that “Documents” is selected. This will not be necessary if exporting from consensus sequence files. 
+If exporting from contig files, at the top of the window, ensure that “Documents” is selected. This will not be necessary if exporting from consensus sequence files. 
 
 From this list, choose all fields that are needed, then click “OK”. The tsv file will be exported to the location previously specified.
