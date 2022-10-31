@@ -69,7 +69,7 @@ Select both Trim 5' End and Trim 3' End options, but leave "At least" UNCHECKED.
 
 Leave "Maximum length after trim" UNCHECKED.
 
-Once all settings are complete hit "OK". Back in the *De Novo Assemble* window, click "OK" to begin the trim/assembly process. All the assemblies and an Assembly Report will be deposited into the subfolder that was specified/named in the local directory. Geneious will generate a new subfolder each time a De Novo Assembly is run.
+Once all settings are complete hit "OK". Back in the *De Novo Assemble* window, click "OK" to begin the trim/assembly process. All the assembled contigs and an Assembly Report will be deposited into the subfolder that was specified/named in the local directory. Geneious will generate a new subfolder each time a De Novo Assembly is run.
 
 
 OPTION 2:Trimming and Assembling in Two Separate Steps
