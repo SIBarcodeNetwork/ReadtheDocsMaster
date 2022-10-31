@@ -29,7 +29,7 @@ Click “Install”, and Geneious Prime will start downloading it from the Inter
 Using the Plugin
 -----------------
 
-Please note, it is possible to submit to GenBank from either assemblies or consensus sequences. The directions laid out below will only describe submitting consensus sequences, as that is SIBN best practice.
+Please note, it is possible to submit to GenBank from either assembled contigs or consensus sequences. The directions laid out below will only describe submitting consensus sequences, as that is SIBN best practice.
 
 Before starting a GenBank submission, organize all high quality consensus sequences to be submitted. Make sure the most up-to-date GEOME FIMS data and Biocode LIMS data are associated with the sequences. To do this, follow the instructions on the :ref:`Annotating_FIMS_LIMS-link` page to annotate the sequence files with the current GEOME FIMS and Biocode LIMS data.
 
