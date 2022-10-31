@@ -3,7 +3,7 @@
 Exporting Sequence Metadata in TSV format
 ==========================================
 
-In Geneious Prime, gather all assemblies or consensus sequences from which metadata will be exported into a local folder.
+In Geneious Prime, gather all assembled contigs or consensus sequences from which metadata will be exported into a local folder.
 
 Make sure the most up-to-date FIMS and LIMS metadata are associated with the sequences. To do this, follow the instructions on the :ref:`Annotating_FIMS_LIMS-link` page to annotate the sequence files with the current GEOME FIMS and Biocode LIMS data. 
 
