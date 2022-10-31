@@ -11,7 +11,7 @@ The easiest way to start the process of quality checking sequences is by marking
 
 Traces that were not assembled due to low quality through the Geneious De Novo Assembler are considered fails. 
 
-Assemblies that have less than 75% High Quality base calls (Geneious Prime field "% HQ") are also potential fails. As per the Barcode Data Standard, assemblies need to be 75% or over to be considered a high quality barcode sequence. However, the user may want to pursue further quality control on assemblies under 75% and not consider them failed based on importance of the sample.  
+Assembled contigs that have less than 75% High Quality base calls (Geneious Prime field "% HQ") are also potential fails. As per the Barcode Data Standard, contigs need to be 75% or over to be considered a high quality barcode sequence. However, the user may want to pursue further quality control on contigs under 75% and not consider them failed based on importance of the sample.  
 
 Traces and assembled contigs that are considered fails need to be noted in Geneious Prime. Based on user preference, notation can consist of:
 
@@ -22,12 +22,12 @@ Traces and assembled contigs that are considered fails need to be noted in Genei
 The "Mark as Fail in LIMS..." Biocode Plugin tool should be used on failed sequences. See the :ref:`mark_pass-link` instructions.
 
 
-Manually Editing Assemblies
+Manually Editing Contigs
 ----------------------------
 
 Continue the quality control process with the remaining assembled contigs.
 
-Click into each assembly individually and scan through to assess whether or not each disagreement or ambiguity (if present) needs a manual edit. 
+Click into each assembled contig individually and scan through to assess whether or not each disagreement or ambiguity (if present) needs a manual edit. 
 
 A manual edit ONLY needs to made if the user believes the consensus sequences has been called incorrectly based on the chromatogram peaks, or there is an unnecessary gap or base insertion that needs to be deleted. 
   
@@ -43,16 +43,16 @@ A manual edit ONLY needs to made if the user believes the consensus sequences ha
 
 Sometimes it is not apparent that an edit is necessary for a protein coding sequence until the sequence has been translated (see below section). 
 
-If Geneious Prime calls the consensus sequence correctly, **NO changes** should be made to base calls in individual traces within the assembly.
+If Geneious Prime calls the consensus sequence correctly, **NO changes** should be made to base calls in individual traces within the contig.
 
-To manually edit an assembly, click the "Allow Editing" button in the toolbar of the "Contig View" tab (seen in above images) and proceed with the edit.
+To manually edit an contig, click the "Allow Editing" button in the toolbar of the "Contig View" tab (seen in above images) and proceed with the edit.
 
 .. figure:: /images/manual_edit_dragtrim.png
   :align: center
   
 Trimmed portions of traces can also be further edited manually by clicking on and dragging the pink bar indicating the trim annotation.
 
-**Do not forget to save all edits.** This will be automatically prompted when clicking outside of the assembly document. Alternatively, click "Save" in the upper right corner of the "Contig View" tab toolbar.
+**Do not forget to save all edits.** This will be automatically prompted when clicking outside of the assembled contig document. Alternatively, click "Save" in the upper right corner of the "Contig View" tab toolbar.
 
 .. figure:: /images/assembly_save_changes.png
   :align: center 
@@ -66,7 +66,7 @@ In addition, another window will prompt the application of changes the original 
 Genetic Code for Protein Coding Sequences
 ------------------------------------------
 
-When looking at individual assemblies, check the "Translation" option in the right hand menu of the Display tab on the Geneious Prime Options Panel. 
+When looking at individual contigs, check the "Translation" option in the right hand menu of the Display tab on the Geneious Prime Options Panel. 
 
 .. figure:: /images/assembly_view2.png
   :align: center
@@ -76,7 +76,7 @@ Set the correct genetic code. This is typically "Vertebrate Mitochondrial" or "I
 Select the correct reading frame. Black asterisks in the protein translation represent stop codons, and cannot be part of the open reading frame of a protein coding sequence (GenBank will not accept these).  If stop codons are present double-check the following:
 
 * The correct genetic code and/or reading frame is selected,
-* The assembly is in the correct orientation (Use "R.C." button in top left of the Contig View tab noted in the above image to reverse complement the sequence and see if that helps),
+* The contig is in the correct orientation (Use "R.C." button in top left of the Contig View tab noted in the above image to reverse complement the sequence and see if that helps),
 * Whether insertions or deletions are present in the sequence that need to be edited, and/or
 * Check BLAST to verify it is not a contaminant (see below for instruction).	
   
@@ -86,7 +86,7 @@ After checking the above, persistant stop codons may be indicative of a **pseudo
 Checking Sequence Quality with Alignments
 -----------------------------------------
 
-After needed edits have been made to individual assemblies, further quality control can be performed in Geneious Prime through alignments of consensus sequences. 
+After needed edits have been made to individual contigs, further quality control can be performed in Geneious Prime through alignments of consensus sequences. 
 
 Only align sequences that represent the same marker, i.e. align COI sequences together, rbcL together, etc. It may also be necessary to do multiple alignments of a single marker dataset based on taxonomy if the organisms are phylogenetically distant.
 
@@ -110,9 +110,9 @@ All other options may be left as default.
 
 Click "OK" in the lower right corner and the Consensus Align function will run.
 
-The alignment file will be located in the same local directory as the assemblies.
+The alignment file will be located in the same local directory as the contigs.
 
-Analyzing the sequences' alignment will inform the user of any further end trimming needed if the Geneious Prime Assembler neglected to remove primers. If this is the case, the assembly in need of trimming will have a consensus sequence be longer than others at either the 3' or 5' ends of the alignment. See the below image for an example of this. 
+Analyzing the sequences' alignment will inform the user of any further end trimming needed if the Geneious Prime Assembler neglected to remove primers. If this is the case, the assembled contig in need of trimming will have a consensus sequence longer than others at either the 3' or 5' ends of the alignment. See the below image for an example of this. 
 
 .. figure:: /images/alignment_view.png
   :align: center
@@ -123,7 +123,7 @@ A sequence alignment is also a more efficient way to ensure that there are no st
 Phylogenetic Trees
 ------------------
 
-Once individual assembly and alignment quality checks have been completed, a quick general identification check can be performed through making a phylogenetic tree in Geneious Prime. For further details on the tree building in Geneious Prime, see their online `tutorial <https://help.geneious.com/hc/en-us/articles/360045071271-How-to-build-a-phylogenetic-tree-in-Geneious-Prime>`_.
+Once individual contig and alignment quality checks have been completed, a quick general identification check can be performed through making a phylogenetic tree in Geneious Prime. For further details on the tree building in Geneious Prime, see their online `tutorial <https://help.geneious.com/hc/en-us/articles/360045071271-How-to-build-a-phylogenetic-tree-in-Geneious-Prime>`_.
 
 To produce a phylogenetic tree:
 
@@ -150,13 +150,13 @@ BLAST
 
 BLAST is a useful way to check the taxonomic ID of a questionable barcode sequence by comparing it to sequences in the NCBI nucleotide database. 
 
-To BLAST the consensus of a single assembly, it is quickest to highlight and copy the consensus sequence from Geneious Prime and enter it into the online BLAST search page on the NCBI website (see http://blast.ncbi.nlm.nih.gov/Blast.cgi). 
+To BLAST the consensus of a single contig, it is quickest to highlight and copy the consensus sequence from Geneious Prime and enter it into the online BLAST search page on the NCBI website (see http://blast.ncbi.nlm.nih.gov/Blast.cgi). 
 
 Geneious Prime also provides the ability to BLAST a single or several sequences at a time from within the program itself, but is more time consuming. It is recommended to only BLAST small batches of 15 or less sequences when using this below method. To BLAST entire sequence datasets at once, see the (LINK to BLAST SOP) instructions to BLAST through the Biocode Plugin or within the Smithsonian Institution High Performance Cluster (SI/HPC) "Hydra".
 
-To use BLAST small batches of assemblies:
+To use BLAST small batches of contigs:
 
-Select assemblies to be compared to the NCBI public DNA sequence database and click on the "BLAST" button in the Geneious Prime Toolbar.
+Select contigs to be compared to the NCBI public DNA sequence database and click on the "BLAST" button in the Geneious Prime Toolbar.
 
 .. figure:: /images/BLAST_button.png
   :align: center 
@@ -166,7 +166,7 @@ The *BLAST* window appears and has multiple options for consensus, GenBank datab
 .. figure:: /images/BLAST_window.png
   :align: center
 
-The consensus options allows the user to choose how the program will call the consensus sequence of each assembly.
+The consensus options allows the user to choose how the program will call the consensus sequence of each contig.
 
 .. figure:: /images/BLAST_consensus_options.png
   :align: center
