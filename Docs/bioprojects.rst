@@ -188,7 +188,7 @@ Or - Treat the BioProject as a source modifier update to the GenBank accessions 
 Adding a BioProject to New GenBank Submissions
 ----------------------------------------------
 
-Out of the several different methods of publishing sequences to GenBank (Genbank Submission Portal, BankIt, Sequin, tbl2asn, Geneious, and BOLD), only the Genbank Submission Portal and tbl2asn have methods for adding a BioProject ID to a batch submission.
+Out of the several different methods of publishing sequences to GenBank (GenBank Submission Portal, BankIt, Sequin, tbl2asn, Geneious, and BOLD), only the Genbank Submission Portal and tbl2asn have methods for adding a BioProject ID to a batch submission.
 
 If submitting metazoan C01 or rDNA through the Genbank Submission Portal, when creating the source modifier table for upload to the portal, simply add a column containing the BioProject ID with the column header "Bioproject" (without the quotations).
 
