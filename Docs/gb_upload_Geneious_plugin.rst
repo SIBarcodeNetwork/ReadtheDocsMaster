@@ -4,12 +4,12 @@ GenBank Upload Pipeline 2: Geneious Prime GenBank Submission Tool
 ===================================================================
 
 
-Installing the Geneious Plug-in
+Installing the Geneious Plugin
 -------------------------------
 
 .. note::
 
-   The most up-to-date GenBank Submission plug-in version is 1.6.8, which can be found `here
+   The most up-to-date GenBank Submission plugin version is 1.6.8, which can be found `here
    <https://www.geneious.com/plugins/genbank-submission-plugin/>`_.
 
 The Geneious Prime’s GenBank Submission plugin tool utilizes BankIT to submit sequences to GenBank for all DNA barcode markers **excluding** metazoan (multicellular) COI or rRNA sequences such as 18S, 16S, 23S, 28S, ITS1, ITS2, etc. which must be submitted using the :ref:`GBsubport-link`.
@@ -26,12 +26,12 @@ Click “Install”, and Geneious Prime will start downloading it from the Inter
   :align: center
   :target: /en/latest/_images/install_success.png
 
-Using the plug-in
+Using the Plugin
 -----------------
 
 Please note, it is possible to submit to GenBank from either assemblies or consensus sequences. The directions laid out below will only describe submitting consensus sequences, as that is SIBN best practice.
 
-Before starting a GenBank submission, organize all high quality consensus sequences to be submitted. Make sure the most up-to-date GeOMe FIMS data and Biocode LIMS data are associated with the sequences. To do this, follow the instructions on the :ref:`Annotating_FIMS_LIMS-link` page to annotate the sequence files with the current GeOMe FIMS and Biocode LIMS data.
+Before starting a GenBank submission, organize all high quality consensus sequences to be submitted. Make sure the most up-to-date GEOME FIMS data and Biocode LIMS data are associated with the sequences. To do this, follow the instructions on the :ref:`Annotating_FIMS_LIMS-link` page to annotate the sequence files with the current GEOME FIMS and Biocode LIMS data.
 
 Keep consensus sequences from different markers in separate folders as only one marker can be submitted at a time. It is possible to submit a single sample or a batch of samples at once. Also make sure to separate submissions based on organism type so that the correct genetic code can be selected for each submission.
 
@@ -108,25 +108,25 @@ Project Name
   Just like the “Submission Name” field at the beginning, this entry won’t end up in the GenBank record, but should be a meaningful name used to organize the sequences.
 
 Country
-  This will become the “country” field in GenBank. This corresponds to the field “genbankCountry'' found in the Geneious LIMS data. Within the GeOMe FIMS, this is separated into “Country” and “Locality” fields so that the “Country” value can be validated according to the INSDC country list (http://www.insdc.org/country.html). Geneious should automatically combine these two fields into the field “genbankCountry”, if the sequences are annotated correctly.
+  This will become the “country” field in GenBank. This corresponds to the field “genbankCountry'' found in the Geneious LIMS data. Within the GEOME FIMS, this is separated into “Country” and “Locality” fields so that the “Country” value can be validated according to the INSDC country list (http://www.insdc.org/country.html). Geneious should automatically combine these two fields into the field “genbankCountry”, if the sequences are annotated correctly.
 
 Specimen Voucher
-  This will become the “specimen_voucher” field in GenBank. It corresponds with the GeOMe FIMS field “voucherCatalogNumber”, which should be a colon-separated triplet consisting of [institutionCode]:[collectionCode]:[catalogNumber]. If the voucher is from a botanical collection, the voucherCatalogNumber should be a doublet consisting of [herbariumCode]:[catalogNumber] or [collector surname]:[collector number].
+  This will become the “specimen_voucher” field in GenBank. It corresponds with the GEOME FIMS field “voucherCatalogNumber”, which should be a colon-separated triplet consisting of [institutionCode]:[collectionCode]:[catalogNumber]. If the voucher is from a botanical collection, the voucherCatalogNumber should be a doublet consisting of [herbariumCode]:[catalogNumber] or [collector surname]:[collector number].
 
 Sequence ID
   This field will not be published as part of the GenBank record, but it is very important because this field will connect the specimen data and sequence data. Select the LIMS field “Workflow Name” for this.
 
 Identified by
-  This will become the “identified_by” field in GenBank. It corresponds with the GeOMe FIMS field “identifiedBy”. If it is unknown, select *None*.
+  This will become the “identified_by” field in GenBank. It corresponds with the GEOME FIMS field “identifiedBy”. If it is unknown, select *None*.
 
 Collection Date
-  This will become the “collection_date” field in GenBank. In GeOMe FIMS, this is separated into “yearCollected”, “monthCollected”, and “dayCollected” fields so that each could be validated. However, Geneious *should* automatically combine these fields into one “genbankDate” field if the sequences are annotated correctly.
+  This will become the “collection_date” field in GenBank. In GEOME FIMS, this is separated into “yearCollected”, “monthCollected”, and “dayCollected” fields so that each could be validated. However, Geneious *should* automatically combine these fields into one “genbankDate” field if the sequences are annotated correctly.
 
 Collected by
-  This will become the “collected_by” field in GenBank. It corresponds with the GeOMe FIMS field “collectorList”.  If it is unknown, select *None*.
+  This will become the “collected_by” field in GenBank. It corresponds with the GEOME FIMS field “collectorList”.  If it is unknown, select *None*.
 
 Organism
-  This field corresponds with the “scientificName" field from GeOMe FIMS. It will be checked against the NCBI taxonomy database, so if it is not already in the database, NCBI staff will create a new entry in the database. This will be the case with any names not identified to species and any morphospecies. The name should only be the binomial name (or trinomial if subspecies), and should not include the taxonomic name authority.
+  This field corresponds with the “scientificName" field from GEOME FIMS. It will be checked against the NCBI taxonomy database, so if it is not already in the database, NCBI staff will create a new entry in the database. This will be the case with any names not identified to species and any morphospecies. The name should only be the binomial name (or trinomial if subspecies), and should not include the taxonomic name authority.
 
 Molecule Type
   This will always be "Genomic DNA" for DNA Barcode records.
@@ -142,7 +142,7 @@ Include Extra Fields
   
 If there is any extra collection information that should be included in these GenBank records, it can be added by checking the “Include extra fields” option below the set Fields discussed above. Click “Choose” and the *Choose Additional Fields* window should appear with dropdown menu options. 
 
-The most common GenBank field to add from the Field Name menu is “Lat_Lon”. If latitude and longitude data are available in the GeOMe FIMS in separate “decimalLatitude” and “decimalLongitude'' fields, Geneious *should* automatically combine these fields into “genbankLatLng”  which can be found in the "Field Value" dropdown menu.
+The most common GenBank field to add from the Field Name menu is “Lat_Lon”. If latitude and longitude data are available in the GEOME FIMS in separate “decimalLatitude” and “decimalLongitude'' fields, Geneious *should* automatically combine these fields into “genbankLatLng”  which can be found in the "Field Value" dropdown menu.
   
 .. image:: /images/choose_additional_fields.png
   :align: center
