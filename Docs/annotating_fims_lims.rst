@@ -3,17 +3,17 @@
 Annotating with FIMS/LIMS Data
 ===============================
 
-After the QC process has begun on assemblies or consensus sequences locally in Geneious Prime, it is possible that updates were made to the data in the GeOMe FIMS or Biocode LIMS (e.g. taxonomy changes or primer corrections). Also, for various reasons, local files in Geneious can become dissociated from the original LIMS plates or workflows. If a local file does not have a workflow ID listed in the “Workflow Name” Geneious column, it is not associated with its original LIMS plate and needs to be annotated. 
+After the QC process has begun on assembled contigs or consensus sequences locally in Geneious Prime, it is possible that updates were made to the data in the GEOME FIMS or Biocode LIMS (e.g. taxonomy changes or primer corrections). Also, for various reasons, local files in Geneious can become dissociated from the original LIMS plates or workflows. If a local file does not have a workflow ID listed in the “Workflow Name” Geneious column, it is not associated with its original LIMS plate and needs to be annotated. 
 
 In either case, local data needs to be updated with current FIMS and/or LIMS data using the “Annotate with FIMS Data Only” or “Annotate with FIMS/LIMS Data'' functions in the Biocode Plugin. 
 
 Notes for consideration: 
 
-  If assemblies are not correctly linked to the trace files from which they were derived, this must be remedied before FIMS/LIMS annotation can be done. Follow the :ref:`relink_trace_files-link` protocol to re-link trace files to assemblies.
+  If assembled contigs are not correctly linked to the trace files from which they were derived, this must be remedied before FIMS/LIMS annotation can be done. Follow the :ref:`relink_trace_files-link` protocol to re-link trace files to contigs.
 
-  When assemblies and their trace files of origin are correctly linked, annotating assembly documents will apply the new information to the trace files.
+  When contigs and their trace files of origin are correctly linked, annotating contig documents will apply the new information to the trace files.
 
-  Annotating consensus sequence(s) does **not** apply the new information to the local assembly(ies) or trace files used to generate the assembly(ies)
+  Annotating consensus sequence(s) does **not** apply the new information to the local contig(s) or trace files used to generate the contig(s)
 
   If attempting to annotate a large number of documents, there is a possibility that the Biocode Plugin will crash. If this happens, select a smaller subset of the documents and try again.  
   
@@ -26,7 +26,7 @@ Determine whether just FIMS or both FIMS and LIMS data needs to be updated for d
 
 Annotate with FIMS Data Only
 ----------------------------
-Use this option if assemblies or consensus sequences are still properly linked to original LIMS plates (and no updates have occurred to LIMS data) but the associated FIMS data has been updated and needs to be applied to the assemblies or consensus sequences. 
+Use this option if contigs or consensus sequences are still properly linked to original LIMS plates (and no updates have occurred to LIMS data) but the associated FIMS data has been updated and needs to be applied to the contigs or consensus sequences. 
 
 Highlight documents to be annotated.
 
@@ -57,13 +57,13 @@ Annotating with FIMS Data Only: Option 1: Annotating by materialSampleID
 When using this option, the materialSampleID data must be part of the document name. 
 
 Follow the :ref:`Batch_rename-link` instructions to add this information to the document names. 
-For assemblies, if materialSampleID was used in De Novo Assembly to create the assemblies to be annotated, it will automatically be part of the assembly name - despite this, use the Batch Rename function to rename the documents to ensure it is correctly linked.
+For contigs, if materialSampleID was used in De Novo Assembly to create the contigs to be annotated, it will automatically be part of the contig name - despite this, use the Batch Rename function to rename the documents to ensure it is correctly linked.
 
-Indicate where in the document name materialSampleID is found and how portions of the document name are separated. In the example above, the materialSampleID is found in the first part of the assembly name and separated by “_(Underscore)”. 
+Indicate where in the document name materialSampleID is found and how portions of the document name are separated. In the example above, the materialSampleID is found in the first part of the contig name and separated by “_(Underscore)”. 
 
 Click “OK” and Geneious Prime will perform the Annotate with FIMS Data Only function on the selected documents. 
 
-If the function is successful, updated FIMS data (such as taxonomy) should now be associated with the selected assembly or sequence files. 
+If the function is successful, updated FIMS data (such as taxonomy) should now be associated with the selected contig or sequence files. 
 
 If the function is not successful (which can happen for a variety of reasons), an *Operation Failed* window such as the one below will pop up and the second option in the *Annotate with FIMS Data Only* window should be tried, as described below.
 
@@ -78,7 +78,7 @@ This option is more time consuming as it requires organizing documents by FIMS d
 
 **If using this option on consensus sequences**: The tissueWell data must be part of the document names. If it is not, follow the :ref:`Batch_rename-link` instructions to add this information to the document names.
 
-**If using this option on assembly files**: The tissueWell data must be part of the trace file of origin document names.
+**If using this option on contig files**: The tissueWell data must be part of the trace file of origin document names.
 
 Once all documents have the tissueWell in their name, highlight documents to be annotated that belong to a single plate only.
 
@@ -96,13 +96,13 @@ Select where in the document (consensus sequence or trace file) name tissueWell 
 
 Click “OK” and Geneious Prime will perform the “Annotate with FIMS Data Only” function on the selected documents. 
 
-If the function is successful, updated FIMS data (such as taxonomy) should now be associated with the selected assembly or sequence files.
+If the function is successful, updated FIMS data (such as taxonomy) should now be associated with the selected contig or sequence files.
 
 
 Annotate with FIMS/LIMS Data
 -----------------------------
 
-This option should be used when assemblies or consensus sequences need to be re-linked to original LIMS plate or workflows, or if updates have occurred in both the GeOMe FIMS and Biocode LIMS (e.g. updated primer names).
+This option should be used when contigs or consensus sequences need to be re-linked to original LIMS plate or workflows, or if updates have occurred in both the GEOME FIMS and Biocode LIMS (e.g. updated primer names).
 
 Highlight all documents to be annotated. 
 
@@ -135,7 +135,7 @@ Choose “Use annotated workflow/plate/well”.
 
 Click “OK” and Geneious Prime will perform the “Annotate with FIMS/LIMS Data” function on the selected documents.
 
-If the function is successful, updated FIMS and LIMS data (such as taxonomy, primers, LIMS workflows) should now be associated with the selected assembly or sequence files.
+If the function is successful, updated FIMS and LIMS data (such as taxonomy, primers, LIMS workflows) should now be associated with the selected contig or sequence files.
 
 
 Annotate with FIMS/LIMS Data: Option 2: Annotating with Cycle Sequencing Plate/materialSampleID
@@ -148,7 +148,7 @@ If documents highlighted are consensus sequences, it *may* be necessary to set t
 
 **If using this option on consensus sequences**: The materialSampleID data must be part of the document names. If it is not, follow the :ref:`Batch_rename-link` instructions to add this information to the document names.
 
-**If using this option on assembly files**: The materialSamplelD data must be part of the trace file of origin document names.
+**If using this option on contig files**: The materialSamplelD data must be part of the trace file of origin document names.
 
 Once documents to be annotated have materialSampleID in their name, navigate back to the *Annotate with FIMS/LIMS Data* window in the Biocode Plugin dropdown menu.
 
@@ -164,25 +164,25 @@ Select materialSampleID as the pivot data field to reconnect the local documents
 
 Click “OK” and Geneious Prime will perform the “Annotate with FIMS/LIMS Data” function on the selected documents. 
 
-If the function is successful, updated FIMS and LIMS data (such as taxonomy, primers, LIMS workflows) should now be associated with the selected assembly or sequence files.
+If the function is successful, updated FIMS and LIMS data (such as taxonomy, primers, LIMS workflows) should now be associated with the selected contig or sequence files.
 
 
 .. _relink_trace_files-link:
 
-Re-link Trace Files to Assemblies
----------------------------------
+Re-link Trace Files to Assembled Contigs
+----------------------------------------
 
-For various reasons, trace files can become unlinked from the assembly file in Geneious Prime, and this may prevent the “Annotate with FIMS/LIMS Data'' function from working. 
+For various reasons, trace files can become unlinked from the contig file in Geneious Prime, and this may prevent the “Annotate with FIMS/LIMS Data'' function from working. 
 
-If a trace file is no longer linked to an assembly file, the reference icon to the left of the trace file name in the assembly Document Viewer Contig View tab will be missing.
+If a trace file is no longer linked to a contig file, the reference icon to the left of the trace file name in the contig Document Viewer Contig View tab will be missing.
 
 .. figure:: /images/relink_traces1.png
   :align: center
   :target: /en/latest/_images/relink_traces1.png
 
-To re-link the trace files to the assembly, the “Extract” function will need to be performed. 
+To re-link the trace files to the contig, the “Extract” function will need to be performed. 
 
-Highlight the unlinked trace file in the assembly Document Viewer, Contig View tab.
+Highlight the unlinked trace file in the contig Document Viewer, Contig View tab.
 
 Select “extract” from the options at the top of the Contig View tab.
 
@@ -196,7 +196,7 @@ An *Extract* window will pop up with the previous trace name automatically fille
   :align: center
   :target: /en/latest/_images/relink_traces3.png
 
-In the same local Geneious directory, a new trace file is produced and linked to the assembly, as seen in the Document Viewer, Contig View. Both traces should now have the reference icon.
+In the same local Geneious directory, a new trace file is produced and linked to the contig, as seen in the Document Viewer, Contig View. Both traces should now have the reference icon.
 
 .. figure:: /images/relink_traces4.png
   :align: center
@@ -205,7 +205,7 @@ In the same local Geneious directory, a new trace file is produced and linked to
 .. note:: 
          If the extracted trace was the reverse read, the extracted trace will need to be reverse complemented to have the same orientation as the original trace file.
 
-The new trace file can be dragged and dropped to wherever the original unlinked trace was. The ”Annotate with FIMS/LIMS Data” function should now work on this assembly.
+The new trace file can be dragged and dropped to wherever the original unlinked trace was. The ”Annotate with FIMS/LIMS Data” function should now work on this contig.
 
 
 .. _set_read_direction-link:
