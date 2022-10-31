@@ -45,7 +45,7 @@ Where it says ‘Excel Workbook’, click the Browse button to select the approp
 	
 If the samples being uploaded are not part of an existing expedition within GEOME, a new one needs to be created.
 
-	In the Expedition Name drop-down that appears, click the plus sign to the right of the box and enter the SIBN project name. (The same name should go in Expedition Title and Expedition Code.) 
+	In the Expedition Name dropdown that appears, click the plus sign to the right of the box and enter the SIBN project name. (The same name should go in Expedition Title and Expedition Code.) 
 	
 	Remember to follow the :ref:`conventions-link`, and make sure not to repeat a previously created expedition code.
 
@@ -53,7 +53,7 @@ If the samples being uploaded are not part of an existing expedition within GEOM
 
    While the expedition title can be modified at any time, the expedition code is a unique identifier and cannot be changed.
 
-If adding to or updating data previously uploaded, simply select the associated project from the Expedition Name drop-down. 
+If adding to or updating data previously uploaded, simply select the associated project from the Expedition Name dropdown. 
 
 	If adding new samples to an existing GEOME expedition, only the new samples need to be in the spreadsheet to be uploaded.
 
