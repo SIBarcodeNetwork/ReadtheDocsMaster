@@ -194,7 +194,7 @@ If submitting metazoan C01 or rDNA through the Genbank Submission Portal, when c
 
 If submitting through tbl2asn, follow instructions in the section below for BioProject addition.
 
-SIBN is working with the Geneious developers to have BioProjects added to the :ref:`gb_submission_details` section of the Geneious Prime GenBank Upload Plugin. Currently, if submitting barcodes through the Geneious Prime Genbank Upload Plugin, submit the sequences first and treat the sequences as "existing Genbank records" (see above).
+For other submission methods, submit the sequences first and treat the sequences as "existing Genbank records" (see above).
 
 
 tbl2asn
