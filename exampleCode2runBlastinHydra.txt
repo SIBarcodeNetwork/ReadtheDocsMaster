@@ -1,0 +1,61 @@
+hydra-login01 login: steierj                                                                                                                                                                                   
+steierj@hydra-login01.cm.cluster's password:                                                                                  
+                                                               
+---------------------------------------------------------------------------                                                   
+Welcome to the SI/HPC cluster Hydra-6, running BCM 9.1         (CentOS 7.9)                                                   
+---------------------------------------------------------------------------                                                   
+ This is one of the login nodes.                                                                                              
+                                                                                                                              
+ +===========================================================================+                                                
+ | You must change your password every 180 days.                             |                                                
+ | Your account will be locked if it is inactive for 180+14 days,            |                                                
+ | as per https://confluence.si.edu/display/HPC/Changing+your+Hydra+Password |                                                
+ | or use https://hydra-6.si.edu/ssp/                                        |                                                
+ +===========================================================================+                                                
+                                                                                                                              
+ ----------------------------------------------------------------------------                                                 
+                                                                                                                                                                                          
+                                                                                                                              
+ + Questions or Problems:                                                                                                     
+    email SI-HPC-Admin@si.edu  for sys-admin related issues,                                                                  
+          SI-HPC@si.edu        for Bioinformatic/Genomics questions,                                                          
+          hpc@cfa.harvard.edu  for SAO users who need help.                                                                   
+                                                                                                                                                                                                                   
+[steierj@hydra-login01 ~]$ cd /scratch/genomics/steierj/Blasts                                                                
+[steierj@hydra-login01 Blasts]$ mkdir FY18Surifish                                                                            
+[steierj@hydra-login01 Blasts]$ cd FY18Surifish                                                                               
+[steierj@hydra-login01 FY18Surifish]$ mkdir 12S                                                                               
+[steierj@hydra-login01 FY18Surifish]$ cd 12S                                                                                  
+[steierj@hydra-login01 12S]$ module load tools/ffsend
+
+#Uploaded .fasta file on send.vis.ee and obtained link to paste below
+                                                                         
+[steierj@hydra-login01 12S]$ ffdownload https://send.vis.ee/download/95223dd0b9ca24f8/#jcFaCk1ouAbTXOFVWn5RVg                 
+Download complete
+
+# Uploaded .job file on send.vis.ee and obtained link to paste below
+                                                                                                             
+[steierj@hydra-login01 12S]$ ffdownload https://send.vis.ee/download/726504e381fb30c0/#KTZnK-TkmKoxot-WRK_8BQ
+Download complete
+
+# Run job
+                                                                                                            
+[steierj@hydra-login01 12S]$ ls                                                                                               
+FY18Surifish12Sblast.job  FY18Surifish12S.fasta                                                                               
+[steierj@hydra-login01 12S]$ qsub FY18Surifish12Sblast.job                                                                    
+Your job 4221361 ("FY18Surifish12S1blast") has been submitted                                                                 
+
+# Waited for job to run, when complete->         
+                                                    
+[steierj@hydra-login01 12S]$ ls                                                                                           	
+FY18Surifish12Sblast.job  FY18Surifish12Sblast.log  FY18Surifish12SBlastResults.tsv  FY18Surifish12S.fasta                    
+[steierj@hydra-login01 12S]$ ffupload FY18Surifish12SBlastResults.tsv                                                        
+Upload complete                                                                                                              
+https://send.vis.ee/download/cf66af395141204f/#VX6IqrKio7QULynq0WOCVQ
+
+# Logout
+
+[steierj@hydra-login01 12S]$ exit
+logout                                                                                                               	                                                                                                
+Connection to hydra-login01.cm.cluster closed.                                                                            	
+Session closed.  
