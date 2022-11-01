@@ -21,7 +21,7 @@ Welcome to the SI/HPC cluster Hydra-6, running BCM 9.1         (CentOS 7.9)
           SI-HPC@si.edu        for Bioinformatic/Genomics questions,                                                          
           hpc@cfa.harvard.edu  for SAO users who need help.                                                                   
                                                                                                                                                                                                                    
-[steierj@hydra-login01 ~]$ cd /scratch/genomics/steierj/Blasts                                                                
+[steierj@hydra-login01 ~]$ cd /pool/genomics/steierj/Blasts                                                                
 [steierj@hydra-login01 Blasts]$ mkdir FY18Surifish                                                                            
 [steierj@hydra-login01 Blasts]$ cd FY18Surifish                                                                               
 [steierj@hydra-login01 FY18Surifish]$ mkdir 12S                                                                               
