@@ -152,7 +152,7 @@ BLAST is a useful way to check the taxonomic ID of a questionable barcode sequen
 
 To BLAST the consensus of a single contig, it is quickest to highlight and copy the consensus sequence from Geneious Prime and enter it into the online BLAST search page on the NCBI website (see http://blast.ncbi.nlm.nih.gov/Blast.cgi). 
 
-Geneious Prime also provides the ability to BLAST a single or several sequences at a time from within the program itself, but is more time consuming. It is recommended to only BLAST small batches of 15 or less sequences when using this below method. To BLAST entire sequence datasets at once, see the (LINK to BLAST SOP) instructions to BLAST through the Biocode Plugin or within the Smithsonian Institution High Performance Cluster (SI/HPC) "Hydra".
+Geneious Prime also provides the ability to BLAST a single or several sequences at a time from within the program itself, but is more time consuming. It is recommended to only BLAST small batches of 15 or less sequences when using this below method. To BLAST entire sequence datasets at once, see the :ref:`running_BLAST-link` instructions to BLAST through the Biocode Plugin or within the Smithsonian Institution High Performance Cluster (SI/HPC) "Hydra".
 
 To use BLAST small batches of contigs:
 
