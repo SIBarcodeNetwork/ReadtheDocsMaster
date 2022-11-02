@@ -1,6 +1,6 @@
 .. _running_BLAST-link:
 
-Running NCBI BLAST to compare taxonomic IDs
+Running NCBI BLAST to Compare Taxonomic IDs
 ===========================================
 
 
@@ -85,8 +85,10 @@ Two files will be needed to run BLAST+ on Hydra:
 * a .fasta file with nucleotide sequences and
 * a .job file that Hydra will use to load the program and run the needed commands.
 
-Step 1: Preparing the files
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Please note: the below instructions have been written for MAC computers as per SIBN best practise.
+
+Preparing the files
+~~~~~~~~~~~~~~~~~~~
 
 Follow the :ref:`Exporting_fasta-link` instructions to obtain a .fasta file with sequences to be BLASTed. It is highly recommended to include the scientficName of the sequence within the sequence name.
 
@@ -103,9 +105,9 @@ The below setting recommendations may need to be increased based on the size of 
   :align: center
   :target: /en/latest/_images/qsubgenerator1.png
 
- Specify CPU time to be short.
+Specify CPU time to be short.
  
- Specify memory to request, multi-thread, # of CPUs, the “sh” job shell.
+Specify memory to request, multi-thread, # of CPUs, the “sh” job shell.
  
   When running the BLAST+ program, *10 GB across 20 CPUs for a total of 200 GB* is recommended to begin. Once initial analyses are run, the user receives a report on how much memory the analyses took and can further specify this value in the future. Also, if a run fails, it can be due to lack of memory.
   
@@ -116,6 +118,7 @@ Start typing BLAST into the modules section and the path to that program will ap
   :target: /en/latest/_images/qsubgenerator2.png
   
 In the "Additional options" section:
+
   Specify the desired name of the job and the .log file will be automatically named accordingly. 
  
   Select the three options “Change to CWD”, “Join output&error files”, and “Send email notifications”.
@@ -167,3 +170,147 @@ At the bottom of the QSub Generation Utility page, click the "Check if OK", then
   
    Once a user has run a successful BLAST in Hydra, going forward, it may be easier to return to this original job file and edit it as needed, rather than produce a new one in the QSub Generation Utility.
 
+Running Hydra in Office via FileZilla (Mac)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Log into user Hydra account through FileZilla.
+ 
+   Host: Hydra-login01.si.edu or Hydra-login02.si.edu
+   Username: lastnamefirstinitial
+   Password: xxxxxxx
+   Port:22
+ 
+This will automatically direct the user to their home directory in Hydra.
+ 
+Navigate to the user pool directory where to run analysis.
+ 
+   Remote site:  /pool/genomics/user/AnyFurtherDirectoryPathway
+ 
+Create a directory for the project.
+
+Drag and drop the .fasta file with consensus sequences from local computer into the chosen pool/genomics/user directory.
+
+Also drag and drop the new .job file into the same directory as the .fasta file
+
+Now open Terminal (Mac).
+
+Log onto Hydra through a secure shell session:
+
+   ssh user@hydra-login01.si.edu
+
+   ex: ssh steierj@hydra-login01.si.edu
+ 
+Enter password (will not show process of typing)
+ 
+This will automatically place the user in the Hydra home directory (~).
+ 
+Navigate to the directory where .fasta input and .job files are stored. 
+ 
+   cd /pool/genomics/user/AnyFurtherDirectoryPathway
+ 
+   ex: cd /pool/genomics/steierj/Blasts/FY19Fern
+ 
+Type the “ls” command to double check if .fasta input and .job file are in the current directory. 
+ 
+Run the qsub command to begin analysis.
+
+   qsub <name of .job file>
+   
+   ex: qsub FY19FernP06blast.job
+ 
+ 
+The user will get emails about the start of the job and completion of the job. The completion email will contain details about how much memory and time the job took. 
+ 
+It may take a couple minutes for output files to appear in proper directories in FileZilla once the job completion email is received. If “CWD” option was indicated in the .job file, the output .tsv file will be in the same directory as the analysis was run.
+ 
+Drag and drop the output .tsv file from FileZilla to a local directory.
+ 
+Log out of Hydra in the Terminal by typing “exit”.
+
+
+Running Hydra When Teleworking
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note::
+
+   For further instruction than what is listed here see: 
+https://github.com/SmithsonianWorkshops/Hydra-introduction/blob/master/hydra_intro.md
+ 
+Log onto telework.si.edu, go to IT tools, find Hydra there. Can click the links to either login node 01 or 02.
+
+   There have been past issues with certain internet browsers like Safari. Firefox browser works well. 
+     
+Log onto Hydra by just typing the username, hit enter, then type the correct password (will not show the process of typing).
+ 
+   This will automatically place the user in the hydra home directory (~) 
+ 
+Navigate to the directory where BLAST will be run within the user’s pool/genomics. ::
+ 
+   cd /pool/genomics/user/AnyFurtherDirectoryPathway
+ 
+   ex:  cd /pool/genomics/steierj/Blasts
+ 
+To build a new directory use the below command. Make sure to navigate to that new directory. ::
+ 
+   mkdir ExampleDirectoryName
+   
+   cd ExampleDirectoryName
+ 
+   ex: mkdir FY18Surifish
+   
+       cd FY18Surifish
+ 
+Once in the directory where files will be stored and BLAST will be run, download the .job and .fasta files to Hydra via the ffsend tool.
+
+Use the following command to load the ffsend module onto the current command line: ::
+ 
+   module load tools/ffsend
+ 
+Go to https://send.vis.ee/, upload the .fasta file to be run, and copy the resulting link.
+
+Download the .fasta file to Hydra with the following command: ::
+ 
+   ffdownload <paste send.vis.ee link here>
+ 
+   ex: ffdownload https://send.vis.ee/download/95223dd0b9ca24f8/#jcFaCk1ouAbTXOFVWn5RVg                 
+ 
+The file should then be downloaded to Hydra.
+ 
+Repeat step this download process for the .job file.
+
+Check that both files have properly downloaded to the Hydra directory with the “ls” command.
+
+Within that same directory, run the .job file. ::
+ 
+   qsub <name of .job file>
+ 
+   ex: qsub FY18Surifish12Blast.job
+ 
+The user will get emails about the start of the job and the completion of the job. The completion email will contain details about how much memory and time the job took.
+ 
+Download the resulting .tsv file from Hydra to the local computer with the following command: ::
+ 
+   ffupload <name of tsv file> 
+ 
+   ex: ffupload FY18Surifish12SBlastResults.tsv
+ 
+.. note::
+   This is a slightly different command than what is listed in the above linked GitHub page.
+   
+This will result in a link that pastes to the command line, click that link and the send.vis.ee page with the download will pop up. Download the file to the current browser's downloads. 
+ 
+Log out of Hydra by typing “exit”.
+ 
+For an example of code using Hydra to run BLAST+ in real time, see this `document <exampleCode2runBlastinHydra.txt>`_.
+
+Analyzing BLAST+ Results
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+As the BLAST+ output does not contain the full taxonomy (i.e. family, order, class etc.) of the BLAST hits as the live Verify Taxonomy Biocode Plugin function does, the user will need to pull the full taxonomy for the hits themselves if this is desired.
+
+A RStudio pipeline has been created utilizing the “taxonomizr” R package to take the locally downloaded BLAST+ .tsv output from Hydra and associate NCBI taxonomy with each blast hit. See this link to download the Rstudio package. Please note that certain text in the script such as working directory pathway and file names will need to be changed as applicable. https://www.dropbox.com/sh/j6u2ea1wudjvmoj/AAAo93idvlq_Bppyp2pSAu-la?dl=0
+(now in SIBN dropbox, but can the database be added to Github?)
+
+In progress: This package also reduces the hits down to the top 10 with the best E-value.
+
+Once taxonomy data has been added to the BLAST+ results, it is recommended that this file be converted to an .xlsx excel file and a pivot table be created to digest the information.
