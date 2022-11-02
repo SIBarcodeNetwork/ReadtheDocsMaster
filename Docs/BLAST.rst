@@ -173,28 +173,11 @@ At the bottom of the QSub Generation Utility page, click the "Check if OK", then
 Running Hydra in Office via FileZilla (Mac)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Log into user Hydra account through FileZilla. ::
- 
-   Host: Hydra-login01.si.edu or Hydra-login02.si.edu
-   Username: lastnamefirstinitial
-   Password: xxxxxxx
-   Port:22
- 
-This will automatically direct the user to their home directory in Hydra.
- 
-Navigate to the user pool directory where to run analysis.
- 
-   Remote site:  /pool/genomics/user/AnyFurtherDirectoryPathway
- 
-Create a directory for the project.
+For instruction on logging into Hydra and transferring the .fasta and .job files to the user's pool/genomics directory, see https://github.com/SmithsonianWorkshops/Hydra-introduction/blob/master/hydra_intro.md
 
-Drag and drop the .fasta file with consensus sequences from local computer into the chosen pool/genomics/user directory.
+Once the files have been transferred to Hydra via FileZilla, open Terminal (Mac) to run BLAST.
 
-Also drag and drop the new .job file into the same directory as the .fasta file.
-
-Now open Terminal (Mac).
-
-Log onto Hydra through a secure shell session:
+Within Terminal, log onto Hydra through a secure shell session:
 
    ssh user@hydra-login01.si.edu
 
