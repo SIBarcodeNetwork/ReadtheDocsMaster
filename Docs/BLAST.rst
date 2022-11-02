@@ -173,7 +173,7 @@ At the bottom of the QSub Generation Utility page, click the "Check if OK", then
 Running Hydra in Office via FileZilla (Mac)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For instruction on logging into Hydra and transferring the .fasta and .job files to the user's pool/genomics directory, see https://github.com/SmithsonianWorkshops/Hydra-introduction/blob/master/hydra_intro.md
+For instruction on logging into Hydra and transferring the .fasta and .job files to the user's pool/genomics directory, see https://github.com/SmithsonianWorkshops/Hydra-introduction/blob/master/hydra_intro.md.
 
 Once the files have been transferred to Hydra via FileZilla, open Terminal (Mac) to run BLAST.
 
