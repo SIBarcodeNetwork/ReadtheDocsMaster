@@ -79,6 +79,7 @@ Updates
 	mark_pass
 	exporting_fasta
 	exporting_metadata
+	BLAST
 
 .. toctree::
 	:maxdepth: 2
