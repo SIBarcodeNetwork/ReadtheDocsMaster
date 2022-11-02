@@ -190,7 +190,7 @@ Create a directory for the project.
 
 Drag and drop the .fasta file with consensus sequences from local computer into the chosen pool/genomics/user directory.
 
-Also drag and drop the new .job file into the same directory as the .fasta file
+Also drag and drop the new .job file into the same directory as the .fasta file.
 
 Now open Terminal (Mac).
 
@@ -200,7 +200,7 @@ Log onto Hydra through a secure shell session:
 
    ex: ssh steierj@hydra-login01.si.edu
  
-Enter password (will not show process of typing)
+Enter password (will not show process of typing).
  
 This will automatically place the user in the Hydra home directory (~).
  
@@ -233,8 +233,7 @@ Running Hydra When Teleworking
 
 .. note::
 
-   For further instruction than what is listed here see: 
-https://github.com/SmithsonianWorkshops/Hydra-introduction/blob/master/hydra_intro.md
+   For further instruction than what is listed here see: https://github.com/SmithsonianWorkshops/Hydra-introduction/blob/master/hydra_intro.md
  
 Log onto telework.si.edu, go to IT tools, find Hydra there. Can click the links to either login node 01 or 02.
 
@@ -295,7 +294,7 @@ Download the resulting .tsv file from Hydra to the local computer with the follo
    ex: ffupload FY18Surifish12SBlastResults.tsv
  
 .. note::
-   This is a slightly different command than what is listed in the above linked GitHub page.
+   "ffupload" is a slightly different command than what is listed in the above linked GitHub page.
    
 This will result in a link that pastes to the command line, click that link and the send.vis.ee page with the download will pop up. Download the file to the current browser's downloads. 
  
