@@ -283,7 +283,7 @@ This will result in a link that pastes to the command line, click that link and 
  
 Log out of Hydra by typing “exit”.
  
-For an example of code using Hydra to run BLAST+ in real time, see this `document <exampleCode2runBlastinHydra.txt>`_.
+For an example of code using Hydra to run BLAST+ in real time, see this `document <https://github.com/SIBarcodeNetwork/ReadtheDocsMaster/blob/master/exampleCode2runBlastinHydra.txt>`_.
 
 Analyzing BLAST+ Results
 ~~~~~~~~~~~~~~~~~~~~~~~~~
