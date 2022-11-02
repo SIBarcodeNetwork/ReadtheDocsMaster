@@ -173,7 +173,7 @@ At the bottom of the QSub Generation Utility page, click the "Check if OK", then
 Running Hydra in Office via FileZilla (Mac)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Log into user Hydra account through FileZilla.
+Log into user Hydra account through FileZilla. ::
  
    Host: Hydra-login01.si.edu or Hydra-login02.si.edu
    Username: lastnamefirstinitial
