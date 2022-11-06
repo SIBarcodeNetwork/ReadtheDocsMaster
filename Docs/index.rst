@@ -91,3 +91,4 @@ Updates
 	rapid_data_release
 	gb_update
 	bioprojects
+	BOLD_tips
