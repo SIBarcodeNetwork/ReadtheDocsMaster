@@ -9,7 +9,11 @@ Creating a BOLD project
 
 When creating a BOLD project, any markers sequenced from the samples can be added to BOLD. 
 
-Markers with simple annotations (i.e. just a single coding region) can be submitted to GenBank from BOLD. However, markers that cover multiple regions, such as the psbA-trnH intergenic spacer and all pseudogenes must be submitted to GenBank through another method other than BOLD, such as the Geneious Prime GenBank Plugin, as these sequences require more complex annotations for GenBank than BOLD can provide.
+However, not all markers can be pushed to GenBank from BOLD:
+
+* Markers with simple annotations (i.e. just a single coding region) can be submitted to GenBank from BOLD.
+* Markers that cover multiple regions, such as the psbA-trnH intergenic spacer must be submitted to GenBank through another method other than BOLD, such as the :ref:`GBplugin-link`, as these sequences require more complex annotations for GenBank than BOLD can provide.
+* Pseudogenes must also be submitted via other methods than BOLD.
 
 .. note:: 
    To keep all sequences from a single project kept together, pseudogenes may be added to BOLD projects using the “-like” barcode options that are available (e.g. “rbcL-like”, “CO1-like”). 
