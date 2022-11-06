@@ -88,7 +88,7 @@ After selecting a local Geneious folder location to place the traces, a *Downloa
   :align: center
   :target: /en/latest/_images/Biocode_LIMS_matchseq.png
 
-Select “Matching selected LIMS sequences”. Click “OK” and traces will be downloaded to chosen local Geneious folder..
+Select “Matching selected LIMS sequences”. Click “OK” and traces will be downloaded to chosen local Geneious folder.
 
 Follow the :ref:`Annotating_FIMS_LIMS-link` protocol to annotate newly downloaded local trace files to associate them with BOLD process IDs from the FIMS. 
 
