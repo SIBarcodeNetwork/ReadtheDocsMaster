@@ -1,7 +1,7 @@
 Tips for BOLD Upload
 =====================
 
-The following instructions are meant to be supplementary to those found in the current version of the BOLD Systems Handbook (http://www.boldsystems.org/libhtml_v3/static/BOLD4_Documentation_Draft1.pdf).
+The following instructions are meant to be supplementary to those found in the current version of the BOLD Systems Handbook (http://www.boldsystems.org/libhtml_v3/static/BOLD4_Documentation_Draft1.pdf). These are aimed towards uploading data to bold that is destined for GenBank publication.
  
 
 Creating a BOLD project
