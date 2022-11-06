@@ -1,7 +1,7 @@
 Tips for BOLD Upload
 =====================
 
-The following tips are aimed towards data uploads to BOLD that are destined for GenBank publication and are meant to be supplementary to instructions found in the current version of the BOLD Systems Handbook. (http://www.boldsystems.org/libhtml_v3/static/BOLD4_Documentation_Draft1.pdf)
+The following tips are aimed towards data uploads to BOLD that are destined for GenBank publication and are meant to be supplementary to instructions found in the current version of the BOLD Systems `Handbook <http://www.boldsystems.org/libhtml_v3/static/BOLD4_Documentation_Draft1.pdf>`_.
  
 
 Creating a BOLD project
@@ -121,7 +121,7 @@ If the “Retrieve using annotated LIMS information” option was selected, the 
   :align: center
   :target: /en/latest/_images/BOLDtracesub_rename.png
   
-  For example, this screenshot shows a primer name change was necessary in this above instance to conform with the entry in the BOLD primer database.
+  This screenshot shows a primer name change was necessary in this above instance to conform with the entry in the BOLD primer database.
 
 Click “OK” when ready and trace files and the necessary BOLD “data” spreadsheet will be downloaded in a zipped file to the chosen local directory. This zipped file can be directly uploaded to BOLD. 
 
