@@ -92,7 +92,7 @@ Select “Matching selected LIMS sequences”. Click “OK” and traces will be
 
 Follow the :ref:`Annotating_FIMS_LIMS-link` protocol to annotate newly downloaded local trace files to associate them with BOLD process IDs from the FIMS. 
 
-This does not need to be done if, after BOLD Process IDs were added to FIMs, contigs were annotated prior to passing them in LIMS.
+ This does not need to be done if, after BOLD Process IDs were added to FIMs, contigs were annotated prior to passing them in LIMS.
 
 Highlight traces to submit to BOLD from within the local Geneious folder.
 
