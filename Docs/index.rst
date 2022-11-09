@@ -9,6 +9,7 @@ This documentation site describes the best practices for the informatics pipelin
 
 	workflow
 	software_components
+	software_updates
 	barcode_data_standard
 	conventions
 
