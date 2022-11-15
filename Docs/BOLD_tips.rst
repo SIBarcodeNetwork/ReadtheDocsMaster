@@ -16,13 +16,13 @@ However, not all markers should be pushed to GenBank from BOLD:
 * Pseudogenes must also be submitted via other methods than BOLD.
 
 .. note:: 
-   To keep all sequences from a single project kept together, pseudogenes may be added to BOLD projects using the “-like” barcode options that are available (e.g. “rbcL-like”, “CO1-like”). Always upload pseudogene marker data separately from coding marker data. 
+   To keep all sequences from a single project together, pseudogenes may be added to BOLD projects using the “-like” barcode options that are available (e.g. “rbcL-like”, “CO1-like”). Always upload pseudogene marker data separately from coding marker data. 
 
 .. figure:: /images/BOLD_pseudogene_names.png
   :align: center
   :target: /en/latest/_images/BOLD_pseudogene_names.png
   
-  Example of a psuedogene "-like" option in the supporting marker dropdown list in BOLD.
+  Example of a pseudogene "-like" option in the supporting marker dropdown list in BOLD.
 
 Uploading Specimen Metadata
 -----------------------------------
