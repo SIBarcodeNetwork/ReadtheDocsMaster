@@ -3,11 +3,23 @@
 Software Updates
 =================
 
-.. image:: https://img.shields.io/badge/Biocode%20Plugin%20Version-3.0.16-green.svg
+.. image:: https://img.shields.io/badge/Biocode%20Plugin%20Version-3.0.17-green.svg
     :target: https://github.com/biocodellc/biocode-lims/releases/download/v3.0.16/BiocodePlugin_3_0_16.gplugin
 
 .. image:: https://img.shields.io/badge/GenBank%20Upload%20Plugin%20Version-1.6.8-green.svg
     :target: https://assets.geneious.com/plugins/GenbankSubmission_1_6_8.gplugin
+
+21 November, 2022
+	The Biocode plug in was updated to incorporate the following things:
+	
+	* Fixed error messaging to be more descriptive when FIMS or LIMS connections do not work. This should help users diagnose connection issues themselves.
+	* Fixed issue where BOLD export crashed when forward/reverse primer names were null. New behaviour asks user to name them prior to submission.
+	* Added descriptive text to all options in plugin dropdown menu
+	* Changed view of wells to be A01, B01 instead of A1, B1 in table view and exports.
+	* Implemented sorting function to sort wells like A01, B01, C01, instead of A01, A02, A03.
+	* Updated ordering of Advanced search options to put search options that are faster at the top of the list. Helps user select options for faster searches. Equals, Begins With, and Ends With are FAR faster than contains searches. Note that these search options are available when clicking "More Options"
+	* Updated list of FIMS connections to only contain working FIMS connections
+	* Upgraded development environnment to synchronize with geneious prime and java 11
 
 24 August, 2022
 	The Biocode plugin was updated to correct contact email for asking for help, and "tentative" was added to the list of reaction statuses, in addition to "passed" or "failed". Tentative to be used in cases where we may still need to check taxonomy but sequence is OK. Note that you should not be able to mark as "submitted" while in "tentative".
