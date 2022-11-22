@@ -4,7 +4,7 @@ Software Updates
 =================
 
 .. image:: https://img.shields.io/badge/Biocode%20Plugin%20Version-3.0.17-green.svg
-    :target: https://github.com/biocodellc/biocode-lims/releases/download/v3.0.16/BiocodePlugin_3_0_16.gplugin
+    :target: https://github.com/biocodellc/biocode-lims/releases/download/v3.0.17/BiocodePlugin_3_0_17.gplugin
 
 .. image:: https://img.shields.io/badge/GenBank%20Upload%20Plugin%20Version-1.6.8-green.svg
     :target: https://assets.geneious.com/plugins/GenbankSubmission_1_6_8.gplugin
