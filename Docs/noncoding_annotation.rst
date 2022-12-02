@@ -57,12 +57,6 @@ Annotations to be added to the psbA-trnH intergenic spacer:
 
 
 Note that the coding portions of a sequence require two types of annotations: the Gene annotation and whatever annotation applies to the function of the coding sequence (CDS or tRNA). Within the CDS annotation, the “transl_table” property will always be 11 (“The Bacterial, Archaeal, and Plant Plastid Code”), and when the full psbA-trnH sequence is present, the codon_start value will typically be 3.
-
-The annotated Features of a properly annotated psbA-trnH intergenic spacer record on GenBank will look like this:
-
-.. figure:: /images/gb_features_annotation.png
-  :align: center
-  :target: /en/latest/_images/gb_features_annotation.png
   
   
 Pseudogenes
