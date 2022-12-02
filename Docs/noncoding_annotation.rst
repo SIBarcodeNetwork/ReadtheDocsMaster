@@ -11,7 +11,7 @@ For additional information on annotating sequences, see the Geneious Prime `tuto
 Initial Annotation Tips
 ---------------------
 
-* Annotate aligned consensus sequences rather than assembled contigs or individual sequences. This saves time in the long run as bulk annotations can be done across all aligned sequences at once.
+* Annotate aligned consensus sequences rather than assembled contigs or individual sequences. This saves time in the long run as bulk annotations can be done across all aligned sequences at once. SIBN recommends using the MUSCLE Alignment option in Geneious Prime.
 
 * If annotating a taxonomically diverse set of sequences that will not all align well, multiple alignments may need to be done, each annotated separately. 
 
