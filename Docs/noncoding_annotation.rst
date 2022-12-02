@@ -200,7 +200,7 @@ For the psbA-trnH spacer sequence, after all applicable annotations are added to
   :align: center
   :target: /en/latest/_images/annotation_interval_edit.png
 
- In the above image, sequence #30 is shorter on the 3’ end and does not have trnH gene sequence. This spacer annotation interval was edited to “Truncated right end”, as the spacer sequence is not complete.
+In the above image, sequence #30 is shorter on the 3’ end and does not have trnH gene sequence. This spacer annotation interval was edited to “Truncated right end”, as the spacer sequence is not complete.
   
 Individual annotations can also be highlighted and dragged to change interval coverage on the sequence when needed.
 
