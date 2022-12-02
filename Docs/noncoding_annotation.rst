@@ -162,7 +162,7 @@ In the Properties section, click the Add button to bring up the *Add Property* w
 
 .. figure:: /images/annotation_add_property.png
   :align: center
-  :target: /en/latest/_images/aannotation_add_property.png
+  :target: /en/latest/_images/annotation_add_property.png
   
 Repeat the above “Add Property” steps for each property listed for the psbA CDS annotation in the above table.
 
