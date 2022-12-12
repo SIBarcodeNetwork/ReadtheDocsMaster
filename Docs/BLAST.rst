@@ -290,7 +290,7 @@ Analyzing BLAST+ Results
 
 As the BLAST+ output does not contain the full taxonomy (i.e. family, order, class etc.) of the BLAST hits as the live Verify Taxonomy Biocode Plugin function does, the user will need to pull the full taxonomy for the hits themselves if this is desired.
 
-A RStudio pipeline has been created utilizing the “taxonomizr” R package to take the locally downloaded BLAST+ .tsv output from Hydra and associate NCBI taxonomy with each blast hit. See this link to download the Rstudio package, called "Running_taxonomizer_Post_BLAST_PP.Rmd".
+An RStudio pipeline has been created utilizing the “taxonomizr” R package to take the locally downloaded BLAST+ .tsv output from Hydra and associate NCBI taxonomy with each blast hit. See this link to download the Rstudio package.
 
 https://www.dropbox.com/sh/j6u2ea1wudjvmoj/AAAo93idvlq_Bppyp2pSAu-la?dl=0
 
