@@ -1,0 +1,128 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+#Intro
+This notebook was developed in RStudio.
+
+If needed, "uncomment" (Remove the "#") the lines below and install the taxonomizr package from CRAN (or from GitHub if CRAN download is unsuccessful), then load it onto R. For the GitHub installation _devtools_ are needed.
+
+```{r setup}
+# install if needed
+# from CRAN
+
+#install.packages("taxonomizr")
+
+# development version (some bugs may be fixed here)
+
+#install.packages("devtools")
+#library(devtools)
+#devtools::install_github('sherrillmix/taxonomizr')
+```
+
+```{r set working directory}
+# set working directory to where you would like the NCBI taxonomy database to be located or where it is already located. This command will set this directory for all following chunks.
+
+knitr::opts_knit$set(root.dir = '~/Dropbox (Smithsonian)/SIBN/SIBN Protocols/Informatics Protocols/NCBI taxonomy database')
+```
+
+```{r load needed libraries}
+
+library(taxonomizr)
+library(readr)
+library(dplyr)
+```
+
+#Download NCBI taxonomy database
+Download the NCBI taxonomy database onto your local computer if not already done. This will take up about 70 GB of memory, and alot of bandwidth and time. IT recommends if downloading this database onto a local computer, that computer have an SSD (solid state hard drive) that is not "almost full", otherwise computer performance may slow after downloading the database. Download may also be more likely to succeed if performed after typical working hours.
+
+After running the below command, the following text should appear gradually as database is downloading:
+/## Downloading names and nodes with getNamesAndNodes()
+/## Downloading accession2taxid with getAccession2taxid()
+/## This can be a big (several gigabytes) download. Please be patient and use a fast connection.
+/## Preprocessing names with read.names.sql()
+/## Preprocessing nodes with read.nodes.sql()
+/## Preprocessing accession2taxid with read.accession2taxid()
+/## Reading ./nucl_gb.accession2taxid.gz.
+/## Reading ./nucl_wgs.accession2taxid.gz.
+/## Reading in values. This may take a while.
+/## Adding index. This may also take a while.
+/## [1] "accessionTaxa.sql" 
+
+If database has already been downloaded, this text will appear:
+/## SQLite database accessionTaxa.sql already exists. Delete to regenerate
+[1] "accessionTaxa.sql"
+
+This can be ignored and move on.
+
+```{r prepare database}
+#prepare NCBI database
+
+prepareDatabase('accessionTaxaApril2022.sql')
+```
+# Prepare BLAST+ output file
+Load the resulting .tsv file from the BLAST+ program, add the column headers back in, filter and sort BLAST results by evalue and keep only the top 10 results.
+
+
+```{r prepare blast results}
+# load blast results and add column names
+
+blastResults <- read_tsv('FY22DipteraP01SBlastResults.tsv',
+                         col_names = c("qseqid", "sacc", "staxid", "sscinames",
+                                       "sblastnames", "evalue", "bitscore", "pident", "qcovs"))
+
+# inspect that column names have been added correctly
+
+View(blastResults)
+
+#filter, sort, and select only the top 10 blast hit results based on e-value
+
+blastResults_edited <- blastResults %>%
+    filter(evalue < 0.01) %>%
+    arrange(evalue) %>%
+    group_by(qseqid) %>%
+    slice_head(., n = 10) 
+
+View(blastResults_edited)
+```
+
+# Pull and add taxonomy to prepared BLAST file
+Pull the NCBI taxonomy using the "getTaxonomy" function:
+Note: To avoid having to list a directory pathway to your .tsv file, move a copy of the file to the same directory that you have placed the NCBI taxonomy database in.
+```{r match taxonomy to blast results}
+# Pull taxonomy based on "staxid" from blastResults and convert taxonomy results to a data frame to further manipulate
+
+blastTaxonomy <- as.data.frame(getTaxonomy(unique(blastResults_edited$staxid),'accessionTaxaApril2022.sql'))
+
+# Add staxid column back into taxonomy results, as the "getTaxonomy" function was not written to do that
+
+blastTaxonomy$staxid <- unique(blastResults_edited$staxid)
+
+# remove the row names from the data frame, as they are not needed now
+
+row.names(blastTaxonomy)<-NULL
+
+# inspect the results
+
+View(blastTaxonomy)
+
+# add taxonomy results to the blast results based on the staxid
+
+blastResults_matched <- blastResults_edited %>% 
+  left_join(blastTaxonomy, by = "staxid")
+
+# inspect the results
+
+View(blastResults_matched)
+
+
+
+```
+# Write results to current working directory
+Finally, write the taxonomy results out of R to a .csv file with whatever name you choose. This will be saved to the current working directory.
+
+```{r write matched file}
+# write file
+
+write.csv(blastResults_matched,'FY22DipteraP01SBlastResults.csv', row.names = FALSE) 
+```
