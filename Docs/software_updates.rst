@@ -3,14 +3,17 @@
 Software Updates
 =================
 
-.. image:: https://img.shields.io/badge/Biocode%20Plugin%20Version-3.0.17-green.svg
-    :target: https://github.com/biocodellc/biocode-lims/releases/download/v3.0.17/BiocodePlugin_3_0_17.gplugin
+.. image:: https://img.shields.io/badge/Biocode%20Plugin%20Version-3.0.18-green.svg
+    :target: https://github.com/biocodellc/biocode-lims/releases/download/v3.0.18/BiocodePlugin_3_0_18.gplugin
 
 .. image:: https://img.shields.io/badge/GenBank%20Upload%20Plugin%20Version-1.6.8-green.svg
     :target: https://assets.geneious.com/plugins/GenbankSubmission_1_6_8.gplugin
 
+27 December, 2022
+	The Biocode Plugin was updated to include performance improvements when opening the detail view of a LIMS plate. Now faster than with previous versions of the plugin. A bug was also fixed where app crashed with null latitude or null longitude.
+
 21 November, 2022
-	The Biocode plug in was updated to incorporate the following things:
+	The Biocode Plugin was updated to incorporate the following things:
 	
 	* Fixed error messaging to be more descriptive when FIMS or LIMS connections do not work. This should help users diagnose connection issues themselves.
 	* Fixed issue where BOLD export crashed when forward/reverse primer names were null. New behaviour asks user to name them prior to submission.
@@ -22,7 +25,7 @@ Software Updates
 	* Upgraded development environnment to synchronize with geneious prime and java 11.
 
 24 August, 2022
-	The Biocode plugin was updated to correct contact email for asking for help, and "tentative" was added to the list of reaction statuses, in addition to "passed" or "failed". Tentative to be used in cases where we may still need to check taxonomy but sequence is OK. Note that you should not be able to mark as "submitted" while in "tentative".
+	The Biocode Plugin was updated to correct contact email for asking for help, and "tentative" was added to the list of reaction statuses, in addition to "passed" or "failed". Tentative to be used in cases where we may still need to check taxonomy but sequence is OK. Note that you should not be able to mark as "submitted" while in "tentative".
 
 24 February, 2021
 	The Biocode plugin was updated to fix issues with large tissue queries against GEOME failing. 
