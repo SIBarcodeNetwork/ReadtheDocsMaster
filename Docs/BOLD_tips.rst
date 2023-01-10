@@ -31,12 +31,14 @@ Populate the BOLD spreadsheet template with relevant voucher, taxonomy, and coll
 
 If tissues/DNAs are stored in the SI Biorepository, add “Smithsonian Institution National Museum of Natural History” in the “Institution Storing” field.
 
-**Be aware that whatever value is listed in the SampleID field in the BOLD metadata spreadsheet will be the “specimen_voucher” in the GenBank record.**
+**Be aware that whatever value is listed in the Sample ID field in the BOLD metadata spreadsheet will be the “specimen_voucher” in the GenBank record.**
 
 .. figure:: /images/BOLD_spreadsheet_sampleID.png
   :align: center
   :target: /en/latest/_images/BOLD_spreadsheet_sampleID.png
  
+To alter Sample ID after initial sample data upload, email support@boldsystems.org to request the current Sample ID change request table.
+
 
 Adding BOLD Process IDs to GEOME
 ---------------------------------------------
