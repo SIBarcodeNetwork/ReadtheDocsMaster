@@ -109,7 +109,7 @@ Specify CPU time to be short.
  
 Specify memory to request, multi-thread, # of CPUs, the “sh” job shell.
  
-  When running the BLAST+ program, *10 GB across 20 CPUs for a total of 200 GB* is recommended to begin. Once initial analyses are run, the user receives a report on how much memory the analyses took and can further specify this value in the future. Also, if a run fails, it can be due to lack of memory.
+  When running the BLAST+ program, *12 GB across 20 CPUs for a total of 240 GB* is recommended to begin. Once initial analyses are run, the user receives a report on how much memory the analyses took and can further specify this value in the future. Also, if a run fails, it can be due to lack of memory.
   
 Start typing BLAST into the modules section and the path to that program will appear – select "(bioinformatics/blast)".
  
