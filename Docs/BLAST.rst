@@ -131,9 +131,7 @@ In the "Job specific commands" section:
   Indicate the specific sh shell commands required to run BLAST. The following code may be copied by the user - remember to change the -query and -out names below. ::
 
  
-    echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
-    echo + NSLOTS = $NSLOTS
-    #
+  
     time \
     blastn \
     -query NameOfConsensusSeqs.fasta \
@@ -143,8 +141,7 @@ In the "Job specific commands" section:
     -num_threads $NSLOTS \
     -max_target_seqs 100 \
     -outfmt "6 qseqid sacc staxid sscinames sblastnames evalue bitscore pident qcovs"
-    #
-    echo = `date` job $JOB_NAME done
+  
 
 
 Specific notes on the above BLAST commands:
