@@ -85,8 +85,6 @@ Two files will be needed to run BLAST+ on Hydra:
 * a .fasta file with nucleotide sequences and
 * a .job file that Hydra will use to load the program and run the needed commands.
 
-Please note: the below instructions have been written for MAC computers as per SIBN best practise.
-
 Preparing the files
 ~~~~~~~~~~~~~~~~~~~
 
@@ -167,14 +165,14 @@ At the bottom of the QSub Generation Utility page, click the "Check if OK", then
   
    Once a user has run a successful BLAST in Hydra, going forward, it may be easier to return to this original job file and edit it as needed, rather than produce a new one in the QSub Generation Utility.
 
-Running Hydra in Office via FileZilla (Mac)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Accessing Hydra on SI Network using a Command Line Interface (CLI)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For instruction on logging into Hydra and transferring the .fasta and .job files to the user's pool/genomics directory, see https://github.com/SmithsonianWorkshops/Hydra-introduction/blob/master/hydra_intro.md.
 
-Once the files have been transferred to Hydra via FileZilla, open Terminal (Mac) to run BLAST.
+Once the files have been transferred to Hydra via FileZilla, open Terminal (Mac) or Command Line [Windows] to run BLAST.
 
-Within Terminal, log onto Hydra through a secure shell session:
+Within Terminal or Command Line, log onto Hydra through a secure shell session:
 
    ssh user@hydra-login01.si.edu
 
@@ -208,7 +206,7 @@ Drag and drop the output .tsv file from FileZilla to a local directory.
 Log out of Hydra in the Terminal by typing “exit”.
 
 
-Running Hydra When Teleworking
+Accessing Hydra When Teleworking
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note::
