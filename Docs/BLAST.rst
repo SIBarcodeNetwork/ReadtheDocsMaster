@@ -82,15 +82,15 @@ Background:
 
 Two files will be needed to run BLAST+ on Hydra:
 
-* a .fasta file with nucleotide sequences and
-* a .job file that Hydra will use to load the program and run the needed commands.
+1. a **fasta** file with nucleotide sequences
+2. a **job** file that Hydra will use to load the program and run the needed commands.
 
 Preparing the files
 ~~~~~~~~~~~~~~~~~~~
 
 Follow the :ref:`Exporting_fasta-link` instructions to obtain a .fasta file with sequences to be BLASTed. It is highly recommended to include the scientficName of the sequence within the sequence name.
 
-Create or modify a .job file on the Qsub Generation Utility
+Create or modify a **job** file on the **Qsub Generation Utility**
 
    When in office: (https://hydra-adm01.si.edu/tools/QSubGen/)
    
@@ -105,7 +105,7 @@ The below setting recommendations may need to be increased based on the size of 
 
 Specify CPU time to be short.
  
-Specify memory to request, multi-thread, # of CPUs, the “sh” job shell.
+Specify memory to request, multi-thread, # of CPUs, the ``sh`` job shell.
  
   When running the BLAST+ program, *12 GB across 20 CPUs for a total of 240 GB* is recommended to begin. Once initial analyses are run, the user receives a report on how much memory the analyses took and can further specify this value in the future. Also, if a run fails, it can be due to lack of memory.
   
@@ -126,7 +126,7 @@ In the "Additional options" section:
 
 In the "Job specific commands" section:
   
-  Indicate the specific sh shell commands required to run BLAST. The following code may be copied by the user - remember to change the -query and -out names below. ::
+  Indicate the specific sh shell commands required to run BLAST. The following code may be copied by the user - remember to change the ``-query`` and ``-out`` names below. ::
 
  
   
@@ -144,11 +144,11 @@ In the "Job specific commands" section:
 
 Specific notes on the above BLAST commands:
 
-* Please change the input ("-query") and output ("-out") code file names bolded above to what is applicable to the user. Directory pathways to these files do not need to be specified if running the .job file in the same Hydra directory as the input .fasta file. 
+* Please change the input ``-query`` and output ``-out`` code file names bolded above to what is applicable to the user. Directory pathways to these files do not need to be specified if running the .job file in the same Hydra directory as the input .fasta file. 
                                        
-* The "-word_size 11" code is specified so the BLAST+ program will perform a traditional blastn run, where runs of 11 base pairs from the query sequence are used to match to the NCBI nucleotide(nt) database. This results in a “deeper dive” into the database and potentially more accurate results when the query sequence is divergent from what exists in the database. If the user would like to run the faster “megablast” instead (matches runs of 28 bps from query sequence), just remove the "-word_size" code from the .job file, as megablast is the default option for BLAST+. 
+* The ``-word_size 11`` parameter is specified so the BLAST+ program will perform a traditional blastn run, where runs of 11 base pairs from the query sequence are used to match to the NCBI nucleotide (nt) database. This results in a “deeper dive” into the database and potentially more accurate results when the query sequence is divergent from what exists in the database. If the user would like to run the faster “megablast” instead (matches runs of 28 bps from query sequence), just remove the ``-word_size`` parameter from the .job file entirely, as megablast is the default option for BLAST+. 
 
-* The -max_target_seqs code specifies how many hits are returned for each query sequence. This is based on which hits are returned first, not which are the most accurate. Therefore, the higher the max_target_seqs listed, the deeper the NCBI nucleotide database is searched. The default value here is 500, this code is only needed if using a value other than 500. It is also important to remember that the higher the value of hits returned, the longer the analysis will take.
+* The ``-max_target_seqs`` parameter specifies how many hits are returned for each query sequence. This is based on which hits are returned first, not which are the most accurate. Therefore, the higher the ``max_target_seqs`` listed, the deeper the NCBI nucleotide database is searched. The default value here is 500, this code is only needed if using a value other than 500. It is also important to remember that the higher the value of hits returned, the longer the analysis will take.
                                             
 * The outfmt values can be further specified based on user preference. For further information on what options are available here in the BLAST+ program, see https://www.ncbi.nlm.nih.gov/books/NBK279684/ table C1, row outfmt.
 
@@ -168,40 +168,40 @@ At the bottom of the QSub Generation Utility page, click the "Check if OK", then
 Accessing Hydra on SI Network using a Command Line Interface (CLI)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For instruction on logging into Hydra and transferring the .fasta and .job files to the user's pool/genomics directory, see https://github.com/SmithsonianWorkshops/Hydra-introduction/blob/master/hydra_intro.md.
+For instruction on logging into Hydra and transferring the **fasta** and **job** files to the user's ``pool/genomics`` directory, see https://github.com/SmithsonianWorkshops/Hydra-introduction/blob/master/hydra_intro.md.
 
-Once the files have been transferred to Hydra via FileZilla, open Terminal (Mac) or Command Line [Windows] to run BLAST.
+Once the files have been transferred to Hydra via FileZilla, open Terminal (Mac) or Command Line (Windows) to access Hydra.
 
 Within Terminal or Command Line, log onto Hydra through a secure shell session:
 
-   ssh user@hydra-login01.si.edu
+   ``ssh user@hydra-login01.si.edu``
 
-   ex: ssh steierj@hydra-login01.si.edu
+   ex: ``ssh steierj@hydra-login01.si.edu``
  
-Enter password (will not show process of typing).
+Enter your password (will not show process of typing).
  
-This will automatically place the user in the Hydra home directory (~).
+The user will now be logged into Hydra and be located in their home directory.
  
-Navigate to the directory where .fasta input and .job files are stored. 
+Navigate to the directory where **fasta** input and **job** files are stored. 
  
-   cd /pool/genomics/user/AnyFurtherDirectoryPathway
+   ``cd /pool/genomics/user/AnyFurtherDirectoryPathway``
  
-   ex: cd /pool/genomics/steierj/Blasts/FY19Fern
+   ex: ``cd /pool/genomics/steierj/Blasts/FY19Fern``
  
-Type the “ls” command to double check if .fasta input and .job file are in the current directory. 
+Type the ``ls`` command to double check if **fasta** input and **job** file are in the current directory. 
  
 Run the qsub command to begin analysis.
 
-   qsub <name of .job file>
+   ``qsub <name of .job file>``
    
-   ex: qsub FY19FernP06blast.job
+   ex: ``qsub FY19FernP06blast.job``
  
  
 The user will get emails about the start of the job and completion of the job. The completion email will contain details about how much memory and time the job took. 
  
-It may take a couple minutes for output files to appear in proper directories in FileZilla once the job completion email is received. If “CWD” option was indicated in the .job file, the output .tsv file will be in the same directory as the analysis was run.
+It may take a couple minutes for output files to appear in proper directories in FileZilla once the job completion email is received. If “CWD” option was indicated in the **job** file, the output **tsv** file will be in the same directory as the analysis was run.
  
-Drag and drop the output .tsv file from FileZilla to a local directory.
+Drag and drop the output **tsv** file from FileZilla to a local directory.
  
 Log out of Hydra in the Terminal by typing “exit”.
 
@@ -213,7 +213,7 @@ Accessing Hydra When Teleworking
 
    For further instruction than what is listed here see: https://github.com/SmithsonianWorkshops/Hydra-introduction/blob/master/hydra_intro.md
  
-Log onto telework.si.edu, go to IT tools, find Hydra there. Can click the links to either login node 01 or 02.
+Log onto telework.si.edu, navigate to the IT tools subsection, expand it, and select Hydra. Can click the links to either login node 01 or 02.
 
    There have been past issues with certain internet browsers like Safari. Firefox browser works well. 
      
@@ -221,7 +221,7 @@ Log onto Hydra by just typing the username, hit enter, then type the correct pas
  
    This will automatically place the user in the hydra home directory (~) 
  
-Navigate to the directory where BLAST will be run within the user’s pool/genomics. ::
+Navigate to the directory where BLAST will be run within the user’s ``pool/genomics``. ::
  
    cd /pool/genomics/user/AnyFurtherDirectoryPathway
  
@@ -237,15 +237,15 @@ To build a new directory use the below command. Make sure to navigate to that ne
    
        cd FY18Surifish
  
-Once in the directory where files will be stored and BLAST will be run, download the .job and .fasta files to Hydra via the ffsend tool.
+Once in the directory where files will be stored and BLAST will be run, download the **job** and **fasta** files to Hydra via the ffsend tool.
 
-Use the following command to load the ffsend module onto the current command line: ::
+Use the following command to load the ``ffsend`` module onto the current command line: ::
  
    module load tools/ffsend
  
-Go to https://send.vis.ee/, upload the .fasta file to be run, and copy the resulting link.
+Go to https://send.vis.ee/, upload the **fasta** file to be run, and copy the resulting link.
 
-Download the .fasta file to Hydra with the following command: ::
+Download the **fasta** file to Hydra with the following command: ::
  
    ffdownload <paste send.vis.ee link here>
  
@@ -253,11 +253,11 @@ Download the .fasta file to Hydra with the following command: ::
  
 The file should then be downloaded to Hydra.
  
-Repeat step this download process for the .job file.
+Repeat step this download process for the **job** file.
 
-Check that both files have properly downloaded to the Hydra directory with the “ls” command.
+Check that both files have properly downloaded to the Hydra directory with the ``ls`` command.
 
-Within that same directory, run the .job file. ::
+Within that same directory, run the **job** file. ::
  
    qsub <name of .job file>
  
@@ -265,28 +265,80 @@ Within that same directory, run the .job file. ::
  
 The user will get emails about the start of the job and the completion of the job. The completion email will contain details about how much memory and time the job took.
  
-Download the resulting .tsv file from Hydra to the local computer with the following command: ::
+Download the resulting **tsv** file from Hydra to the local computer with the following command: ::
  
    ffupload <name of tsv file> 
  
    ex: ffupload FY18Surifish12SBlastResults.tsv
  
 .. note::
-   "ffupload" is a slightly different command than what is listed in the above linked GitHub page.
+   ``ffupload`` is a slightly different command than what is listed in the above linked GitHub page.
    
 This will result in a link that pastes to the command line, click that link and the send.vis.ee page with the download will pop up. Download the file to the current browser's downloads. 
  
-Log out of Hydra by typing “exit”.
+Log out of Hydra by typing ``exit``.
  
 For an example of code using Hydra to run BLAST+ in real time, see this `document <https://github.com/SIBarcodeNetwork/ReadtheDocsMaster/blob/master/exampleCode2runBlastinHydra.txt>`_.
 
-Analyzing BLAST+ Results
+Augmenting BLAST+ Results
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 As the BLAST+ output does not contain the full taxonomy (i.e. family, order, class etc.) of the BLAST hits as the live Verify Taxonomy Biocode Plugin function does, the user will need to pull the full taxonomy for the hits themselves if this is desired.
 
-An RStudio pipeline has been created utilizing the “taxonomizr” R package to take the locally downloaded BLAST+ .tsv output from Hydra and associate NCBI taxonomy with each blast hit. See this `link <https://github.com/SIBarcodeNetwork/SIBarcodeNetwork/blob/master/Running_taxonomizr_post_BLAST_12_13_2022.Rmd>`_ to copy the raw code and save as a .Rmd file to run in RStudio.
+
+Taxonomy Fill Using Hydra and the *Blast Taxa Backfill* Module
+^^^^
+
+To use this module to complete the taxonomic lineage for each Blast result, you will need 2 pieces of information from your previous Blast job.
+
+1. the path of the output **tsv** file 
+2. the value passed to the ``-outfmt`` parameter in your Blast **job** file
+   
+Currently this module only accepts input in **tsv** format. As well your ``-outfmt`` value will need to begin with the tabular alignment view option, **6**, and contain the format specifier: **staxids**. It will not run if those two values are not present.
+
+- Ex: ``"6 qseqid sacc staxids sscinames bitscore pident qcovs"``
+
+Below is an example job file you can edit to fit your needs ::
+
+   # /bin/sh
+   # ----------------Parameters---------------------- #
+   #$ -S /bin/sh
+   #$ -pe mthread 8
+   #$ -q sThC.q
+   #$ -l mres=48G,h_data=6G,h_vmem=6G
+   #$ -cwd
+   #$ -j y
+   #$ -N Example_blast_taxa_backfill.job
+   #$ -o ../logs/Example_blast_taxa_backfill.log
+   #
+   # ----------------Modules------------------------- #
+   module load bioinformatics/blast_taxa_backfill
+   #
+   # ----------------Your Commands------------------- #
+   #
+   echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+   #
+   echo + NSLOTS = $NSLOTS
+   #
+   blast_taxa_backfill.py \
+        path/to/example/input.tsv \
+        path/to/example/output.tsv \
+        "6 qseqid sacc staxids sscinames bitscore pident qcovs"
+   #
+   echo = `date` job $JOB_NAME done
+
+You should edit the ``-N`` and ``-o`` parameters to reflect your job name as well as name and location of your log files. It is important to note that under ``blast_taxa_backfill.py`` **the order of parameters is important**. This program is **position dependent**, meaning that you don't need to pass parameter flags. Instead, the program recognizes the first option passed to it as input, second as output, and third as ``-outfmt`` value. 
+
+If the software fails, check the log file as the exception handling should report where it went wrong.
+
+This is an undemanding program and can easily run on a local machine. In the future, the author will write up the documentation and provide the files to do just that. 
+
+
+Taxonomy Fill Using R and *Taxonimizr* Package
+^^^^
+A pipeline in RStudio has been created utilizing the “taxonomizr” R package to take the locally downloaded BLAST+ **tsv** output from Hydra and associate NCBI taxonomy with each blast hit. See this `link <https://github.com/SIBarcodeNetwork/SIBarcodeNetwork/blob/master/Running_taxonomizr_post_BLAST_12_13_2022.Rmd>`_ to copy the raw code and save as a **Rmd** file to run in RStudio.
 
 Please note that certain text in the script such as working directory pathway and file names will need to be changed as applicable. The user will also need to download the NCBI Taxonomy database, which is detailed in the script.
 
-Once taxonomy data has been added to the BLAST+ results, it is recommended that this file be converted to an .xlsx excel file and a pivot table be created to digest the information.
+Once taxonomy data has been added to the BLAST+ results, it is recommended that this file be converted to an **xlsx** file and a pivot table be created to digest the information.
+
