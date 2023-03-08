@@ -3,12 +3,6 @@
 Running NCBI BLAST to Compare Taxonomic IDs
 ===========================================
 
-
-.. note::
-   
-   This protocol is in development, please use the link on the upper right corner of this page to submit any issues or pull requests with edits in GitHub.
-
-
 The Basic Local Alignment Search Tool, or “BLAST”, is a tool developed by NCBI to find and compare regions of similarity between sequences. Please see the NCBI `BLAST website <https://blast.ncbi.nlm.nih.gov/Blast.cgi>`_ for further background.
 
 BLAST can be used to check for contamination, and in conjunction with other information, can confirm or update specimen IDs from which barcodes were derived. There are two main ways this can be done:
