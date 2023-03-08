@@ -178,7 +178,7 @@ Within Terminal or Command Line, log onto Hydra through a secure shell session:
 
    ex: ``ssh steierj@hydra-login01.si.edu``
  
-Enter your password (will not show process of typing).
+Enter password (will not show process of typing).
  
 The user will now be logged into Hydra and be located in their home directory.
  
@@ -289,16 +289,16 @@ As the BLAST+ output does not contain the full taxonomy (i.e. family, order, cla
 Taxonomy Fill Using Hydra and the *Blast Taxa Backfill* Module
 ^^^^
 
-To use this module to complete the taxonomic lineage for each Blast result, you will need 2 pieces of information from your previous Blast job.
+To use this module to complete the taxonomic lineage for each BLAST result, 2 pieces of information are needed from the previous BLAST job.
 
 1. the path of the output **tsv** file 
-2. the value passed to the ``-outfmt`` parameter in your Blast **job** file
+2. the value passed to the ``-outfmt`` parameter in the BLAST **job** file
    
-Currently this module only accepts input in **tsv** format. As well your ``-outfmt`` value will need to begin with the tabular alignment view option, **6**, and contain the format specifier: **staxids**. It will not run if those two values are not present.
+Currently this module only accepts input in **tsv** format. The ``-outfmt`` value in the BLAST **job** file will need to begin with the tabular alignment view option, **6**, and contain the format specifier: **staxids**. It will not run if those two values are not present.
 
 - Ex: ``"6 qseqid sacc staxids sscinames bitscore pident qcovs"``
 
-Below is an example job file you can edit to fit your needs ::
+Below is an example job file that can be copied and edited to fit the user's needs ::
 
    # /bin/sh
    # ----------------Parameters---------------------- #
@@ -327,16 +327,14 @@ Below is an example job file you can edit to fit your needs ::
    #
    echo = `date` job $JOB_NAME done
 
-You should edit the ``-N`` and ``-o`` parameters to reflect your job name as well as name and location of your log files. It is important to note that under ``blast_taxa_backfill.py`` **the order of parameters is important**. This program is **position dependent**, meaning that you don't need to pass parameter flags. Instead, the program recognizes the first option passed to it as input, second as output, and third as ``-outfmt`` value. 
+Edit the ``-N`` and ``-o`` parameters to reflect the job name as well as name and location of the log files. It is important to note that under ``blast_taxa_backfill.py`` **the order of parameters is important**. This program is **position dependent**, meaning that parameter flags are not needed. Instead, the program recognizes the first option passed to it as input, second as output, and third as ``-outfmt`` value. 
 
 If the software fails, check the log file as the exception handling should report where it went wrong.
-
-This is an undemanding program and can easily run on a local machine. In the future, the author will write up the documentation and provide the files to do just that. 
 
 
 Taxonomy Fill Using R and *Taxonimizr* Package
 ^^^^
-A pipeline in RStudio has been created utilizing the “taxonomizr” R package to take the locally downloaded BLAST+ **tsv** output from Hydra and associate NCBI taxonomy with each blast hit. See this `link <https://github.com/SIBarcodeNetwork/SIBarcodeNetwork/blob/master/Running_taxonomizr_post_BLAST_12_13_2022.Rmd>`_ to copy the raw code and save as a **Rmd** file to run in RStudio.
+A pipeline in RStudio has been created utilizing the “taxonomizr” R package to take the locally downloaded BLAST+ **tsv** output from Hydra and associate NCBI taxonomy with each BLAST hit. See this `link <https://github.com/SIBarcodeNetwork/SIBarcodeNetwork/blob/master/Running_taxonomizr_post_BLAST_12_13_2022.Rmd>`_ to copy the raw code and save as a **Rmd** file to run in RStudio.
 
 Please note that certain text in the script such as working directory pathway and file names will need to be changed as applicable. The user will also need to download the NCBI Taxonomy database, which is detailed in the script.
 
