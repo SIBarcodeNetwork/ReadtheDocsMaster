@@ -28,7 +28,7 @@ Enter a value such as "GEOME FIMS" in the Connection Name so that the plugin sav
 Field Database Connection
 --------------------------
 
-In the Field Database Connection section, select "GeOMe FIMS" from the dropdown.
+In the Field Database Connection section, select "GEOME FIMS" from the dropdown.
 
 .. figure:: /images/biocode_fims_options.png
   :align: center
