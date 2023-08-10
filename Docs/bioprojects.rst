@@ -182,7 +182,7 @@ Either - Email bioprojecthelp@ncbi.nlm.nih.gov with:
 	
 Or - Treat the BioProject as a source modifier update to the GenBank accessions and email gb-admin@ncbi.nlm.nih.gov with:
 	* the range of GenBank accessions to be updated in the subject line
-	* attach a text file table that contains the fields "Accession" and "Bioproject" (without the quotations) 
+	* attach a text file table that contains the fields "acc. num." and "bioproject" (without the quotations) 
 
 
 Adding a BioProject to New GenBank Submissions
