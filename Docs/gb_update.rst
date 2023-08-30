@@ -32,7 +32,7 @@ The 3 most common types of updates to barcode records will be:
 Source Information
 ~~~~~~~~~~~~~~~~~~
 
-The GenBank "source modifiers" are any of the fields in a GenBank record that pertain to the specimen metadata portion of the Barcode Data Standard. To make a change to one or more of these fields, prepare a spreadsheet table with "Accession" (GenBank accession number) in the first column, and all of the fields to be changed or added in the subsequent columns.
+The GenBank "source modifiers" are any of the fields in a GenBank record that pertain to the specimen metadata portion of the Barcode Data Standard. To make a change to one or more of these fields, prepare a spreadsheet table with "acc. num." (GenBank accession number) in the first column, and all of the fields to be changed or added in the subsequent columns.
 
 Save the spreadsheet as a tab-separated text file (.tsv), and attach to an email to gb-admin@ncbi.nlm.nih.gov with the following text:
   
