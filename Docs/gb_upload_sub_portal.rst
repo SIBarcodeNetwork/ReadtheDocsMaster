@@ -147,7 +147,7 @@ Once the metadata are exported as a tsv file, in Excel or a text editor, change 
 
 \* voucherCatalogNumber or value used to name sequences in FASTA file
 
-** Specimen_ID will translate to Specimen_voucher or Isolate, depending on what was chosen in the previous tab of the portal
+** Sequence_ID will translate to Specimen_voucher or Isolate, depending on what was chosen in the previous tab of the portal
 
 Further Source Modifier Notes for Consideration: 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
