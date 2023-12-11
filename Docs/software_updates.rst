@@ -3,11 +3,11 @@
 Software Updates
 =================
 
-.. image:: https://img.shields.io/badge/Biocode%20Plugin%20Version-3.0.18-green.svg
-    :target: https://github.com/biocodellc/biocode-lims/releases/download/v3.0.18/BiocodePlugin_3_0_18.gplugin
+.. image:: https://img.shields.io/badge/Biocode%20Plugin%20Version-3.0.20-green.svg
+    :target: https://github.com/biocodellc/biocode-lims/releases/download/v3.0.20/BiocodePlugin_3_0_20.gplugin
 
-.. image:: https://img.shields.io/badge/GenBank%20Upload%20Plugin%20Version-1.6.8-green.svg
-    :target: https://assets.geneious.com/plugins/GenbankSubmission_1_6_8.gplugin
+.. image:: https://img.shields.io/badge/GenBank%20Upload%20Plugin%20Version-1.7.0-green.svg
+    :target: https://assets.geneious.com/plugins/GenbankSubmission_1_7_0.gplugin
 
 27 December, 2022
 	The Biocode Plugin was updated to include performance improvements when opening the detail view of a LIMS plate. Now faster than with previous versions of the plugin. A bug was also fixed where app crashed with null latitude or null longitude.
