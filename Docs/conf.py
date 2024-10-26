@@ -44,7 +44,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'SI Barcode Network Informatics Documentation'
-copyright = u'2016-2023, Niamh Redmond, Julia Steier, Mike Trizna, Mike O`Mahoney, Allison Becker.'
+copyright = u'2016-2024, Niamh Redmond, Julia Steier, Mike Trizna, Mike O`Mahoney, Allison Becker.'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
