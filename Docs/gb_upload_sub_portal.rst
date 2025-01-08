@@ -124,9 +124,7 @@ Once the metadata are exported as a tsv file, in Excel or a text editor, change 
 +-----------------------------------+------------------------+
 | collectorList                     | Collected_by           |
 +-----------------------------------+------------------------+
-| identifiedBy                      | Identified_by          |
-+-----------------------------------+------------------------+
-| genbankCountry                    | Country                |
+| genbankCountry                    | geo_loc_name           |
 +-----------------------------------+------------------------+
 | genbankDate                       | Collection_date        |
 +-----------------------------------+------------------------+
@@ -163,7 +161,7 @@ Further Source Modifier Notes for Consideration:
 
 * Regarding BioProjects: If sequences being submitted will be organized within a BioProject that has already been created, it is possible to add that to the tsv file at this stage. Simply add the column header “BioProject” and list the PRNJ BioProject number for each sequence. To create a BioProject ahead of time and for any further information on associating barcode accessions with GenBank Bioprojects, see the :ref:`Bioprojects-link` instructions.
 
-* While it is recommended to export the tsv metadata file from Geneious Prime, a tsv file for upload may also be obtained from reformatting data directly from GEOME FIMS or from a local spreadsheet if GEOME FIMS was never used, but remember to include primer name and sequence data and to format Country, Collection_date, and Lat_Lon data according to GenBank standards. For more information or examples of how these data should be formatted, see the GenBank `recommendations <https://www.ncbi.nlm.nih.gov/WebSub/html/help/genbank-source-table.html#modifiers/>`_.
+* While it is recommended to export the tsv metadata file from Geneious Prime, a tsv file for upload may also be obtained from reformatting data directly from GEOME FIMS or from a local spreadsheet if GEOME FIMS was never used, but remember to include primer name and sequence data and to format geo_loc_name, Collection_date, and Lat_Lon data according to GenBank standards. For more information or examples of how these data should be formatted, see the GenBank `recommendations <https://www.ncbi.nlm.nih.gov/WebSub/html/help/genbank-source-table.html#modifiers/>`_.
 
 Upload the tsv file as a tab-delimited table to the GenBank Submission Portal. Click “Continue”.
 
