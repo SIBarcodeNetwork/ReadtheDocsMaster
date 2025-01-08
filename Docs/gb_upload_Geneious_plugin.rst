@@ -117,7 +117,7 @@ Sequence ID
   This field will not be published as part of the GenBank record, but it is very important because this field will connect the specimen data and sequence data. Select the LIMS field “Workflow Name” for this.
 
 Identified by
-  This will become the “identified_by” field in GenBank. It corresponds with the GEOME FIMS field “identifiedBy”. If it is unknown, select *None*.
+  This will become the “identified_by” field in GenBank. It corresponds with the GEOME FIMS field “identifiedBy”. As of January 2025, this field is deprecated by GenBank, select *None*.
 
 Collection Date
   This will become the “collection_date” field in GenBank. In GEOME FIMS, this is separated into “yearCollected”, “monthCollected”, and “dayCollected” fields so that each could be validated. However, Geneious *should* automatically combine these fields into one “genbankDate” field if the sequences are annotated correctly.
