@@ -5,7 +5,7 @@ GenBank Upload Pipeline 1: GenBank Submission Portal
 
 The GenBank Submission Portal on the NCBI website must be used to submit metazoan (multicellular) mtCOI and/or any rRNA sequences (such as 18S, 16S, 23S, 28S, ITS, etc.), as GenBank no longer supports submissions of these markers through the Geneious Prime GenBank Submission plugin. This plugin can still  be used to submit all other markers. See :ref:`GBplugin-link` for a detailed step by step of how to use the plugin.  
 
-To demonstrate GenBank submission via the Submission Portal, a batch of ITS fungal barcodes will be used as an example. 
+To demonstrate GenBank submission via the Submission Portal, a batch of COX1 Diptera barcodes will be used as an example. 
 
 Navigate to the NCBI Submission Portal: https://submit.ncbi.nlm.nih.gov/ 
 
@@ -185,7 +185,7 @@ Fill out the reason for each new name, whether it is a New Species, New Combinat
 
 New non-specific taxon names (e.g. *Amphiesma* sp.) and morphospecies names may be submitted as a “New species”.
 
-If submitting COI sequences (not seen in this example), also indicate “Mitochondrial Genetic Code” for new names to NCBI. For more information on NCBI genetic codes see their `webpage <https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi>`_.
+When submitting COI sequences, also indicate “Mitochondrial Genetic Code” for new names to NCBI. For more information on NCBI genetic codes see their `webpage <https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi>`_. When submitting rRNA sequences, this will not be asked.
 
 Once all details for unknown names are filled out, click “Continue”.
 
@@ -195,7 +195,7 @@ References Tab
 
 This tab is used to fill in details on who produced the sequences and any relevant publication data. If a publication is or will be associated with the sequences, always include at least one publication author as a sequence author. **Important: Only sequence authors can edit the records in GenBank.**
 
-For records associated with USNM collections, SIBN strongly recommends that the relevant departmental Data Manager and/or the departmental Collections Manager are included in the Sequence Authors list as this can assist with updates if required in the future. Discussions should be held with the relevant departmental staff to discuss the sequence authors on the GenBank records.
+For records associated with USNM collections, SIBN strongly recommends that the **relevant departmental Data Manager and/or the departmental Collections Manager are included in the Sequence Authors list** as this can assist with updates if required in the future. Discussions should be held with the relevant departmental staff to discuss the sequence authors on the GenBank records.
 
 .. figure:: /images/gb_subportal_references.png
  :align: center
