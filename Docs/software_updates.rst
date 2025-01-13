@@ -3,11 +3,18 @@
 Software Updates
 =================
 
-.. image:: https://img.shields.io/badge/Biocode%20Plugin%20Version-3.0.22-green.svg
-    :target: https://github.com/biocodellc/biocode-lims/releases/download/v3.0.22/BiocodePlugin_3_0_22.gplugin
+.. image:: https://img.shields.io/badge/Biocode%20Plugin%20Version-3.0.23-green.svg
+    :target: https://github.com/biocodellc/biocode-lims/releases/download/v3.0.23/BiocodePlugin_3_0_23.gplugin
 
 .. image:: https://img.shields.io/badge/GenBank%20Upload%20Plugin%20Version-1.7.0-green.svg
     :target: https://assets.geneious.com/plugins/GenbankSubmission_1_7_0.gplugin
+
+12 January, 2025	
+	The Biocode Plugin was updated to incorporate the following things:
+
+	* Extraction plates: Concentration/Purity renamed to Concentration
+	* Extraction plates: Concentration does not display 0.0 values and instead shows blank values
+	* Verified Save function executes without errors
 
 20 October, 2024
 	The Biocode Plugin was updated to incorporate changes that improve LIMS query speed, addressing github issue #134
