@@ -23,12 +23,10 @@ The data standard consists of several required and strongly recommended elements
 | | species or a provisional label for   |                     |                              |
 | | an unpublished species"              |                     |                              |
 +----------------------------------------+---------------------+------------------------------+
-| | "Country-Code using the controlled   | country             | Required                     |
+| | "Country-Code using the controlled   | Geo_Loc_Name        | Required                     |
 | | vocabulary used by GenBank"          |                     |                              |
 +----------------------------------------+---------------------+------------------------------+
 | | "Latitude and longitude"             | lat_lon             | Strongly recommended         |
-+----------------------------------------+---------------------+------------------------------+
-| | "Name of the identifier"             | identified_by       | Strongly recommended         |
 +----------------------------------------+---------------------+------------------------------+
 | | "Name of the collector"              | collected_by        | Strongly recommended         |
 +----------------------------------------+---------------------+------------------------------+
@@ -64,8 +62,8 @@ Specimen Metadata
 Collection Metadata
 ~~~~~~~~~~~~~~~~~~~
 
-Country -- Required
-	The GenBank field name “Country” is slightly confusing -- not just because the INSDC country controlled vocabulary list (http://www.insdc.org/country.html) includes oceans and seas in addition to countries -- but because the country name is often concatenated with a colon to provide more specific location information about where a specimen was collected. Typically, locality terms following the standardized country name are ordered in ascending order of specificity. An example for a specimen collected on the grounds of the Smithsonian Natural History Museum might be "USA: Washington, DC; Smithsonian Natural History Museum; West Loading Dock".
+Geo_Loc_Name -- Required
+	The GenBank field name “geo_loc_name” (previously "Country") is slightly confusing -- not just because the INSDC country controlled vocabulary list (http://www.insdc.org/country.html) includes oceans and seas in addition to countries -- but because the country name is often concatenated with a colon to provide more specific location information about where a specimen was collected. Typically, locality terms following the standardized country name are ordered in ascending order of specificity. An example for a specimen collected on the grounds of the Smithsonian Natural History Museum might be "USA: Washington, DC; Smithsonian Natural History Museum; West Loading Dock".
 
 Latitude and Longitude -- Strongly Recommended
 	The geographical coordinates of the location of where a specimen was collected are stored in the “lat_lon” field in decimal format. GenBank uses the specific format "d[d.dddd] N|S d[dd.dddd] W|E". An example of this is "38.891262 N 77.026093 W" for the Smithsonian Natural History Museum.
@@ -102,8 +100,6 @@ Specimen Voucher -- Required
 Organism -- Required
 	The scientific name of the organism that provided the sequenced genetic material. The text from the data standard reads "the name of a formally described species or a provisional label for an unpublished species", which allows for the exception of allowing for organism names only identified to the Order or Family level. It is recommended by GenBank to give provisional names the values of the specimen voucher for reproducibility reasons.
 
-Identifier Name -- Highly Recommended
-	The name of the person(s) or institute that identified the specimen. Just as with Collector Name, GenBank does not provide any guidance on how to structure name ("Give Name Surname" vs. "Surname, Given Name") or how to group multiple names, but at least be consistent.
 
 Sequence Metadata
 -----------------
