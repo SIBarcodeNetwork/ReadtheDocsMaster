@@ -3,12 +3,14 @@
 Software Updates
 =================
 
-.. image:: https://img.shields.io/badge/Biocode%20Plugin%20Version-3.0.24-green.svg
-    :target: https://github.com/biocodellc/biocode-lims/releases/download/v3.0.23/BiocodePlugin_3_0_23.gplugin
+.. image:: https://img.shields.io/badge/Biocode%20Plugin%20Version-3.0.25-green.svg
+    :target: https://github.com/biocodellc/biocode-lims/releases/download/v3.0.25/BiocodePlugin_3_0_25.gplugin
 
 .. image:: https://img.shields.io/badge/GenBank%20Upload%20Plugin%20Version-1.7.0-green.svg
     :target: https://assets.geneious.com/plugins/GenbankSubmission_1_7_0.gplugin
 
+14 April, 2025
+	An bug in the Biocode Plugin was addressed that enables private query of projects and does not require setting public access.
 27 February, 2025
 	The Biocode Plugin was updated to fix an issue involving the movement of barcodes in extraction plates that leaves extraction barcodes behind
 
