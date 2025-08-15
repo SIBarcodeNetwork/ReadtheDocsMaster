@@ -39,7 +39,7 @@ Black column headers are not required, but they should still be filled out if th
 Column Definitions
 ------------------
 
-Column definitions are also found within the "Sample_Fields" tab of the template FIMS spreadsheet.
+Column definitions are also found within the Fields tabs of the GEOME FIMS spreadsheet.
 
 materialSampleID 
   The collector's specimen number. This number must be unique among the IDs within the expedition. Use the field number or voucherCatalogNumber, if no field number exists.
