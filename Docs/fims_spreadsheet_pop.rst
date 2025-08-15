@@ -20,9 +20,9 @@ It is a good idea to immediately rename this spreadsheet file with the dataset n
   :align: center
   :target: /en/latest/_images/sibn_spreadsheet_template.png
 
-  This screenshot shows a portion of the column headers of the specimen spreadsheet template.
+  This screenshot shows a portion of the column headers on the Samples tab of the specimen spreadsheet template.
 
-There are four tabs in the spreadsheet: Instructions, Samples, Samples_Fields, and Lists. The Instructions tab explains how to use and populate the spreadsheet. The Samples tab is where data will be entered. The Samples_Fields tab includes definitions for all the columns on the Samples tab. The Lists tab includes all controlled vocabulary for certain fields. 
+There are eight tabs in the spreadsheet: Instructions, Samples, Events, Tissues, Samples_Fields, Events_Fields, Tissues_Fields and Lists. The Instructions tab explains how to use and populate the spreadsheet. The Samples, Events, and Tissues tabs are where data will be entered. The Fields tabs include definitions for all the columns on their applicable tab. The Lists tab includes all controlled vocabulary for certain fields. 
 
 Source of Columns
 ~~~~~~~~~~~~~~~~~
@@ -32,7 +32,7 @@ The GEOME FIMS allows projects to completely customize the fields that they use 
 Column Colors
 ~~~~~~~~~~~~~
 
-Red column headers indicate fields **required** before they can be uploaded to the FIMS. 
+Red column headers indicate fields **required** before they can be uploaded to the GEOME FIMS. 
 
 Black column headers are not required, but they should still be filled out if the values are known.
 
