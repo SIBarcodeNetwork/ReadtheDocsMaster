@@ -29,7 +29,7 @@ Uploading Specimen Metadata
 
 Populate the BOLD spreadsheet template with relevant voucher, taxonomy, and collection data from the GEOME FIMS. Alternatively, if wanting to isolate BOLD metadata upload to only samples that have passed QC in LIMS, follow the :ref:`Exporting_metadata-link` protocol to pull relevant data from passed LIMS sequences.
 
-If tissues/DNAs are stored in the SI Biorepository, add “Smithsonian Institution National Museum of Natural History” in the “Institution Storing” field.
+If vouchers are stored at Smithsonian, add “Smithsonian Institution National Museum of Natural History” in the “INST” field.
 
 **Be aware that whatever value is listed in the SAMPLEID field in the BOLD metadata spreadsheet will be the “specimen_voucher” in the GenBank record.**
 
