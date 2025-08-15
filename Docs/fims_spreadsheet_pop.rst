@@ -4,7 +4,7 @@ Populating the FIMS Spreadsheet
 The GEOME FIMS Spreadsheet Template
 -----------------------------
 
-The SI Barcode Network GEOME FIMS spreadsheet template is hosted on the SI Barcode Network GitHub page at https://github.com/SIBarcodeNetwork/SIBarcodeNetwork, called "SI Barcode Network FIMS template.xlsx". (The direct link to download it is `here <https://github.com/SIBarcodeNetwork/SIBarcodeNetwork/raw/master/SI%20Barcode%20Network%20FIMS%20template.xlsx>`_.) 
+The SI Barcode Network GEOME FIMS spreadsheet template is hosted on the SI Barcode Network GitHub page at https://github.com/SIBarcodeNetwork/SIBarcodeNetwork, called "SI Barcode Network GEOME FIMS template.xlsx". (The direct link to download it is `here <https://github.com/SIBarcodeNetwork/SIBarcodeNetwork/raw/master/SI%20Barcode%20Network%20GEOME%20FIMS%20template.xlsx>`_.) 
 
 To personalize the columns included in the template, create a new account on GEOME and generate a customized template by following `this link <https://geome-db.org/workbench/template>`_.
 
