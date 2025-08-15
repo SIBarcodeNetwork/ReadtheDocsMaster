@@ -1,7 +1,7 @@
 Tips for BOLD Upload
 =====================
 
-The following tips are aimed towards data uploads to BOLD that are destined for GenBank publication and are meant to be supplementary to instructions found in the current version of the BOLD Systems `Handbook <http://www.boldsystems.org/libhtml_v3/static/BOLD4_Documentation_Draft1.pdf>`_.
+The following tips are aimed towards data uploads to BOLD that are destined for GenBank publication and are meant to be supplementary to instructions found in the current version of the BOLD Systems `Handbook <https://boldsystems.org/resource-hub/documentation/>`_.
  
 
 Creating a BOLD project
@@ -27,17 +27,17 @@ However, not all markers should be pushed to GenBank from BOLD:
 Uploading Specimen Metadata
 -----------------------------------
 
-Populate the BOLD spreadsheet template with relevant voucher, taxonomy, and collection data from the GEOME FIMS.
+Populate the BOLD spreadsheet template with relevant voucher, taxonomy, and collection data from the GEOME FIMS. Alternatively, if wanting to isolate BOLD metadata upload to only samples that have passed QC in LIMS, follow the :ref:`Exporting_metadata-link` protocol to pull relevant data from passed LIMS sequences.
 
 If tissues/DNAs are stored in the SI Biorepository, add “Smithsonian Institution National Museum of Natural History” in the “Institution Storing” field.
 
-**Be aware that whatever value is listed in the Sample ID field in the BOLD metadata spreadsheet will be the “specimen_voucher” in the GenBank record.**
+**Be aware that whatever value is listed in the SAMPLEID field in the BOLD metadata spreadsheet will be the “specimen_voucher” in the GenBank record.**
 
 .. figure:: /images/BOLD_spreadsheet_sampleID.png
   :align: center
   :target: /en/latest/_images/BOLD_spreadsheet_sampleID.png
  
-To alter Sample ID after initial sample data upload, email support@boldsystems.org to request the current Sample ID change request table.
+To alter SAMPLEID after initial sample data upload, email support@boldsystems.org to request the current SAMPLEID change request table.
 
 
 Adding BOLD Process IDs to GEOME
@@ -45,7 +45,7 @@ Adding BOLD Process IDs to GEOME
 
 Once BOLD has imported the samples, download specimen “data spreadsheets” from the BOLD project to obtain the BOLD Process IDs. 
 
-Download FIMS spreadsheet from GEOME and use the Excel “index(match)” function to paste the BOLD Process IDs into column “boldProcessID”. 
+Download FIMS spreadsheet from GEOME and use the Excel “Xlookup” function to paste the BOLD Process IDs into FIMS column “boldProcessID”. 
 Re-import the edited FIMS data to GEOME to update this information. 
 
 Uploading Sequences to BOLD
