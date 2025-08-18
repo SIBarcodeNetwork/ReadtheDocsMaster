@@ -86,7 +86,11 @@ Leave the "Remove previous final sequencing results" box checked.
 
 Uncheck "Also attach raw traces to sequencing reaction in LIMS".
 
-Fill in the "Reason Details" and "Notes" fields with any relevant information.
+Select the "Reason" for failing from the dropdown menu and fill in any needed further information in the "Reason Details" field.
+
+.. figure:: /images/mark_fail_reason.png
+  :align: center 
+  :target: /en/latest/_images/mark_fail_reason.png
 
 Leave the rest of the fields as the default selection, and click "OK" for the operation to run.
   
